@@ -144,7 +144,17 @@ body {
 	text-align: center;
 	color: #35465d;
 }
+.mybtn {
+	width: 100px;
+	margin: auto;
+	display: block;
+}
+.flex-container{
+	display: inline-flex;
+}
 
+
+				  
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
   html {
@@ -208,4 +218,8 @@ body {
 	text-align: center;
 	color: #35465d;
 	margin: 0 auto;
+}
+
+div{
+	text-align: center;
 }
