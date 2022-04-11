@@ -1,3 +1,20 @@
+# 파일 저장 형식
+
+파일저장형식: 
+
+- 모델: 
+  - 파일이름:파일이름(언더바)모델이름(언더바)작성자이름(언더바)
+  - 커밋이름: 변경된 사항
+
+- 웹/앱:
+  - 파일이름(언더바)적용된모델이름(언더바)작성자이름(언더바)
+  - 커밋이름:변견된 사항
+
+
+
+
+
+
 # 림펫 ( Limn pet )
 
 - Limn = to draw or paint on a surface
@@ -57,7 +74,8 @@
   - segmentation 추가
     - 배경을 제외한 반려동물 사진만 캐릭터화
     - UX/UI 개선
-    - 모델 개선
+    - 모델 개선 - 원하는 디자인 > 추가학습
+      - 모델개수 
 - goal 2 
   - 앱/웹 배포를 통해 얻은 feedback 추가
 
@@ -71,9 +89,11 @@
       - 사업자 정보 제공
     - 사진을 굿즈 사업자에게 전달
       - 굿즈 제작 및 구매
-
 - goal 2 
   - 앱/웹 배포를 통해 얻은 feedback 추가
+- goal 3 
+  - google colab 말고 제대로된 서버 구축해서 이용방안 탐구
+
 
 ---
 
@@ -128,18 +148,22 @@
 
   - Webview 이용하기
     - 인터넷 화면을 앱에 띄우는 기술
+  
 - 환경설정
 
   - React-Native & Expo 개발 환경 설정 
 
     - Node.js, Expo, React Native = 구름 IDE로 해결
       - container에서 React Native 선택 후 생성
+    
   - Android & iOS 앱 코딩
-  
+
     - React Native를 도와주는 Expo(테스트와 배포)를 이용
       - expo react web view 검색 > inastallation (terminal)> Usage (App.js) 대체 > 저장
       - expo 어플 다운뒤 QR 찍어서 직접 확인가능
-    - - 
+      
+      
+    
   - 앱 마켓 출시 준비
 
     - 출시를 위한 설정(아이콘이나 스플래시 이미지) , APK 파일 제작
