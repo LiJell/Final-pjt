@@ -17,7 +17,7 @@ drive.mount('/content/drive')
 import tensorflow as tf
 import tensorflowjs as tfjs
 
-new_model = tf.keras.models.load_model("/content/drive/MyDrive/K-food-model/n_.h5")
+new_model = tf.keras.models.load_model("model path")
 
-tfjs.converters.save_keras_model(new_model, "/content/drive/MyDrive/K-food-model/tfjs_n_.h5")
+tfjs.converters.save_keras_model(new_model, "converted_model_saving_path")
 
