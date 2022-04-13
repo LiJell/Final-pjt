@@ -1,3 +1,9 @@
+
+[자료 및 코드 출처]
+segmentation : pytorch hub, https://github.com/kairess/semantic-segmentation-pytorch
+cartoonGAN : https://github.com/mnicnc404/CartoonGan-tensorflow
+Real_esrGAN : https://github.com/xinntao/Real-ESRGAN
+
 # 파일 저장 형식
 
 파일저장형식: 
@@ -195,3 +201,4 @@
     - 네이버
   - Applaunchpad
     - 앱 스크린 샷 (다양함)
+
