@@ -165,7 +165,7 @@ body {
 	text-decoration: underline;
 }
 
-.github-link: hover {
+.github-link hover {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: bolder;
 	font-size: 1.0rem;
@@ -175,7 +175,7 @@ body {
 	text-decoration: underline;
 }
 
-.INFOODD-icon {
+.LimnPet-icon {
 	width: 10%
 }
 
