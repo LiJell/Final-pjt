@@ -33,7 +33,7 @@ def home(): # 경로에 대한 요청이 있을 때 실행될 함수 정의
 def upload_file():
     if request.method == 'POST':
         f = request.files['Pet-Raw-image']
-        f.save('/home/sjh7397/test_pythonanywhere/static')
+        f.save('/home/sjh7397/test_pythonanywhere/static/input_img')
     
 @app.route('/test') # 실제 프로젝트의 내용이 구현될 부분에 대한 경로 및 함수 정의
 def test():
