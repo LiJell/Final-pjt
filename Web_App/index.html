@@ -157,39 +157,46 @@
 
     <section>
       <div class="container file-upload">
-        <div class="image-upload-wrap" style="width: 65%; margin: 0 auto">
-          <input
-            class="file-upload-input"
-            type="file"
-            onchange="readURL(this);"
-            accept="image/*"
-          />
-          <div class="drag-text">
-            <img
-              src="img/icon-1294806.svg"
-              class="mt-5 pt-2 upload"
-              style="width: 16%"
+        <form action="http://35.173.69.207:5000/file_upload" method="POST">
+          <div class="image-upload-wrap" style="width: 65%; margin: 0 auto">
+            <input
+              name="Pet-Raw-image"
+              class="file-upload-input"
+              type="file"
+              onchange="readURL(this);"
+              accept="image/*"
             />
-            <h3 class="mb-5 pd-5 pt-4 upload-text">Drop or Select a image</h3>
+            <div class="drag-text">
+              <img
+                src="img/icon-1294806.svg"
+                class="mt-5 pt-2 upload"
+                style="width: 16%"
+              />
+              <h3 class="mb-5 pd-5 pt-4 upload-text">Drop or Select a image</h3>
+            </div>
           </div>
-        </div>
-        <div class="file-upload-content">
-          <img
-            class="file-upload-image"
-            id="food-image"
-            src="#"
-            alt="your image"
-          />
-          <p class="result-message">What a Lovely Character! Please Share!</p>
+          <div class="file-upload-content">
+            <img
+              class="file-upload-image"
+              id="pet-image"
+              src="#"
+              alt="your image"
+            />
+            <p class="result-message">What a Lovely Character! Please Share!</p>
 
-          <!-- <div id="label-container"></div> -->
-          <div class="image-title-wrap">
-            <button type="button" onclick="removeUpload()" class="remove-image">
-              <span class="image-title">Try New One</span>
-            </button>
+            <!-- <div id="label-container"></div> -->
+            <div class="image-title-wrap">
+              <button
+                type="button"
+                onclick="removeUpload()"
+                class="remove-image"
+              >
+                <span class="image-title">Try New One</span>
+              </button>
+            </div>
+            <div class="addthis_inline_share_toolbox"></div>
           </div>
-          <div class="addthis_inline_share_toolbox"></div>
-        </div>
+        </form>
       </div>
     </section>
 

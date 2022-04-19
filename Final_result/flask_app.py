@@ -10,7 +10,7 @@ import PIL
 import matplotlib.pyplot as plt
 import torch
 from torchvision import transforms, models
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 # # real esrGAN 환경 설정
 # print('환경을 설정 중입니다')
@@ -29,8 +29,15 @@ app = Flask(__name__) # 플라스크 인스턴스 생성
 def home(): # 경로에 대한 요청이 있을 때 실행될 함수 정의
     return render_template('index.html') # 저장된 html 템플릿 렌더링
 
-@app.route("/test") # 실제 프로젝트의 내용이 구현될 부분에 대한 경로 및 함수 정의
+@app.route('/file_upload', methods= ['POST, GET'])
+def upload_file():
+    if request.method == 'POST':
+        f = request.files['Pet-Raw-image']
+        f.save('/home/sjh7397/test_pythonanywhere/static')
+    
+@app.route('/test') # 실제 프로젝트의 내용이 구현될 부분에 대한 경로 및 함수 정의
 def test():
+    
     image_path = '/home/sjh7397/test_pythonanywhere/static/input_img/111.jpg'
     style = 'hayao' # 원하는 스타일명 지정(나중에 값 받아오도록 수정해야함)
     date_string = datetime.now().strftime("%d%m%Y%H%M%S") # 파일명 중복 방지를 위한 변수 지정
