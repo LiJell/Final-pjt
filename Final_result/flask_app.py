@@ -33,8 +33,8 @@ def home(): # 경로에 대한 요청이 있을 때 실행될 함수 정의
 def upload_file():
     if request.method == 'POST':
         f = request.files['Pet-Raw-image']
-        f.save('/home/sjh7397/test_pythonanywhere/static/input_img')
-    
+        f.save('/home/sjh7397/test_pythonanywhere/static/' + secure_filename(f.filename))
+        return render_template('index.html')
 @app.route('/test') # 실제 프로젝트의 내용이 구현될 부분에 대한 경로 및 함수 정의
 def test():
     
@@ -365,4 +365,4 @@ def test():
     return render_template('result.html', img_file=f'output_img/{style}_{date_string}_out.png' )
 
 if __name__ == '__main__':
-    app.run(debug=True) # 파이썬 파일을 직접 실행할 경우 app.run 수행
+    app.run(port="8000",debug=True) # 파이썬 파일을 직접 실행할 경우 app.run 수행
