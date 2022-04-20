@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -9,7 +14,6 @@
     />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-  
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
@@ -20,9 +24,15 @@
       crossorigin="anonymous"
     />
 
-    <title>림펫</title>
+<!-- ! 글자 뒷 배경 비치게 하기 -->
+    <div class="wrap">
+      <div class="bg">
+          <span>LIMN PET</span>
+      </div>
+  </div>
+
+    <title></title>
     <link rel="stylesheet" href="style.css" />
- 
     <script
       type="text/javascript"
       src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-624d45d85b9c2167"
@@ -32,7 +42,7 @@
     <!-- navigation bar (햄버거) -->
     <nav class="navbar navbar-expand-lg navbar-light nav-distance">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">LIMN PET</a>
+        <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,7 +52,6 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,9 +67,6 @@
                     "<a class='nav-link active' aria-current='page' href='#'></a>"
                   );
                 }
-            
-			
-
               </script>
             </li>
 
@@ -104,44 +110,76 @@
       </h1>
     </section>
     <section class="section">
-      <h2 class="title"; style="color:rgb(0,128,0)">Make Your Pet's Character!</h2>
-      <h5 class="subtitle"; "color:rgb(192,192,192)">Be Unique!</h5>
+      <h3 class="title">Make Your Pet's Character!</h3>
+      <h5 class="subtitle">Be Unique!</h5>
 
+      <button
+        type="button"
+        class="btn btn-primary('이미지로는 변환이 안되요!')" 
+      >
+      <div style="text-align:center"></div>
+        이미지 변환해주세요
+      </button>
+
+
+
+      <select
+        name="데이터리스트"
+        ;
+        class="btn btn-light"
+      >
+        <option value="1">만화</option>
+        <option value="2">애니메이션</option>
+        <option value="3">강아지</option>
+        <option value="4">캐릭터</option>
+        <div style="text-align:center"></div>
+      </select>
+
+
+<!-- --! 슬라이드 -->
+  <script>
+  var index = 0;   //이미지에 접근하는 인덱스
+  window.onload = function(){
+      slideShow();
+  }
+  
+  function slideShow() {
+  var i;
+  var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+  }
+  index++;
+  if (index > x.length) {
+      index = 1;  //인덱스가 초과되면 1로 변경
+  }   
+  x[index-1].style.display = "block";  //해당 인덱스는 block으로
+  setTimeout(slideShow, 4000);   //함수를 4초마다 호출
+
+}
+</script>
+
+<body>
+ 
+<div>
+<img class="slide1" src="img_1.jpg" width:"500" height="500">
+<img class="slide1" src="img_2.jpg" width:"500" height="500">
+<img class="slide1" src="img_3.jpg" width:"500" height="500">
+</div>
+
+<style>
+
+  img { max-width:100%; height:auto }
+  
+  </style>  
+
+<style>
+
+  #warp { width:100%; max-width:640px }
+  
+  </style>
    
-      
-      <button type="button" onclick="alert('이미지로는 변환이 안되요!')">이미지 변환해주세요</button>
-          <input type="text" style="width: 200px; height: 30px; font-size: 15px;">
-          <button style="width:50px; height:30px; font-size: 15px;">검색</button>
-       
-          <select name="데이터리스트";  style="text-align:center">
-              <option value="1">만화</option>
-              <option value="2">애니메이션</option>
-              <option value="3">강아지</option>
-              <option value="4">캐릭터</option>
-          </select>
-          
-          
-   
-
-        </form>
-
-        
-     
-
-   
-     
-
-      </form> 
-      
-     
-    
-      
-     
-      
-
-     
-      
-
+  <div id="warp">
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
     </section>
 
@@ -184,8 +222,8 @@
     </section>
 
     <section class="multi_crew">
-      <div class="container mt-5 INFOODD-cover d-flex flex-row-reverse">
-        <img src="img/INFOODD img.jpg" alt="" class="INFOODD-icon" /><a
+      <div class="container mt-5 LimnPet-cover d-flex flex-row-reverse">
+        <img src="img/Limnpet img.jpg" alt="" class="LimnPet-icon" /><a
           href="https://github.com/LiJell/Final-pjt"
           class="github-link"
           >By LIMNPET</a

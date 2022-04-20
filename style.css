@@ -144,17 +144,7 @@ body {
 	text-align: center;
 	color: #35465d;
 }
-.mybtn {
-	width: 100px;
-	margin: auto;
-	display: block;
-}
-.flex-container{
-	display: inline-flex;
-}
 
-
-				  
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
   html {
@@ -175,7 +165,7 @@ body {
 	text-decoration: underline;
 }
 
-.github-link: hover {
+.github-link hover {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: bolder;
 	font-size: 1.0rem;
@@ -185,46 +175,97 @@ body {
 	text-decoration: underline;
 }
 
-.INFOODD-icon {
+.LimnPet-icon {
 	width: 10%
 }
 
 
+@charset "UTF-8"
+  
+* {
+    margin: 0;
+    padding: 0;
+}        
+li {
+  list-style: none;
+}       
+a {
+  font-family: "돋움";
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+}        
+#visual {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;           
+  box-shadow: 1px 5px 10px 2px #666;
 
-
-.image-upload-wrap {
-	object-fit: contain;
-	border-radius: 10px;
-	border: dashed 1.5px
-		#35465d;
-	background-color:
-		#ffffff;
+}      
+#visual>div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+#visual>div.on{
+  opacity: 1;
+}
+#control { 
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  text-align: center;         
+}
+#control a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #f6f5f5;                       
+  line-height: 26px;
+  font-size: 0.8em;
+  border-radius: 14px;
+  margin: 0 2px
 }
 
-.image-upload-wrap hover {
-	object-fit: contain;
-	border-radius: 10px;
-	border: dashed 1.5px
-		#35465d;
-	background-color:
-		#35465d;
+#control a.on {
+  background: #9ab3f5;
 }
 
-.upload-text {
-	width: 50%;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1.6 rem;
-	line-height: 1.53;
-	text-align: center;
-	color: #35465d;
-	margin: 0 auto;
+@charset "utf8";
+
+*{
+    margin: 0 auto;
 }
 
-div{
-	text-align: center;
+.wrap{
+    background-color: #fff;
 }
 
 
+.bg{
+    width: 800px;
+    height: 300px;
+    background: url('https://user-images.githubusercontent.com/38034518/128056812-8d44a38e-9418-44b8-aa55-b04281e6cbb3.gif') no-repeat center/100%;
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
 
- 
+.bg>span{
+    font-size: 90px;
+    color: transparent;
+    font-weight: bold;
+    line-height: 300px;
+}
 
+.img_responsive{
+	width: 100%;    
+	height: auto;
+  }
