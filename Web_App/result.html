@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>LimnPet</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+        <h1 style="text-align:center">LimnPet</h1>
+        <h3 style="text-align:center">Draw your pet in the style of your choice</h3>
+        <div style="text-align:center">
+            <img src="{{url_for('static', filename = img_file)}}" width='400' alt='Error'>
+        </div>
+    </body>
+
+
+</html>
