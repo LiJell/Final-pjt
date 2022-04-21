@@ -1,115 +1,105 @@
 <!DOCTYPE html>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>LimnPet 🐶</title>
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/main.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/service.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/style.css') }}"
-    />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/main.css') }}">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/service.css') }}">
+
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
     </style>
   </head>
 
   <body>
-    <header id="header">
-      <nav class="menu">
-        <ul>
-          <li>
-            <a href="index.html"><b>Home</b></a>
-          </li>
-          <li>
-            <a href="about.html"><b>About</b></a>
-          </li>
-          <li>
-            <a href="/service"><b>Service</b></a>
-          </li>
-          <li>
-            <a href="contact.html"><b>Contact</b></a>
-          </li>
-          <li>
-            <a href="goods.html"><b>Goods</b></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <h1 style="text-align: center">LimnPet</h1>
-    <h3 style="text-align: center">
-      Draw your pet in the style of your choice
-    </h3>
-    <div style="text-align: center">
-      <section>
-        <div class="container file-upload">
-          <form action="/test" method="POST" enctype="multipart/form-data">
-            <div class="image-upload-wrap" style="width: 65%; margin: 0 auto">
-              <input
-                class="file-upload-input"
-                name="file"
-                type="file"
-                accept="image/*"
-                onchange="this.form.submit()"
-              />
-
-              <div class="drag-text">
-                <img
-                  src="static/img/icon-1294806.svg"
-                  class="mt-5 pt-2 upload"
-                  style="width: 16%"
-                />
-                <h3 class="mb-5 pd-5 pt-4 upload-text">
-                  Drop or Select a image
-                </h3>
-              </div>
-            </div>
-            <div>
-              <select
-                name="style"
-                class="btn btn-light"
-                style="text-align: center"
-              >
-                <option value="hayao">Hayao</option>
-                <option value="paprika">Paprika</option>
-                <option value="disney">Disney</option>
-                <option value="monet">Monet</option>
-                <option value="ladyOscar">Ladyoscar</option>
-                <option value="Onepiece">Onepiece</option>
-              </select>
-            </div>
-          </form>
+     <!--로딩이 되어지는 부분-->
+     <div id="div_load_image" style="position:absolute; top:50%; left:50%;">
+        <!img src="/static/img/loading.gif" style="width:100px; height:100px;">
+     </div>
+     <!--홈페이지에서 보여지는 부분-->
+     <div style="text-align: center" id='div_show'>
+         <header id = "header">
+            <nav style="background-color:#000000" class="menu">
+                <ul>
+                    <li><a href = "/home" <b>Home</b></a></li>
+                    <li><a href = "/about" <b>About</b></a></li>
+                    <li><a href = "/service" <b>Service</b></a></li>
+                    <li><a href = "/contact" <b>Contact</b></a></li>
+                    <li><a href = "/goods" <b>Goods</b></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <h1 style="text-align:center">LimnPet</h1>
+            <h3 style="text-align: center">Draw your pet in the style of your choice</h3>
         </div>
-      </section>
+        <div style="text-align:center">
+          <section>
+            <div class="file-upload">
+              <form action="/test" method="POST" enctype="multipart/form-data">
+                  <div style="display:inline">스타일 선택</div>
+                  <select
+                    name="style"
+                    class="btn btn-light"
+                    style="text-align: center; display:inline
+                  >
+                    <option value="hayao">Hayao</option>
+                    <option value="paprika">Paprika</option>
+                    <option value="disney">Disney</option>
+                    <option value="monet">Monet</option>
+                    <option value="ladyOscar">Ladyoscar</option>
+                    <option value="Onepiece">Onepiece</option>
+                  </select>
+                <div class="image-upload-wrap" style="width: 65%; margin: 0 auto">
+                    <input
+                      class="file-upload-input"
+                      name="file"
+                      type="file"
+                      accept="image/*"
+                      onchange="this.form.submit();search()"
+                    />
 
-      <!--<form action = "/test" method = "POST" enctype = "multipart/form-data">-->
-      <!--<label class="input-file-button" for="input-file">-->
-      <!--이미지 업로드-->
-      <!--</label>-->
-      <!--style="display:none"-->
-      <!--    <input type="file" id="input-file" name="file"/>-->
-      <!--    <select name="style" class="btn btn-light" style="text-align: center">-->
-      <!--        <option value="hayao">Hayao</option>-->
-      <!--        <option value="paprika">Paprika</option>-->
-      <!--        <option value="disney">Disney</option>-->
-      <!--        <option value="monet">Monet</option>-->
-      <!--        <option value="ladyOscar">Ladyoscar</option>-->
-      <!--        <option value="Onepiece">Onepiece</option>-->
-      <!--    </select>-->
-      <!--    <input type = "submit" value="그림그리기"/>-->
-      <!--</form>-->
-    </div>
+                    <div class="drag-text">
+                      <img
+                        src="static/img/icon-1294806.svg"
+                        class="mt-5 pt-2 upload"
+                        style="width: 10%"
+                      />
+                      <h5 class="mb-5 pd-5 pt-4 upload-text">
+                        Drop or Select a image
+                      </h5>
+                    </div>
+                </div>
 
-    <!--disqus 부분-->
-    <div id="disqus_thread"></div>
+              </form>
+            </div>
+          </section>
+
+          <!--<form action = "/test" method = "POST" enctype = "multipart/form-data">-->
+          <!--<label class="input-file-button" for="input-file">-->
+          <!--이미지 업로드-->
+          <!--</label>-->
+          <!--style="display:none"-->
+          <!--    <input type="file" id="input-file" name="file"/>-->
+          <!--    <select name="style" class="btn btn-light" style="text-align: center">-->
+          <!--        <option value="hayao">Hayao</option>-->
+          <!--        <option value="paprika">Paprika</option>-->
+          <!--        <option value="disney">Disney</option>-->
+          <!--        <option value="monet">Monet</option>-->
+          <!--        <option value="ladyOscar">Ladyoscar</option>-->
+          <!--        <option value="Onepiece">Onepiece</option>-->
+          <!--    </select>-->
+          <!--    <input type = "submit" value="그림그리기"/>-->
+          <!--</form>-->
+        </div>
+
+        <!--disqus 부분-->
+        <div id="disqus_thread"></div>
+     </div>
     <script>
       /**
        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -135,40 +125,49 @@
         >comments powered by Disqus.</a
       ></noscript
     >
-    //
-    <script>
-      //   // input file들이 들어오면 아래 코드들이 실행
-      //   function readURL(input) {
-      //     if (input.files && input.files[0]) {
-      //       var reader = new FileReader();
-      //       reader.onload = function (e) {
-      //         $(".image-upload-wrap").hide();
-      //         $(".file-upload-image").attr("src", e.target.result);
-      //         $(".file-upload-content").show();
-      //       };
-      //       reader.readAsDataURL(input.files[0]);
-      //       init().then(() => {
-      //         console.log("hello");
-      //         predict();
-      //       });
-      //     } else {
-      //       removeUpload();
-      //     }
-      //   }
+     <script>
+       // input file들이 들어오면 아래 코드들이 실행
+       function readURL(input) {
+         if (input.files && input.files[0]) {
+           var reader = new FileReader();
+           reader.onload = function (e) {
+             $(".image-upload-wrap").hide();
+             $(".file-upload-image").attr("src", e.target.result);
+             $(".file-upload-content").show();
+           };
+           reader.readAsDataURL(input.files[0]);
+           init().then(() => {
+             console.log("hello");
+             predict();
+           });
+         } else {
+           removeUpload();
+         }
+       }
 
-      //   function removeUpload() {
-      //     $(".file-upload-input").replaceWith($(".file-upload-input").clone());
-      //     $(".file-upload-content").hide();
-      //     $(".image-upload-wrap").show();
-      //   }
-      //   $(".image-upload-wrap").bind("dragover", function () {
-      //     $(".image-upload-wrap").addClass("image-dropping");
-      //   });
-      //   $(".image-upload-wrap").bind("dragleave", function () {
-      //     $(".image-upload-wrap").removeClass("image-dropping");
-      //   });
-      //
-    </script>
+       function removeUpload() {
+         $(".file-upload-input").replaceWith($(".file-upload-input").clone());
+         $(".file-upload-content").hide();
+         $(".image-upload-wrap").show();
+       }
+       $(".image-upload-wrap").bind("dragover", function () {
+         $(".image-upload-wrap").addClass("image-dropping");
+       });
+       $(".image-upload-wrap").bind("dragleave", function () {
+         $(".image-upload-wrap").removeClass("image-dropping");
+       });
+      //원래 그림이 존재하지만, 이 스크립트로 그림이 숨겨짐 window.onload -> 뒤로가기 누르면 버튼이 무효화 onpageshow -> 뒤로가기 눌러도 유지
+      window.onpageshow = function() {
+            $("#div_load_image").hide();
+            $("#div_show").show();
+          }
+      //숨겨진 그림을 onclick으로 불러낼 함수
+      function search(){
+          $("#div_load_image").show();
+          $("#div_show").hide();
+      }
+
+     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </body>
 </html>
