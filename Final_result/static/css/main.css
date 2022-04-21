@@ -1,17 +1,17 @@
 body {
-  overflow: hidden;
+  /*overflow: hidden;*/
   font-family: "Roboto Slab", serif;
 }
 
-h3 {
-  font-family: "Pretendard-Thin";
-  color: #ffffff;
-  text-align: center;
-  font-style: italic;
-  font-weight: lighter;
-  margin-top: 50px;
-  font-size: 20px;
-}
+/*h3 {*/
+/*  font-family: "Pretendard-Thin";*/
+/*  color: #ffffff;*/
+/*  text-align: center;*/
+/*  font-style: italic;*/
+/*  font-weight: lighter;*/
+/*  margin-top: 50px;*/
+/*  font-size: 20px;*/
+/*}*/
 
 /* 상단바 */
 
@@ -31,6 +31,7 @@ h3 {
 .menu ul {
   padding-left: 0px;
 }
+
 .menu {
   font-size: 20px;
   font-style: italic;
@@ -43,18 +44,6 @@ h3 {
   bottom: 0;
   height: 40px;
 }
-/* .menu {
-  font-size: 20px;
-  font-style: italic;
-  align-items: center;
-  text-align: center;
-  padding-top: 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-} */
 
 /* page 1 */
 
@@ -114,14 +103,11 @@ h3 {
 
 /* page 5 */
 
-h1 {
-  text-align: center;
-}
-
 .lists {
   text-align: center;
   font-family: "Pretendard-Thin";
   display: block;
+  text-align: center;
   font-weight: 400;
   font-family: "Pretendard-Thin";
   font-size: 18px;
@@ -130,31 +116,14 @@ h1 {
 }
 
 .list_img {
-  padding-top: 100px;
   width: 300px;
   height: 300px;
   display: block;
-  /* margin: 7vh 5vh; */
+  margin: 7vh 5vh;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .goods {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 84px;
-  padding-bottom:165px;
   display: inline-flex;
   margin-top: 60px;
-}
-.two {
-  margin-left: auto;
-  margin-right: auto;
-  width: 750px;
-  height: 500px;
-}
-
-.goods_shop {
-	padding-top: 83px;
 }
