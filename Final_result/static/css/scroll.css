@@ -37,6 +37,7 @@ body {
 }
 
 .list:nth-child(3) {
+  padding-top: 110px;
   background-color: #ffd93d;
   background-size: cover;
   background-attachment: fixed;
@@ -58,6 +59,8 @@ body {
 }
 
 .list:nth-child(6) {
+  width: auto;
+  height: auto;
   background-color: #4d96ff;
   background-size: cover;
   background-attachment: fixed;
