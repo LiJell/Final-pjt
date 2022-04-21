@@ -1,0 +1,133 @@
+body {
+  overflow: hidden;
+  font-family: "Roboto Slab", serif;
+}
+
+h3 {
+  font-family: "Pretendard-Thin";
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+/* 상단바 */
+
+.menu * {
+  display: inline;
+}
+
+.menu li {
+  margin: 35px;
+}
+
+.menu li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.menu ul {
+  padding-left: 0px;
+}
+
+.menu {
+  font-size: 20px;
+  font-style: italic;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+}
+
+/* page 1 */
+
+.one {
+  background-size: cover;
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 130px;
+}
+
+.profile {
+  border-radius: 30%;
+  display: inline-block;
+  padding: 0.5rem;
+  margin-top: 20px;
+  border: 1px solid gray;
+  background-color: rgba(255, 211, 16, 0.89);
+  border: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.profile img {
+  border-radius: 30%;
+}
+
+/* page 2 */
+
+.intext {
+  float: right;
+  margin-top: 35px;
+  padding-left: 50px;
+}
+
+/* page 3 */
+
+/* page 4 */
+
+.four {
+  text-align: center;
+  align-items: center;
+}
+
+.contact_img {
+  width: 100%;
+  height: 500px;
+  padding-bottom: 60px;
+}
+
+.ct {
+  margin-top: 80px;
+  font-family: "Roboto Slab", serif;
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  margin: 35px;
+}
+
+/* page 5 */
+
+h1 {
+  text-align: center;
+}
+
+.lists {
+  text-align: center;
+  font-family: "Pretendard-Thin";
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Pretendard-Thin";
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.list_img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 7vh 5vh;
+  margin-bottom: 50px;
+}
+
+.goods {
+  display: inline-flex;
+  margin-top: 60px;
+}
