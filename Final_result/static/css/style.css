@@ -16,12 +16,13 @@ body {
 	background-color: #fff;
 }
 .file-upload {
-	/* width: 914px; */
+    text-align: center ;
+	width: 60%;
 	border-radius: 10px;
 	border: solid 1.5px #f6f7fa;
 	background-color: #f6f7fa;
 	padding: 13% 5%;
-	margin: 10% 5%
+	margin: 0 auto
 	/* width: 600px; */
 
 }
@@ -62,6 +63,10 @@ body {
 	outline: none;
 	opacity: 0;
 	cursor: pointer;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .image-upload-wrap {
 	border: 4px dashed #1fb264;
