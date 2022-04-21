@@ -30,7 +30,23 @@ app.use_reloader= False
 @app.route('/')
 @app.route('/home') # 기본 홈 경로 설정
 def home(): # 경로에 대한 요청이 있을 때 실행될 함수 정의
-    return render_template('home.html') # 저장된 html 템플릿 렌더링
+    return render_template('index.html') # 저장된 html 템플릿 렌더링
+
+@app.route('/service')
+def service():
+    return render_template('service.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/goods')
+def goods():
+    return render_template('goods.html')
 
 # @app.route('/fileUpload', methods = ['GET', 'POST'])
 # def upload_file():

@@ -1,13 +1,13 @@
 # ignored folders
 datasets/*
-# experiments/*
+experiments/*
 results/*
 tb_logger/*
 wandb/*
 tmp/*
 realesrgan/weights/*
 
-# version.py
+version.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

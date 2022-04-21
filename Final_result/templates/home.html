@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="robots" content="index,follow" />
-    <meta
-      name="google-site-verification"
-      content="0025mGEf2ZtX4gjWrrrs9xwChLlHo91qx0srZPNUsXw"
-    />
-    <meta
-      name="naver-site-verification"
-      content="0020cbb83cc0440060b4a81f8a1ad25474064596"
-    />
+
     <title>LimnPet</title>
     <link
       rel="stylesheet"
@@ -111,38 +103,38 @@
         >comments powered by Disqus.</a
       ></noscript
     >
-    <script>
-      // input file들이 들어오면 아래 코드들이 실행
-      function readURL(input) {
-        if (input.files && input.files[0]) {
-          var reader = new FileReader();
-          reader.onload = function (e) {
-            $(".image-upload-wrap").hide();
-            $(".file-upload-image").attr("src", e.target.result);
-            $(".file-upload-content").show();
-          };
-          reader.readAsDataURL(input.files[0]);
-          init().then(() => {
-            console.log("hello");
-            predict();
-          });
-        } else {
-          removeUpload();
-        }
-      }
+    // <script>
+    //   // input file들이 들어오면 아래 코드들이 실행
+    //   function readURL(input) {
+    //     if (input.files && input.files[0]) {
+    //       var reader = new FileReader();
+    //       reader.onload = function (e) {
+    //         $(".image-upload-wrap").hide();
+    //         $(".file-upload-image").attr("src", e.target.result);
+    //         $(".file-upload-content").show();
+    //       };
+    //       reader.readAsDataURL(input.files[0]);
+    //       init().then(() => {
+    //         console.log("hello");
+    //         predict();
+    //       });
+    //     } else {
+    //       removeUpload();
+    //     }
+    //   }
 
-      function removeUpload() {
-        $(".file-upload-input").replaceWith($(".file-upload-input").clone());
-        $(".file-upload-content").hide();
-        $(".image-upload-wrap").show();
-      }
-      $(".image-upload-wrap").bind("dragover", function () {
-        $(".image-upload-wrap").addClass("image-dropping");
-      });
-      $(".image-upload-wrap").bind("dragleave", function () {
-        $(".image-upload-wrap").removeClass("image-dropping");
-      });
-    </script>
+    //   function removeUpload() {
+    //     $(".file-upload-input").replaceWith($(".file-upload-input").clone());
+    //     $(".file-upload-content").hide();
+    //     $(".image-upload-wrap").show();
+    //   }
+    //   $(".image-upload-wrap").bind("dragover", function () {
+    //     $(".image-upload-wrap").addClass("image-dropping");
+    //   });
+    //   $(".image-upload-wrap").bind("dragleave", function () {
+    //     $(".image-upload-wrap").removeClass("image-dropping");
+    //   });
+    // </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </body>
 </html>

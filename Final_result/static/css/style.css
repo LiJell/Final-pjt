@@ -1,3 +1,16 @@
+.input-file-button{
+  padding: 6px 25px;
+  background-color:#FF6600;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+/*기존*/
 body {
 	font-family: 'Ubuntu', sans-serif;
 	background-color: #fff;
@@ -8,9 +21,9 @@ body {
 	border: solid 1.5px #f6f7fa;
 	background-color: #f6f7fa;
 	padding: 13% 5%;
-	margin: 0 auto
+	margin: 10% 5%
 	/* width: 600px; */
-	
+
 }
 .file-upload-btn {
 	width: 100%;
@@ -63,6 +76,8 @@ body {
 	border: 4px dashed #fff;
 }
 .image-title-wrap {
+    display:block;
+    margin:auto;
 	padding: 0 15px 15px;
 	color: #222;
 }
@@ -82,10 +97,12 @@ body {
 	margin: 0 auto;
 }
 .file-upload-image {
-	max-height: 200px;
-	max-width: 200px;
+	max-height: 500px;
+	max-width: 500px;
+	display: block;
 	margin: auto;
 	padding: 20px;
+    position: relative;
 }
 .remove-image {
 	width: 200px;
@@ -209,3 +226,4 @@ body {
 	color: #35465d;
 	margin: 0 auto;
 }
+

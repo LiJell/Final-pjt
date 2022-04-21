@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel = "stylesheet" href = "./static/css/main.css">
+    <link rel = "stylesheet" href = "./static/css/about.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+
+    <!--슬라이드 -->
+    <script>
+    var index = 0; //이미지에 접근하는 인덱스
+    window.onload = function () {
+      slideShow();
+    };
+
+    function slideShow() {
+      var i;
+      var x = document.getElementsByClassName("slide1"); //slide1에 대한 dom 참조
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; //처음에 전부 display를 none으로 한다.
+      }
+      index++;
+      if (index > x.length) {
+        index = 1; //인덱스가 초과되면 1로 변경
+      }
+      x[index - 1].style.display = "block"; //해당 인덱스는 block으로
+      setTimeout(slideShow, 4000); //함수를 4초마다 호출
+    }
+    </script>
+</head>
+
+<div id="container">
+
+    <header id = "header">
+        <nav class ="menu">
+            <ul>
+                <li><a href = "index.html" <b>Home</b></a></li>
+                <li><a href = "about.html" <b>About</b></a></li>
+                <li><a href = "/service" <b>Service</b></a></li>
+                <li><a href = "contact.html" <b>Contact</b></a></li>
+                <li><a href = "goods.html" <b>Goods</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="list">
+        <div class ="two">
+          <div>
+            <img class="slide1" src="./static/img/img_1.jpg" width:"450" height="500"> <img
+            class="slide1" src="./static/img/img_2.jpg" width:"450" height="500"> <img
+            class="slide1" src="./static/img/img_3.jpg" width:"450" height="500">
+          </div>
+            <h3 class ="intext"> <strong>내 반려견의 그림을 그리는 방법?<br></strong><br>
+            <strong>LimnPet!</strong><br><br>
+            LimnPet은 반려견 커스텀 굿즈 제작을 위한 GAN 기반 cartoon stylization 상용서비스입니다.<br><br>
+            반려견 커스텀 굿즈 제작 과정간 따로 그림 서비스를 받아야하는 불편함을 해소하기 위한<br>
+            GAN 기반 반려견 그림 자동 생성 및 저장/공유 서비스를 제공합니다<br><br>
+            생성된 이미지를 기반으로 반려견 커스텀 굿즈(휴대폰 케이스, 컵, 옷 등)를 제작할 수 있도록<br>
+            관련 업체와 사용자간 의사소통 채널 형성 기반 마련합니다.<br>
+            </h3>
+        </div>
+    </div>
+</body>

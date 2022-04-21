@@ -4,7 +4,7 @@
     <title>LimnPet</title>
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename = 'style.css') }}"
+      href="{{ url_for('static', filename = 'css/style.css') }}"
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,8 +23,15 @@
         alt="Error"
       />
       <div>
-        <button type="button" onClick="location.href='/home'">
-          <span>첫페이지로돌아가기</span>
+          <a href="{{url_for('static', filename = img_file)}}" download>
+              <button class="remove-image">
+                <span class="image-title">저장하기</span>
+              </button>
+          </a>
+      </div>
+      <div>
+        <button class="remove-image" type="button" onClick="location.href='/home'">
+          <span class="image-title">첫페이지로돌아가기</span>
         </button>
       </div>
       <!-- addthis 위치 -->
@@ -65,3 +72,4 @@
     ></script>
   </body>
 </html>
+
