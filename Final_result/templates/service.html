@@ -3,29 +3,46 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>LimnPet 🐶</title>
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/main.css') }}">
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/service.css') }}">
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/style.css') }}">
+      href="{{ url_for('static', filename = 'css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/service.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/style.css') }}"
+    />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
     </style>
   </head>
 
   <body>
-     <header id = "header">
-        <nav class ="menu">
-            <ul>
-                <li><a href = "index.html" <b>Home</b></a></li>
-                <li><a href = "about.html" <b>About</b></a></li>
-                <li><a href = "/service" <b>Service</b></a></li>
-                <li><a href = "contact.html" <b>Contact</b></a></li>
-                <li><a href = "goods.html" <b>Goods</b></a></li>
-            </ul>
-        </nav>
+    <header id="header">
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="index.html"><b>Home</b></a>
+          </li>
+          <li>
+            <a href="about.html"><b>About</b></a>
+          </li>
+          <li>
+            <a href="/service"><b>Service</b></a>
+          </li>
+          <li>
+            <a href="contact.html"><b>Contact</b></a>
+          </li>
+          <li>
+            <a href="goods.html"><b>Goods</b></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <h1 style="text-align: center">LimnPet</h1>
     <h3 style="text-align: center">
@@ -118,38 +135,40 @@
         >comments powered by Disqus.</a
       ></noscript
     >
-    // <script>
-    //   // input file들이 들어오면 아래 코드들이 실행
-    //   function readURL(input) {
-    //     if (input.files && input.files[0]) {
-    //       var reader = new FileReader();
-    //       reader.onload = function (e) {
-    //         $(".image-upload-wrap").hide();
-    //         $(".file-upload-image").attr("src", e.target.result);
-    //         $(".file-upload-content").show();
-    //       };
-    //       reader.readAsDataURL(input.files[0]);
-    //       init().then(() => {
-    //         console.log("hello");
-    //         predict();
-    //       });
-    //     } else {
-    //       removeUpload();
-    //     }
-    //   }
+    //
+    <script>
+      //   // input file들이 들어오면 아래 코드들이 실행
+      //   function readURL(input) {
+      //     if (input.files && input.files[0]) {
+      //       var reader = new FileReader();
+      //       reader.onload = function (e) {
+      //         $(".image-upload-wrap").hide();
+      //         $(".file-upload-image").attr("src", e.target.result);
+      //         $(".file-upload-content").show();
+      //       };
+      //       reader.readAsDataURL(input.files[0]);
+      //       init().then(() => {
+      //         console.log("hello");
+      //         predict();
+      //       });
+      //     } else {
+      //       removeUpload();
+      //     }
+      //   }
 
-    //   function removeUpload() {
-    //     $(".file-upload-input").replaceWith($(".file-upload-input").clone());
-    //     $(".file-upload-content").hide();
-    //     $(".image-upload-wrap").show();
-    //   }
-    //   $(".image-upload-wrap").bind("dragover", function () {
-    //     $(".image-upload-wrap").addClass("image-dropping");
-    //   });
-    //   $(".image-upload-wrap").bind("dragleave", function () {
-    //     $(".image-upload-wrap").removeClass("image-dropping");
-    //   });
-    // </script>
+      //   function removeUpload() {
+      //     $(".file-upload-input").replaceWith($(".file-upload-input").clone());
+      //     $(".file-upload-content").hide();
+      //     $(".image-upload-wrap").show();
+      //   }
+      //   $(".image-upload-wrap").bind("dragover", function () {
+      //     $(".image-upload-wrap").addClass("image-dropping");
+      //   });
+      //   $(".image-upload-wrap").bind("dragleave", function () {
+      //     $(".image-upload-wrap").removeClass("image-dropping");
+      //   });
+      //
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </body>
 </html>
