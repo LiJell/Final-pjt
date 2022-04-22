@@ -1,3 +1,6 @@
+![My project](assets/README/My%20project.jpg)
+
+
 
 [자료 및 코드 출처]
 segmentation : pytorch hub, https://github.com/kairess/semantic-segmentation-pytorch
