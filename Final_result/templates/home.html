@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>LimnPet</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/style.css') }}"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <h1 style="text-align: center">LimnPet</h1>
+    <h3 style="text-align: center">
+      Draw your pet in the style of your choice
+    </h3>
+    <div style="text-align: center">
+      <section>
+        <div class="container file-upload">
+          <form action="/test" method="POST" enctype="multipart/form-data">
+            <div class="image-upload-wrap" style="width: 65%; margin: 0 auto">
+              <input
+                class="file-upload-input"
+                name="file"
+                type="file"
+                accept="image/*"
+                onchange="this.form.submit()"
+              />
+
+              <div class="drag-text">
+                <img
+                  src="static/img/icon-1294806.svg"
+                  class="mt-5 pt-2 upload"
+                  style="width: 16%"
+                />
+                <h3 class="mb-5 pd-5 pt-4 upload-text">
+                  Drop or Select a image
+                </h3>
+              </div>
+            </div>
+            <div>
+              <select
+                name="style"
+                class="btn btn-light"
+                style="text-align: center"
+              >
+                <option value="hayao">Hayao</option>
+                <option value="paprika">Paprika</option>
+                <option value="disney">Disney</option>
+                <option value="monet">Monet</option>
+                <option value="ladyOscar">Ladyoscar</option>
+                <option value="Onepiece">Onepiece</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--<form action = "/test" method = "POST" enctype = "multipart/form-data">-->
+      <!--<label class="input-file-button" for="input-file">-->
+      <!--이미지 업로드-->
+      <!--</label>-->
+      <!--style="display:none"-->
+      <!--    <input type="file" id="input-file" name="file"/>-->
+      <!--    <select name="style" class="btn btn-light" style="text-align: center">-->
+      <!--        <option value="hayao">Hayao</option>-->
+      <!--        <option value="paprika">Paprika</option>-->
+      <!--        <option value="disney">Disney</option>-->
+      <!--        <option value="monet">Monet</option>-->
+      <!--        <option value="ladyOscar">Ladyoscar</option>-->
+      <!--        <option value="Onepiece">Onepiece</option>-->
+      <!--    </select>-->
+      <!--    <input type = "submit" value="그림그리기"/>-->
+      <!--</form>-->
+    </div>
+
+    <!--disqus 부분-->
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://limnpet.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+    // <script>
+    //   // input file들이 들어오면 아래 코드들이 실행
+    //   function readURL(input) {
+    //     if (input.files && input.files[0]) {
+    //       var reader = new FileReader();
+    //       reader.onload = function (e) {
+    //         $(".image-upload-wrap").hide();
+    //         $(".file-upload-image").attr("src", e.target.result);
+    //         $(".file-upload-content").show();
+    //       };
+    //       reader.readAsDataURL(input.files[0]);
+    //       init().then(() => {
+    //         console.log("hello");
+    //         predict();
+    //       });
+    //     } else {
+    //       removeUpload();
+    //     }
+    //   }
+
+    //   function removeUpload() {
+    //     $(".file-upload-input").replaceWith($(".file-upload-input").clone());
+    //     $(".file-upload-content").hide();
+    //     $(".image-upload-wrap").show();
+    //   }
+    //   $(".image-upload-wrap").bind("dragover", function () {
+    //     $(".image-upload-wrap").addClass("image-dropping");
+    //   });
+    //   $(".image-upload-wrap").bind("dragleave", function () {
+    //     $(".image-upload-wrap").removeClass("image-dropping");
+    //   });
+    // </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </body>
+</html>

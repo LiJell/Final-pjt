@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/main.css') }}">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/contact.css') }}">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <div id="header" role="menu">
+            <nav class="menu">
+                <ul>
+                <li><a href = "/home"><b>Home</b></a></li>
+                <li><a href = "/about"><b>About</b></a></li>
+                <li><a href = "/service"><b>Service</b></a></li>
+                <li><a href = "/contact"><b>Contact</b></a></li>
+                <li><a href = "/goods" ><b>Goods</b></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="container" role="main">
+            <div class="list">
+                <div class="four">
+                    <div class="member">
+                        <img src ="{{ url_for('static', filename = 'img/bg.jpg') }}">
+                        <p>김한주</p>
+                        <p>E-mail : sjh7397@naver.com</p>
+                        <p>카카오톡 : Lilac3</p>
+                    </div> 
+                    <div class="member">
+                        <img src ="{{ url_for('static', filename = 'img/bg.jpg') }}">
+                        <p>김민지</p>
+                        <p>E-mail : sjh7397@naver.com</p>
+                        <p>카카오톡 : Lilac3</p>
+                    </div> 
+                    <div class="member">
+                        <img src ="{{ url_for('static', filename = 'img/bg.jpg') }}">
+                        <p>성연재</p>
+                        <p>E-mail : sjh7397@naver.com</p>
+                        <p>카카오톡 : Lilac3</p>
+                    </div> 
+                    <div class="member">
+                        <img src ="{{ url_for('static', filename = 'img/bg.jpg') }}">
+                        <p>송종호</p>
+                        <p>E-mail : sjh7397@naver.com</p>
+                        <p>카카오톡 : Lilac3</p>
+                    </div> 
+                    <div class="member">
+                        <img src ="{{ url_for('static', filename = 'img/bg.jpg') }}">
+                        <p>정영훈</p>
+                        <p>E-mail : sjh7397@naver.com</p>
+                        <p>카카오톡 : Lilac3</p>
+                    </div> 
+                    <div>
+                        <a href="https://www.limnpet.ml" class="ct">Home</a>
+                        <a href="" class="ct">Notion</a>
+                        <a href="https://github.com/LiJell/Final-pjt" class="ct">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LimnPet 🐶</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/main.css') }}">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/service.css') }}">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+  </style>
+  </head>
+
+  <body>
+    <div id="header" role="menu">
+      <nav class="menu">
+        <ul>
+          <li><a href = "/home"><b>Home</b></a></li>
+          <li><a href = "/about"><b>About</b></a></li>
+          <li><a href = "/service"><b>Service</b></a></li>
+          <li><a href = "/contact"><b>Contact</b></a></li>
+          <li><a href = "/goods" ><b>Goods</b></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="list">
+      <div class="three">
+
+        <div style="text-align: center" id='div_show'>
+          <h1 style="text-align: center">LimnPet</h1>
+          <h3 style="text-align: center">Draw your pet in the style of your choice</h3>
+        </div>
+        
+        <div class="file-upload">
+          <div id="result_show">
+            <img src="{{url_for('static', filename = img_file)}}" style="width:10rem" alt="Error"/>
+          </div>
+
+          <div id="download_button">
+            <a href="{{url_for('static', filename = img_file)}}" download>
+              <button class="remove-image">
+                <span class="image-title">저장하기</span>
+              </button>
+            </a>
+          </div>
+
+          <div id="return_button">
+            <button class="remove-image" type="button" onClick="location.href='/service'">
+              <span class="image-title">다시하기</span>
+            </button>
+          </div>
+
+          <div id="home_button">
+            <button class="remove-image" type="button" onClick="location.href='/home'">
+              <span class="image-title">홈으로돌아가기</span>
+            </button>
+          </div>
+
+          <!-- addthis 위치 -->
+          <div style="margin:3rem" class="addthis_inline_share_toolbox"></div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!--disqus 부분-->
+    <div id="disqus_thread"></div>
+    
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://limnpet.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+    <!-- addthis -->
+    <script
+      type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-624d45d85b9c2167"
+    ></script>
+  </body>
+</html>
+
