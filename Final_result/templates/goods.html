@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goods</title>
-    <link rel = "stylesheet" href = "./static/css/main.css">
-    <link rel = "stylesheet" href = "./static/css/goods.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-    </style>
-</head>
-<body>
-    <header id = "header">
-        <nav style="background-color:#000000" class ="menu">
-            <ul>
-                <li><a href = "/home" <b>Home</b></a></li>
-                <li><a href = "/about" <b>About</b></a></li>
-                <li><a href = "/service" <b>Service</b></a></li>
-                <li><a href = "/contact" <b>Contact</b></a></li>
-                <li><a href = "/goods" <b>Goods</b></a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="list">
-        <div class="five">
-            <h1><br><br> 🐶 Goods Shops 🐶 </h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Goods</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/main.css') }}">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/goods.css') }}">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+        </style>
+    </head>
 
-            <div class = "goods">
+    <body>
+        <div id="header" role="menu">
+            <nav class="menu">
+                <ul>
+                    <li><a href = "/home"><b>Home</b></a></li>
+                    <li><a href = "/about"><b>About</b></a></li>
+                    <li><a href = "/service"><b>Service</b></a></li>
+                    <li><a href = "/contact"><b>Contact</b></a></li>
+                    <li><a href = "/goods" ><b>Goods</b></a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="container" role="main">
+
+            <div class="list">
+                <div class="five">
+                <h1 styl="text-align:center"> 🐶 Goods Shops 🐶 </h1>
                 <div class="lists">
-                    <img class = "list_img" src="./static/img/goods_shops/.jpg" alt="">
-                    <p class = "list_text"> goods1</p>
+                    <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_clothes.jpg') }}" alt="">
+                    <p>의류</p>
                 </div>
-
                 <div class="lists">
-                    <img class = "list_img" src="./static/img/goods_shops/.jpg" alt="">
-                    <p class = "list_text"> goods2</p>
+                    <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_griptok.jpg') }}" alt="">
+                    <p>휴대폰 액세서리</p>
                 </div>
-
                 <div class="lists">
-                    <img class = "list_img" src="./static/img/goods_shops/.jpg" alt="">
-                    <p class = "list_text"> goods3</p>
+                    <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_cup.jpg') }}" alt="">
+                    <p>생활용품</p>
                 </div>
-
                 <div class="lists">
-                    <img class = "list_img" src="./static/img/goods_shops/.jpg" alt="">
-                    <p class = "list_text"> goods4</p>
+                    <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_sticker.jpg') }}" alt="">
+                    <p>그 외 기타</p>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+
+    </body>
 </html>
 <!-- <a href="https://url.kr/kpbz96" class="ct">1</a>
 <a href="https://www.idus.com/" class="ct">아이디어스</a>
