@@ -13,6 +13,9 @@ body {
 /*  font-size: 20px;*/
 /*}*/
 
+
+
+
 /* 상단바 */
 
 .menu * {
@@ -33,7 +36,9 @@ body {
 }
 
 .menu {
-  font-size: 20px;
+  opacity:0.5;
+  background-color:#000000;
+  font-size: 1.5rem;
   font-style: italic;
   align-items: center;
   text-align: center;
@@ -42,116 +47,132 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 40px;
+  height: 2.8rem;
 }
-/* .menu {
-  font-size: 20px;
-  font-style: italic;
-  align-items: center;
-  text-align: center;
-  padding-top: 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-} */
-/* page 1 */
+@media screen and (max-width: 719px) {
+  .menu {
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 419px) {
+  .menu {
+    height: 7rem;
+  }
+}
+@media screen and (max-width: 289px) {
+  .menu {
+    height: 9rem;
+  }
+}
+@media screen and (max-width: 269px) {
+  .menu {
+    height: 11rem;
+  }
+}
 
+/* page 1 */
 .one {
   background-size: cover;
   text-align: center;
-  padding-top: 180px;
-  padding-bottom: 130px;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
 }
 
 .profile {
+  width : 40rem;
   border-radius: 30%;
   display: inline-block;
   padding: 0.5rem;
-  margin-top: 20px;
+  margin-bottom: 2rem;
   border: 1px solid gray;
   background-color: rgba(255, 211, 16, 0.89);
   border: 1px solid rgb(255, 255, 255, 0.5);
 }
 
 .profile img {
+  width:38rem;
   border-radius: 30%;
 }
 
 /* page 2 */
-
-.intext {
-  float: right;
-  margin-top: 35px;
-  padding-left: 50px;
+.two {
+  background-size: cover;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
+.slide {
+  margin:0 auto; 
+  padding-bottom:3rem;
+  width:38rem;
+}
+.intext {
+  padding-top: 5rem;
+} 
+
 /* page 3 */
+.three {
+  background-size: cover;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
 
 /* page 4 */
 
 .four {
   text-align: center;
   align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
 .contact_img {
-  width: 100%;
-  height: 500px;
-  padding-bottom: 60px;
+  margin: auto;
+  width: 70rem;
+  padding-bottom: 1rem;
 }
 
 .ct {
-  margin-top: 80px;
-  font-family: "Roboto Slab", serif;
   text-decoration: none;
   color: white;
-  font-size: 50px;
+  font-size: 2rem;
   font-style: italic;
-  margin: 35px;
+  margin:4rem;
 }
+
 
 /* page 5 */
 
+.five {
+  text-align: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
 .lists {
-  text-align: center;
-  font-family: "Pretendard-Thin";
   display: block;
-  text-align: center;
   font-weight: 400;
   font-family: "Pretendard-Thin";
   font-size: 18px;
   line-height: 1.5;
-  font-style: italic;
+  display: inline-block;
 }
 
 .list_img {
-  padding-top: 100px;
   width: 300px;
   height: 300px;
-  display: block;
-  /* margin: 7vh 5vh; */
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5vh 2vh;
 }
 
-.goods {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 84px;
-  padding-bottom:165px;
-  display: inline-flex;
-  margin-top: 60px;
-}
-.two {
-  margin-left: auto;
-  margin-right: auto;
-  width: 750px;
-  height: 500px;
-}
+/* page 6 */
 
-.goods_shop {
-	padding-top: 83px;
+.six {
+  text-align: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
