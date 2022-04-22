@@ -10,7 +10,7 @@ import PIL
 import matplotlib.pyplot as plt
 import torch
 from torchvision import transforms, models
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 # from werkzeug.utils import secure_filename
 
 # # real esrGAN 환경 설정
@@ -26,6 +26,11 @@ from flask import Flask, render_template, request
 app = Flask(__name__) # 플라스크 인스턴스 생성
 app.debug = False
 app.use_reloader= False
+
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 @app.route('/')
 @app.route('/home') # 기본 홈 경로 설정
