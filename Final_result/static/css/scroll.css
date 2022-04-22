@@ -1,8 +1,3 @@
-body {
-  /* overflow: hidden; */
-  font-family: "Roboto Slab", serif;
-}
-
 /* Scroll down */
 
 #container {
@@ -19,7 +14,8 @@ body {
   /* display: flex; */
   justify-content: center;
   align-items: center;
-  /* scroll-snap-align: center; 자동으로 넘어가는거 해제 */
+  /* scroll-snap-align: center; */
+  /* 자동으로 넘어가는거 해제 */
 }
 
 .list:nth-child(1) {
