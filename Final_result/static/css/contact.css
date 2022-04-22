@@ -6,5 +6,18 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 200px;
+    margin-top: 100px;
+}
+
+.member {
+    margin: 2rem 2rem;;
+    display:inline-block;
+    padding-bottom: 1rem;
+  }
+
+.member img {
+    width:10rem;
+    height:10rem;
+    border: .4rem groove rgba(213, 33, 236, 0.247);
+    border-radius:2rem;
 }

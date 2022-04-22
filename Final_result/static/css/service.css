@@ -2,9 +2,20 @@ body {
   background-color: #6bcb77;
 }
 
+select {
+  width: 5rem;
+  padding: .5rem .5rem;
+  margin: .5rem auto;
+  border: 1px solid #999;
+  font-size: .8rem;
+  border-radius: 0.7rem;
+  }
+
+
 .list {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 100px;
 }
+
