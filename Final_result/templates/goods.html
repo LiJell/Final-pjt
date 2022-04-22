@@ -1,14 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<!-- saved from url=(0028)https://www.limnpet.ml/goods -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Goods</title>
-        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/main.css') }}">
-        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/goods.css') }}">
+        <link rel="stylesheet" href="./static/Goods_files/main.css">
+        <link rel="stylesheet" href="./static/Goods_files/goods.css">
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+            .lists1 {
+            display: block;
+            font-weight: 400;
+            font-family: "Pretendard-Thin";
+            font-size: 18px;
+            line-height: 1.5;
+            display: inline-block;
+            }
+            .lists2 {
+            display: block;
+            font-weight: 400;
+            font-family: "Pretendard-Thin";
+            font-size: 18px;
+            line-height: 1.5;
+            display: inline-block;
+            }
+            .lists3 {
+            display: block;
+            font-weight: 400;
+            font-family: "Pretendard-Thin";
+            font-size: 18px;
+            line-height: 1.5;
+            display: inline-block;
+            }
+            .lists4 {
+            display: block;
+            font-weight: 400;
+            font-family: "Pretendard-Thin";
+            font-size: 18px;
+            line-height: 1.5;
+            display: inline-block;
+            }
+            .img1 {
+            width:300px;
+            height:300px;
+            background-color:white;
+            margin: 5vh 2vh;
+            display:none;
+            }
+            .img2 {
+            width:300px;
+            height:300px;
+            background-color:white;
+            margin: 5vh 2vh;
+            display:none;
+            }
+            .img3 {
+            width:300px;
+            height:300px;
+            background-color:white;
+            margin: 5vh 2vh;
+            display:none;
+            }
+            .img4 {
+            width:300px;
+            height:300px;
+            background-color:white;
+            margin: 5vh 2vh;
+            display:none;
+            }
+            .list_img1 {
+            width: 300px;
+            height: 300px;
+            margin: 5vh 2vh;
+            display: block;
+            }
+            .list_img2 {
+            width: 300px;
+            height: 300px;
+            margin: 5vh 2vh;
+            display: block;
+            }
+            .list_img3 {
+            width: 300px;
+            height: 300px;
+            margin: 5vh 2vh;
+            display: block;
+            }
+            .list_img4 {
+            width: 300px;
+            height: 300px;
+            margin: 5vh 2vh;
+            display: block;
+            }
+            .lists1:hover .list_img1{
+                display:none;
+            }
+            .lists1:hover .img1{
+                display:block;
+            }
+            .lists2:hover .list_img2{
+                display:none;
+            }
+            .lists2:hover .img2{
+                display:block;
+            }
+            .lists3:hover .list_img3{
+                display:none;
+            }
+            .lists3:hover .img3{
+                display:block;
+            }
+            .lists4:hover .list_img4{
+                display:none;
+            }
+            .lists4:hover .img4{
+                display:block;
+            }
         </style>
     </head>
 
@@ -16,11 +124,11 @@
         <div id="header" role="menu">
             <nav class="menu">
                 <ul>
-                    <li><a href = "/home"><b>Home</b></a></li>
-                    <li><a href = "/about"><b>About</b></a></li>
-                    <li><a href = "/service"><b>Service</b></a></li>
-                    <li><a href = "/contact"><b>Contact</b></a></li>
-                    <li><a href = "/goods" ><b>Goods</b></a></li>
+                    <li><a href="https://www.limnpet.ml/home"><b>Home</b></a></li>
+                    <li><a href="https://www.limnpet.ml/about"><b>About</b></a></li>
+                    <li><a href="https://www.limnpet.ml/service"><b>Service</b></a></li>
+                    <li><a href="https://www.limnpet.ml/contact"><b>Contact</b></a></li>
+                    <li><a href="https://www.limnpet.ml/goods"><b>Goods</b></a></li>
                 </ul>
             </nav>
         </div>
@@ -30,27 +138,61 @@
             <div class="list">
                 <div class="five">
                 <h1 styl="text-align:center"> 🐶 Goods Shops 🐶 </h1>
-                <div class="lists">
-                    <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_clothes.jpg') }}" alt="">
+                <div class="lists1">
+                    <img class="list_img1" src="./static/Goods_files/goods_clothes.jpg" alt="">
+                    <div class="img1">
+                        <a href="https://www.bizhows.com/">비즈하우스</a>
+                        <a href="https://www.publog.co.kr/Default.asp">퍼블로그</a>
+                        <a href="https://www.tpana.com/">티파나</a>
+                        <a href="https://www.customzone.co.kr/">커스텀존</a>
+                    </div>
                     <p>의류</p>
                 </div>
-                <div class="lists">
-                    <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_griptok.jpg') }}" alt="">
+                <div class="lists2">
+                    <img class="list_img2" src="./static/Goods_files/goods_griptok.jpg" alt="">
+                    <div class="img2">
+                    <a href="http://www.bandya.com/">반디야</a>
+                    <a href="https://www.marpple.com/kr/">MARPPLE</a>
+                    <a href="https://www.phoneppu.com/index.html/">폰뿌</a>
+                    <a href="https://shapely.co.kr/index.html">셰이플리</a>
+                    </div>
                     <p>휴대폰 액세서리</p>
                 </div>
-                <div class="lists">
-                    <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_cup.jpg') }}" alt="">
+                <div class="lists3">
+                    <img class="list_img3" src="./static/Goods_files/goods_cup.jpg" alt="">
+                    <div class="img3">
+                        <a href="http://www.handmc.com/">핸드메이드씨</a>
+                        <a href="http://www.jjomool.com/">쪼물샵</a>
+                        <a href="https://www.ruashop.co.kr/">루아샵</a>
+                        <a href="http://www.thankshop.co.kr/shopuser/index.html">땡스샵</a>
+                    </div>
                     <p>생활용품</p>
                 </div>
-                <div class="lists">
-                    <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_sticker.jpg') }}" alt="">
+                <div class="lists4">
+                    <img class="list_img4" src="./static/Goods_files/goods_sticker.jpg" alt="">
+                    <div class="img4">
+                        <a href="https://www.smilecat.com/index.jsp/">스마일캣</a>
+                        <a href="http://www.adsland.com/">성원애드피아</a>
+                        <a href="http://www.t-free.co.kr/"더팬스</a>
+                        <a href="http://www.huniprinting.com/main.asp">후니프린팅</a>
+                    </div>
                     <p>그 외 기타</p>
                 </div>
             </div>
         </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+    let test = document.getElementById("example");
 
-    </body>
-</html>
+    test.addEventListener("mouseover", function (event) {
+    //highlight the mouseover target
+    event.target.style.color = "red";
+    }, false);
+
+    test.addEventListener("mouseout", function (event) {
+    // highlight the mouseout target
+    event.target.style.color = "black";
+    }, false);
+</script>
 <!-- <a href="https://url.kr/kpbz96" class="ct">1</a>
 <a href="https://www.idus.com/" class="ct">아이디어스</a>
-<a href="https://url.kr/koxdmp" class="ct">마플</a> -->
+<a href="https://url.kr/koxdmp" class="ct">마플</a> --></div></body></html>
