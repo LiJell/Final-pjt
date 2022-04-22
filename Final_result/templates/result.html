@@ -10,8 +10,8 @@
     <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/service.css') }}">
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-    </style>
+      @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+  </style>
   </head>
 
   <body>
@@ -34,39 +34,40 @@
           <h1 style="text-align: center">LimnPet</h1>
           <h3 style="text-align: center">Draw your pet in the style of your choice</h3>
         </div>
+        
+        <div class="file-upload">
+          <div id="result_show">
+            <img src="{{url_for('static', filename = img_file)}}" style="width:10rem" alt="Error"/>
+          </div>
 
-        <div id="result_show">
-          <img src="{{url_for('static', filename = img_file)}}" width="400" alt="Error"/>
-        </div>
+          <div id="download_button">
+            <a href="{{url_for('static', filename = img_file)}}" download>
+              <button class="remove-image">
+                <span class="image-title">저장하기</span>
+              </button>
+            </a>
+          </div>
 
-        <div id="download_button">
-          <a href="{{url_for('static', filename = img_file)}}" download>
-            <button class="remove-image">
-              <span class="image-title">저장하기</span>
+          <div id="return_button">
+            <button class="remove-image" type="button" onClick="location.href='/service'">
+              <span class="image-title">다시하기</span>
             </button>
-          </a>
-        </div>
+          </div>
 
-        <div id="return_button">
-          <button class="remove-image" type="button" onClick="location.href='/service'">
-            <span class="image-title">다시하기</span>
-          </button>
-        </div>
+          <div id="home_button">
+            <button class="remove-image" type="button" onClick="location.href='/home'">
+              <span class="image-title">홈으로돌아가기</span>
+            </button>
+          </div>
 
-        <div id="home_button">
-          <button class="remove-image" type="button" onClick="location.href='/home'">
-            <span class="image-title">홈으로돌아가기</span>
-          </button>
+          <!-- addthis 위치 -->
+          <div style="margin:3rem" class="addthis_inline_share_toolbox"></div>
         </div>
-
-        <!-- addthis 위치 -->
-        <div class="addthis_inline_share_toolbox"></div>
-      
       </div>
 
       
     </div>
-    
+
     <!--disqus 부분-->
     <div id="disqus_thread"></div>
     

@@ -1,20 +1,6 @@
 body {
-  /*overflow: hidden;*/
-  font-family: "Roboto Slab", serif;
+  font-family: 'Gowun Dodum', sans-serif;
 }
-
-/*h3 {*/
-/*  font-family: "Pretendard-Thin";*/
-/*  color: #ffffff;*/
-/*  text-align: center;*/
-/*  font-style: italic;*/
-/*  font-weight: lighter;*/
-/*  margin-top: 50px;*/
-/*  font-size: 20px;*/
-/*}*/
-
-
-
 
 /* 상단바 */
 
@@ -74,9 +60,8 @@ body {
 .one {
   background-size: cover;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
-
 }
 
 .profile {
@@ -85,7 +70,6 @@ body {
   display: inline-block;
   padding: 0.5rem;
   margin-bottom: 2rem;
-  border: 1px solid gray;
   background-color: rgba(255, 211, 16, 0.89);
   border: 1px solid rgb(255, 255, 255, 0.5);
 }
@@ -99,7 +83,7 @@ body {
 .two {
   background-size: cover;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
@@ -116,7 +100,7 @@ body {
 .three {
   background-size: cover;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
@@ -125,7 +109,7 @@ body {
 .four {
   text-align: center;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
@@ -149,14 +133,13 @@ body {
 .five {
   text-align: center;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 .lists {
   display: block;
   font-weight: 400;
-  font-family: "Pretendard-Thin";
   font-size: 18px;
   line-height: 1.5;
   display: inline-block;
