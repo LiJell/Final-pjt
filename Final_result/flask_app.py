@@ -355,22 +355,22 @@ def test():
             return model
 
 
-        # cartoonGAN
+         # cartoonGAN
         if (style == "hayao") | (style == "paprika"):
             PRETRAINED_WEIGHT_DIR = '/home/sjh7397/test_pythonanywhere/model/cartoongan/pretrained_weights' # 저장된 pretrained 모델 가중치 파일 경로
             cartoonGAN_model = load_model(style)
-            input_image = result
+            input_image = cv2.cvtColor(result, cv2.COLOR_RGB2BGR)
             input_image = np.expand_dims(input_image, axis=0)
             output_image = cartoonGAN_model.predict(input_image)
             output_image = output_image[0]
             output_image = output_image[:,:,[2,1,0]]
             output_image = output_image * 0.5 + 0.5
-            alpha_output = cv2.cvtColor(output_image, cv2.COLOR_RGB2RGBA)
+            alpha_output = cv2.cvtColor(output_image, cv2.COLOR_BGR2BGRA)
             resize_alpha = cv2.resize(alpha_scale, (output_image.shape[1],output_image.shape[0]))
             alpha_output[:,:,3] = resize_alpha
             alpha_output_2= alpha_output*255
             alpha_output_2 = alpha_output_2.astype(np.uint8)
-            alpha_output_2 = cv2.cvtColor(alpha_output_2, cv2.COLOR_RGBA2BGRA)
+            alpha_output_2 = cv2.cvtColor(alpha_output_2, cv2.COLOR_BGRA2RGBA)
             cv2.imwrite(f'/home/sjh7397/test_pythonanywhere/static/output_img/{style}_{date_string}.png', alpha_output_2)
 
         else :
