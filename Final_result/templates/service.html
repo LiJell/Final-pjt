@@ -29,8 +29,11 @@
     </div>
 
      <!--로딩이 되어지는 부분-->
-    <div id="div_load_image" style="position:absolute; top:50%; left:50%;">
-      <img src="{{ url_for('static', filename = 'img/loading.gif') }}" style="width:100px; height:100px;">
+    <div id="div_load_image" style="text-align:center">
+      <h1 style="text-align:center; margin-top:5rem">LimnPet</h1>
+      <h3 style="text-align: center">Draw your pet in the style of your choice</h3>
+      <img src="{{ url_for('static', filename = 'img/loading_dog.gif') }}" style="width:10rem">
+      <h2 style="text-align: center">Drawing in progress.....</h3>
     </div>
 
      <!--홈페이지에서 보여지는 부분-->
@@ -45,7 +48,7 @@
         <div style="text-align:center">
           <section>
             <div class="file-upload">
-              <form action="/test" method="POST" enctype="multipart/form-data">
+              <form name="frm1" method="POST" enctype="multipart/form-data">
                 <div>스타일 선택</div>
                 <select name="style" class="btn btn-light" style="text-align: center; display:inline">
                   <option value="hayao">Hayao</option>
@@ -69,7 +72,7 @@
                     id="pet-image"
                     src="#"
                     alt="your image"
-                  />        
+                  />
                   <div class="image-title-wrap">
                     <button type="button" onclick="removeUpload(this)" class="remove-image">
                       <span class="image-title">사진 다시 올리기</span>
@@ -77,23 +80,29 @@
                   </div>
                 </div>
                 <div id="submit_button">
-                  <button class="remove-image" type="submit" onClick="location.href='/test';search();">
+                  <input class="remove-image" value="그림 그리기" type="submit" onClick="btn_click('draw');search();">
+                  </input>
+                  <input class="remove-image" value="화질 올리기" type="submit" onClick="btn_click('hires');search();">
+                  </input>
+                  <!-- <button class="remove-image" type="submit" onClick="location.href='/test';search();">
                     <span class="image-title">그림 그리기</span>
                   </button>
+                  <button class="remove-image" type="submit" onClick="location.href='/hires';search();">
+                    <span class="image-title">화질 올리기</span>
+                  </button> -->
                 </div>
-                
               </form>
             </div>
           </section>
         </div>
 
       </div>
-      
+
     </div>
 
     <!--disqus 부분-->
     <div id="disqus_thread"></div>
-    
+
     <script>
       /**
        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -150,13 +159,13 @@
         $(".image-upload-wrap").removeClass("image-dropping");
       });
       //원래 그림이 존재하지만, 이 스크립트로 그림이 숨겨짐 window.onload -> 뒤로가기 누르면 버튼이 무효화 onpageshow -> 뒤로가기 눌러도 유지
-      
+
       window.onpageshow = function() {
         $("#div_load_image").hide();
         $("#div_show").show();
       }
       // 숨겨진 그림을 onclick으로 불러낼 함수
-      
+
       function search(){
         $("#div_load_image").show();
         $("#div_show").hide();
@@ -164,5 +173,15 @@
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      function btn_click(str){
+        if(str=="draw"){
+          frm1.action="/test";
+        }
+        else{
+          frm1.action="/hires";
+        }
+      }
+    </script>
   </body>
 </html>
