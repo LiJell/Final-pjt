@@ -6,59 +6,162 @@
       name="google-site-verification"
       content="0025mGEf2ZtX4gjWrrrs9xwChLlHo91qx0srZPNUsXw"
     />
-    <meta name="naver-site-verification" content="0020cbb83cc0440060b4a81f8a1ad25474064596" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="naver-site-verification"
+      content="0020cbb83cc0440060b4a81f8a1ad25474064596"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LimnPet 🐶</title>
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/main.css') }}">
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/scroll.css') }}">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/scroll.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/banner.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/slideshow.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-  </style>
+      @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+    </style>
   </head>
 
   <body>
-    <div id="header" role="menu">
-      <nav class="menu">
-        <ul>
-          <li><a href = "/home"><b>Home</b></a></li>
-          <li><a href = "/about"><b>About</b></a></li>
-          <li><a href = "/service"><b>Service</b></a></li>
-          <li><a href = "/contact"><b>Contact</b></a></li>
-          <li><a href = "/goods" ><b>Goods</b></a></li>
-        </ul>
-      </nav>
+    <div class="list">
+      <div class="one">
+        <main class="slide_container">
+          <section class="slideshow">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="overlay">
+              <h1>Drawing your pet, <b>LimnPet</b></h1>
+            </div>
+          </section>
+        </main>
+      </div>
     </div>
-
     <div id="container" role="main">
-
-      <div class="list">
-        <div class="one">
-          <span class="profile"><img src="{{ url_for('static', filename = 'img/img_5.jpg') }}" alt=""/></span>
-          <h3><strong>Hello! We are LimnPet</strong></h3> 
-          <h4>You can scroll down if you want to see ours!</h4>
-        </div>
+      <div id="header" role="menu">
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="/home"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="/about"><b>About</b></a>
+            </li>
+            <li>
+              <a href="/service"><b>Service</b></a>
+            </li>
+            <li>
+              <a href="/contact"><b>Contact</b></a>
+            </li>
+            <li>
+              <a href="/goods"><b>Goods</b></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="list">
         <div class="two">
-          <img class="slide1 slide" src="{{ url_for('static', filename = 'img/img_1.jpg') }}" > 
-          <img class="slide1 slide" src="{{ url_for('static', filename = 'img/img_2.jpg') }}" > 
-          <img class="slide1 slide" src="{{ url_for('static', filename = 'img/img_3.jpg') }}" >
-          <h3> 
-            <strong>내 반려견의 그림을 그리는 방법?</strong>
-            <br>
-            <br>
-            <strong>LimnPet!</strong>
-          </h3>
+          <!-- <span class="profile"
+            ><img
+              src="{{ url_for('static', filename = 'img/img_5.jpg') }}"
+              alt="cannot load a image"
+          /></span> -->
+          <!-- 3D Slideshow Section -->
+          <section id="slideshow">
+            <div class="entire-content">
+              <div class="content-carrousel">
+                <figure class="shadow">
+                  <img
+                    src="https://images.mubicdn.net/images/cast_member/1419/cache-10-1535963981/image-w856.jpg?size=800x"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img src="https://wallpaperaccess.com/full/6608526.jpg" />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="https://mblogthumb-phinf.pstatic.net/MjAxNzA3MThfMTkx/MDAxNTAwMzEyOTMzNzI2.Jr6gdX_6k6Ywkof6W3dc2J9oIpc6QQbnYSK0MZgCoJog.qZ7pfbkng1P0vDaDKb9Q0lTwFQm-RFpM65lBsxGSFKEg.JPEG.joonicarus/movie_image_%2811%29.jpg?type=w800"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="https://lumiere-a.akamaihd.net/v1/images/og_disney_4a3148aa.jpeg?region=0%2C0%2C1200%2C630"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="http://cdn.bosa.co.kr/news/photo/202112/2163722_195185_3526.jpg"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="http://itimg.chosun.com/sitedata/image/201910/26/2019102600772_0.jpg"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="https://t1.daumcdn.net/news/202105/24/potenshop/20210524160959298pcwt.jpg"
+                  />
+                </figure>
+                <!-- <figure class="shadow">
+                  <img
+                    src="https://images.pexels.com/photos/301682/pexels-photo-301682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+                  />
+                </figure> -->
+              </div>
+            </div>
+          </section>
+          <h3><strong>Hello! We are LimnPet</strong></h3>
+          <h4>
+            LimnPet is a styling service that makes your pet photos into various
+            painting styles!
+          </h4>
+
+          <div class="intext">
+            You no longer have to pay for the styling of your pet photos.<br />
+            Through LimnPet, We have simplified the complicated process for
+            purchasing pet custom goods.<br />
+            From now on, all you need to do is upload a picture of your pet to
+            LimnPet service and save your newly styled picture!<br />
+            If you want to purchase stylized pet printed custom goods, select
+            Goods from the menu.
+          </div>
+
+          <h4>Future Plans</h4>
           <div class="'intext">
-            LimnPet은 반려견 커스텀 굿즈 제작을 위한 GAN 기반 cartoon stylization 상용서비스입니다.<br><br>
-            반려견 커스텀 굿즈 제작 과정간 따로 그림 서비스를 받아야하는 불편함을 해소하기 위한<br>
-            GAN 기반 반려견 그림 자동 생성 및 저장/공유 서비스를 제공합니다<br><br>
-            생성된 이미지를 기반으로 반려견 커스텀 굿즈(휴대폰 케이스, 컵, 옷 등)를 제작할 수 있도록<br>
-            관련 업체와 사용자간 의사소통 채널 형성의 기반을 마련해 나가겠습니다.
+            LimnPet's exclusive goods edition via collaboration with artist,
+            goods brand<br />
+            Considering to add photo manipulation Options<br />
+            Stylized pet photos into your own emoji<br />
+            Stylized pet photos into NFT<br />
           </div>
         </div>
       </div>
@@ -71,7 +174,10 @@
 
       <div class="list">
         <div class="four">
-          <img class = "contact_img" src ="{{ url_for('static', filename = 'img/bg.jpg') }}">
+          <img
+            class="contact_img"
+            src="{{ url_for('static', filename = 'img/bg.jpg') }}"
+          />
           <div>
             <a href="https://www.limnpet.ml" class="ct">Home</a>
             <a href="mailto:allislijell@gmail.com" class="ct">Gmail</a>
@@ -82,21 +188,37 @@
 
       <div class="list">
         <div class="five">
-          <h1 styl="text-align:center"> 🐶 Goods Shops 🐶 </h1>
+          <h1 styl="text-align:center">🐶 Goods Shops 🐶</h1>
           <div class="lists">
-            <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_clothes.jpg') }}" alt="">
+            <img
+              class="list_img"
+              src="{{ url_for('static', filename = 'img/goods_clothes.jpg') }}"
+              alt=""
+            />
             <p>의류</p>
           </div>
           <div class="lists">
-            <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_griptok.jpg') }}" alt="">
+            <img
+              class="list_img"
+              src="{{ url_for('static', filename = 'img/goods_griptok.jpg') }}"
+              alt=""
+            />
             <p>휴대폰 액세서리</p>
           </div>
           <div class="lists">
-            <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_cup.jpg') }}" alt="">
+            <img
+              class="list_img"
+              src="{{ url_for('static', filename = 'img/goods_cup.jpg') }}"
+              alt=""
+            />
             <p>생활용품</p>
           </div>
           <div class="lists">
-            <img class = "list_img" src="{{ url_for('static', filename = 'img/goods_sticker.jpg') }}" alt="">
+            <img
+              class="list_img"
+              src="{{ url_for('static', filename = 'img/goods_sticker.jpg') }}"
+              alt=""
+            />
             <p>그 외 기타</p>
           </div>
         </div>
@@ -104,11 +226,11 @@
 
       <div class="list">
         <div class="six">
-          <h5 style="color:white">정보 입력?</h5>
+          <h5 style="color: white">정보 입력?</h5>
         </div>
       </div>
-
-    <script>
+    </div>
+    <!-- <script>
       var index = 0; 
       window.onload = function () {
         slideShow();
@@ -127,9 +249,21 @@
         x[index - 1].style.display = "block";
         setTimeout(slideShow, 2000); 
         }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
