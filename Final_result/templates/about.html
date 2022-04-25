@@ -1,93 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/main.css') }}">
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/about.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/about.css') }}"
+    />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-  </style>
+      @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+    </style>
   </head>
 
-	<body>
-		<div id="header" role="menu">
-			<nav class="menu">
-				<ul>
-					<li>
-						<a href="/home"><b>Home</b></a>
-					</li>
-					<li>
-						<a href="/about"><b>About</b></a>
-					</li>
-					<li>
-						<a href="/service"><b>Service</b></a>
-					</li>
-					<li>
-						<a href="/contact"><b>Contact</b></a>
-					</li>
-					<li>
-						<a href="/goods"><b>Goods</b></a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+  <body>
+    <div id="header" role="menu">
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="/home"><b>Home</b></a>
+          </li>
+          <li>
+            <a href="/about"><b>About</b></a>
+          </li>
+          <li>
+            <a href="/service"><b>Service</b></a>
+          </li>
+          <li>
+            <a href="/contact"><b>Contact</b></a>
+          </li>
+          <li>
+            <a href="/goods"><b>Goods</b></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-		<div id="container">
-			<div class="list">
-				<div class="one">
-					<span class="profile"
-						><img src="{{ url_for('static', filename = 'img/img_5.jpg') }}" alt="cannot load a image"
-					/></span>
-					<h3><strong>Hello! We are LimnPet</strong></h3>
-					<h4>
-						LimnPet is a styling service that makes your pet photos into various
-						painting styles!
-					</h4>
+    <div id="container">
+      <div class="list">
+        <div class="two">
+          <span class="profile"
+            ><img
+              src="{{ url_for('static', filename = 'img/img_5.jpg') }}"
+              alt="cannot load a image"
+          /></span>
+          <h3><strong>Hello! We are LimnPet</strong></h3>
+          <h4>
+            LimnPet is a styling service that makes your pet photos into various
+            painting styles!
+          </h4>
 
-					<div class="'intext">
-						You no longer have to pay for the styling of your pet photos.<br />
-						Through LimnPet, We have simplified the complicated process for purchasing
-						pet custom goods.<br />
-						From now on, all you need to do is upload a picture of your pet to LimnPet
-						service and save your newly styled picture!<br />
-						If you want to purchase stylized pet printed custom goods, select Goods from
-						the menu.
-					</div>
+          <div class="'intext">
+            You no longer have to pay for the styling of your pet photos.<br />
+            Through LimnPet, We have simplified the complicated process for
+            purchasing pet custom goods.<br />
+            From now on, all you need to do is upload a picture of your pet to
+            LimnPet service and save your newly styled picture!<br />
+            If you want to purchase stylized pet printed custom goods, select
+            Goods from the menu.
+          </div>
 
-					<h4>Future Plans</h4>
-					<div class="'intext">
-						LimnPet's exclusive goods edition via collaboration with artist, goods brand<br />
-						Considering to add photo manipulation Options<br />
-						Stylized pet photos into your own emoji<br />
-						Stylized pet photos into NFT<br />
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!--슬라이드 -->
-		<script>
-			var index = 0; //이미지에 접근하는 인덱스
-			window.onload = function () {
-				slideShow();
-			};
-
-			function slideShow() {
-				var i;
-				var x = document.getElementsByClassName('slide1'); //slide1에 대한 dom 참조
-				for (i = 0; i < x.length; i++) {
-					x[i].style.display = 'none'; //처음에 전부 display를 none으로 한다.
-				}
-				index++;
-				if (index > x.length) {
-					index = 1; //인덱스가 초과되면 1로 변경
-				}
-				x[index - 1].style.display = 'block'; //해당 인덱스는 block으로
-				setTimeout(slideShow, 4000); //함수를 4초마다 호출
-			}
-		</script>
-	</body>
+          <h4>Future Plans</h4>
+          <div class="'intext">
+            LimnPet's exclusive goods edition via collaboration with artist,
+            goods brand<br />
+            Considering to add photo manipulation Options<br />
+            Stylized pet photos into your own emoji<br />
+            Stylized pet photos into NFT<br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

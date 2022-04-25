@@ -3,9 +3,9 @@
 #container {
   width: 100%;
   height: 100vh;
-  overflow: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  /* overflow: auto;/ */
+  /* scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; */
 }
 
 .list {
@@ -19,7 +19,7 @@
 }
 
 .list:nth-child(1) {
-  background-color: #ff6b6b;
+  /* background-color: #ff6b6b; */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -30,7 +30,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height:110vh;
+  height: 110vh;
   /* overflow:hidden; */
 }
 
@@ -49,7 +49,7 @@
 }
 @media screen and (max-width: 669px) {
   .list:nth-child(4) {
-    height:110vh;
+    height: 110vh;
   }
 }
 
@@ -58,17 +58,17 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height:70vh;
+  height: 70vh;
 }
 
 @media screen and (max-width: 1376px) {
   .list:nth-child(5) {
-    height:120vh;
+    height: 120vh;
   }
 }
 @media screen and (max-width: 694px) {
   .list:nth-child(5) {
-    height:210vh;
+    height: 210vh;
   }
 }
 
@@ -77,5 +77,5 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height:30vh;
+  height: 30vh;
 }
