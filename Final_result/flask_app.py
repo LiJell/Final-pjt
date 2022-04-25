@@ -62,6 +62,17 @@ def goods():
 #         f.save('/home/sjh7397/test_pythonanywhere/static/input_img/'+filename)
 #         return render_template('index_1_1.html', img_file=f'input_img/{filename}' )
 
+@app.route('/hires', methods = ['GET', 'POST']) # 실제 프로젝트의 내용이 구현될 부분에 대한 경로 및 함수 정의
+def hires():
+    if request.method == 'POST':
+        f = request.files['file']
+        # 저장할 경로 + 파일명
+        f.save('/home/sjh7397/test_pythonanywhere/static/input_img/'+f.filename)
+        # 해상도 개선
+        os.system(f'python inference_realesrgan.py -n RealESRGAN_x4plus_anime_6B -i /home/sjh7397/test_pythonanywhere/static/input_img/{f.filename}  -o /home/sjh7397/test_pythonanywhere/static/output_img')
+
+        return render_template('result.html', img_file=f'output_img/{f.filename[:-4]}_out.png' )
+
 @app.route('/test', methods = ['GET', 'POST']) # 실제 프로젝트의 내용이 구현될 부분에 대한 경로 및 함수 정의
 def test():
     if request.method == 'POST':
@@ -106,7 +117,7 @@ def test():
         np.random.seed(2020)
         colors.insert(0, [0, 0, 0])
         colors = np.array(colors, dtype=np.uint8)
-        img = np.array(PIL.Image.open(image_path))
+        img = np.array(PIL.Image.open(image_path).convert("RGB"))
         fg_h, fg_w, _ = img.shape
 
         while (fg_h >= 512) | (fg_w >= 512):
