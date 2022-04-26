@@ -87,7 +87,7 @@
 
      <!--로딩이 되어지는 부분-->
     <div id="div_load_image" style="text-align:center">
-      <h1 style="text-align:center; margin-top:5rem">LimnPet</h1>
+      <h1 style="text-align:center; margin-top:5rem"><strong>LimnPet Service</strong></h1>
       <h3 style="text-align: center">Draw your pet in the style of your choice</h3>
       <img src="{{ url_for('static', filename = 'img/loading_dog.gif') }}" style="width:10rem">
       <h2 style="text-align: center">Drawing in progress.....</h2>
@@ -100,7 +100,7 @@
       <div class="three">
 
         <div style="text-align: center" id='div_show'>
-          <h1 style="text-align:center">LimnPet</h1>
+          <h1 style="text-align:center"><strong>LimnPet Service</strong></h1>
           <h3 style="text-align: center">Draw your pet in the style of your choice</h3>
         </div>
 
@@ -109,7 +109,7 @@
             <div class="file-upload">
               <form name="frm1" method="POST" enctype="multipart/form-data">
                 <div>스타일 선택</div>
-                <select name="style" class="btn btn-light" style="text-align: center; display:inline">
+                <select name="style" class="select" style="text-align: center; display:inline">
                   <option value="hayao">Hayao</option>
                   <option value="paprika">Paprika</option>
                   <option value="disney">Disney</option>
