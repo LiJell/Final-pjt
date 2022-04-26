@@ -9,6 +9,8 @@
 }
 
 .list {
+  background: linear-gradient(to right, #F2994A, #F2C94C);
+
   width: 100%;
   height: 100vh;
   /* display: flex; */
@@ -25,13 +27,7 @@
 }
 
 .list:nth-child(2) {
-  background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  /* background: linear-gradient(to right, #F2994A, #F2C94C); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -43,7 +39,7 @@
 }
 
 .list:nth-child(3) {
-  background: linear-gradient(to bottom left, pink, yellow);
+  /* background: linear-gradient(to right, #11998e, #38ef7d); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -54,10 +50,12 @@
 }
 
 .list:nth-child(4) {
-  background-color: #4836bf;
+  /* background: linear-gradient(to right, #1A2980, #26D0CE); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  height: 70vh;
+
 }
 @media screen and (max-width: 669px) {
   .list:nth-child(4) {
@@ -66,7 +64,7 @@
 }
 
 .list:nth-child(5) {
-  background-color: #9c99f2;
+  /* background: linear-gradient(to right, #1D2B64, #F8CDDA); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

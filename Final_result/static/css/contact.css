@@ -1,5 +1,5 @@
 body {
-  background-color: #b39db3;
+  background: linear-gradient(to right, #F2994A, #F2C94C);
 }
 
 .contact_list {
@@ -11,12 +11,13 @@ body {
 .member {
   margin: 2rem 2rem;
   display: inline-block;
-  padding-bottom: 1rem;
+  padding-bottom:2rem;
 }
 
 .member img {
   width: 10rem;
   height: 10rem;
-  border: 0.4rem groove rgba(213, 33, 236, 0.247);
+  border: 0.4rem outset rgba(241, 143, 16, 0.87);
   border-radius: 2rem;
+  margin-bottom : 2rem;
 }

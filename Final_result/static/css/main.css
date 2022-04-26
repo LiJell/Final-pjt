@@ -15,6 +15,7 @@ body {
 	right: 0;
 	bottom: 0;
 	height: 3.2rem;
+	z-index:5;
 }
 
 .navbar-dark .navbar-toggler {
