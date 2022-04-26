@@ -1,57 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goods</title>
-    <link rel = "stylesheet" href = "./css/main.css">
-    <link rel = "stylesheet" href = "./css/favorites.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-    </style>
-</head>
-<body>
-    <header id = "header"> 
-        <nav class ="menu">
-            <ul>
-                <li><a href = "index.html" <b>Home</b></a></li>
-                <li><a href = "about.html" <b>About</b></a></li>
-                <li><a href = "service.html" <b>Service</b></a></li>
-                <li><a href = "contact.html" <b>Contact</b></a></li>
-                <li><a href = "goods.html" <b>Goods</b></a></li>
-            </ul>
-        </nav>
-    </header> 
-    <div class="list">
-        <div class="five">
-            <h1><br><br> 🐶 Goods Shops 🐶 </h1>
+<!-- saved from url=(0028)https://www.limnpet.ml/goods -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Goods</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/goods.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+            .list1 {
+            display: block;
+            }
+            .list2 {
+            display: block;
+            }
+            .list3 {
+            display: block;
+            }
+            .list4 {
+            display: block;
+            }
+            a > img.I1{
+            width:300px;
+            height:75px;
+            object-fit:cover;
+            object-position: 0px -20px;
+            opacity:0.2;
+            position:absolute;
+            }
+            a > img.I2{
+            width:300px;
+            height:75px;
+            object-fit:cover;
+            object-position: 0px -50px;
+            opacity:0.2;
             
-            <div class = "goods">
+            }
+            .img1 {
+            width:300px;
+            height:300px;
+            /*background-image:url("./imgs/goods_clothes.jpg");*/
+            background-color:white;
+            background-size:300px 300px;
+            margin: 5vh 2vh;
+            display:none;
+            }
+            .img2 {
+            width:300px;
+            height:300px;
+            background-color:white;
+            margin: 5vh 2vh;
+            display:none;
+            }
+            .img3 {
+            width:300px;
+            height:300px;
+            background-color:white;
+            margin: 5vh 2vh;
+            display:none;
+            }
+            .img4 {
+            width:300px;
+            height:300px;
+            background-color:white;
+            margin: 5vh 2vh;
+            display:none;
+            }
+            .list_img1 {
+            width: 300px;
+            height: 300px;
+            margin: 5vh 2vh;
+            display: block;
+            object-fit:cover;
+            object-position:0px 0px
+            }
+            .list_img2 {
+            width: 300px;
+            height: 300px;
+            margin: 5vh 2vh;
+            display: block;
+            }
+            .list_img3 {
+            width: 300px;
+            height: 300px;
+            margin: 5vh 2vh;
+            display: block;
+            }
+            .list_img4 {
+            width: 300px;
+            height: 300px;
+            margin: 5vh 2vh;
+            display: block;
+            }
+            .list1:hover .list_img1{
+                display:none;
+            }
+            .list1:hover .img1{
+                display:block;
+            }
+            .list2:hover .list_img2{
+                display:none;
+            }
+            .list2:hover .img2{
+                display:block;
+            }
+            .list3:hover .list_img3{
+                display:none;
+            }
+            .list3:hover .img3{
+                display:block;
+            }
+            .list4:hover .list_img4{
+                display:none;
+            }
+            .list4:hover .img4{
+                display:block;
+            }
+            .imc11 {
+                width:300px;
+                height:75px;
+                background-size:cover;
+                background-image:url("./imgs/goods_clothes.jpg");
+                background-position: 0% 0%;
+                font-size:25px;
+                line-height:50px;
+            }
+            .imc12 {
+                width:300px;
+                height:75px;
+                background-size:cover;
+                
+                background-image:url("./imgs/goods_clothes.jpg");
+                background-position: 0% 25%;
+                font-size:25px;
+                line-height:50px;
+            }
+            .imc13 {
+                width:300px;
+                height:75px;
+                background-size:cover;
+                background-image:url("./imgs/goods_clothes.jpg");
+                background-position: 0% 50%;
+                font-size:25px;
+                line-height:50px;
+            }
+            .imc14 {
+                width:300px;
+                height:75px;
+                background-size:cover;
+                background-image:url("./imgs/goods_clothes.jpg");
+                background-position: 0% 75%;
+                font-size:25px;
+                line-height:50px;
+            }
+            .imc21 {
+                width:300px;
+                height:75px;
+                background-size:cover;
+                background-image:url("./imgs/goods_griptok.jpg");
+                background-position: 0% 0%;
+                font-size:25px;
+                line-height:50px;
+                /*border-width: 1px;
+                border-style: dashed;
+                bprder-color:black;*/
+            }
+            .imc22 {
+                width:300px;
+                height:75px;
+                background-size:cover;
+                background-image:url("./imgs/goods_griptok.jpg");
+                background-position: 0% 33.3%;
+                font-size:25px;
+                line-height:50px;
+            }
+            .imc23 {
+                width:300px;
+                height:75px;
+                background-size:cover;
+                background-image:url("./imgs/goods_griptok.jpg");
+                background-position: 0% 66.6%;
+                font-size:25px;
+                line-height:50px;
+            }
+            .imc24 {
+                width:300px;
+                height:75px;
+                background-size:cover;
+                background-image:url("./imgs/goods_griptok.jpg");
+                background-position: 0% 99.9%;
+                font-size:25px;
+                line-height:50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header" role="menu">
+            <nav class="menu">
+                <ul>
+                    <li><a href="https://www.limnpet.ml/home"><b>Home</b></a></li>
+                    <li><a href="https://www.limnpet.ml/about"><b>About</b></a></li>
+                    <li><a href="https://www.limnpet.ml/service"><b>Service</b></a></li>
+                    <li><a href="https://www.limnpet.ml/contact"><b>Contact</b></a></li>
+                    <li><a href="https://www.limnpet.ml/goods"><b>Goods</b></a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="container" role="main">
+
+            <div class="list">
+                <div class="five">
+                <h1 styl="text-align:center"> 🐶 Goods Shops 🐶 </h1>
                 <div class="lists">
-                    <img class = "list_img" src="./imgs/what i love/.jpg" alt="">
-                    <p class = "list_text"> goods1</p>
+                    <div class="list1">
+                    <img class="list_img1" src="./imgs/goods_clothes.jpg" alt="">
+                        <div class="img1">
+                            <a href="https://www.bizhows.com/"><div class="imc11">비즈하우스</div>
+                            </a>
+                            <a href="https://www.publog.co.kr/Default.asp"><div class="imc12">퍼블로그</div>
+                            </a>
+                            <a href="https://www.tpana.com/"><div class="imc13">티파나</div>
+                            </a>
+                            <a href="https://www.customzone.co.kr/"><div class="imc14">커스텀존</div>
+                            </a>
+                        </div>
+                    </div>
+                    <p>의류</p>
                 </div>
-  
                 <div class="lists">
-                    <img class = "list_img" src="./imgs/what i love/.jpg" alt="">
-                    <p class = "list_text"> goods2</p>
+                    <div class="list2">
+                    <img class="list_img2" src="./imgs/goods_griptok.jpg" alt="">
+                    <div class="img2">
+                    <a href="http://www.bandya.com/"><div class="imc21">반디야</div></a>
+                    <a href="https://www.marpple.com/kr/"><div class="imc22">MARPPLE</div></a>
+                    <a href="https://www.phoneppu.com/"><div class="imc23">폰뿌</div></a>
+                    <a href="https://shapely.co.kr/index.html"><div class="imc24">셰이플리</div></a>
+                    </div>
+                    </div>
+                    <p>휴대폰 악세서리</p>
                 </div>
-  
                 <div class="lists">
-                    <img class = "list_img" src="./imgs/what i love/.jpg" alt="">
-                    <p class = "list_text"> goods3</p>
+                    <div class="list3">
+                    <img class="list_img3" src="./imgs/goods_cup.jpg" alt="">
+                    <div class="img3">
+                        <p><a href="http://www.handmc.com/">핸드메이드씨</a></p>
+                        <p><a href="http://www.jjomool.com/">쪼물샵</a></p>
+                        <p><a href="https://www.ruashop.co.kr/">루아샵</a></p>
+                        <p><a href="http://www.thankshop.co.kr/shopuser/index.html">땡스샵</a></p>
+                    </div>
+                    </div>
+                    <p>생활용품</p>
                 </div>
-  
                 <div class="lists">
-                    <img class = "list_img" src="./imgs/what i love/.jpg" alt="">
-                    <p class = "list_text"> goods4</p>
+                    <div class="list4">
+                    <img class="list_img4" src="./imgs/goods_sticker.jpg" alt="">
+                    <div class="img4">
+                        <a href="https://www.smilecat.com/">스마일캣</a>
+                        <a href="http://www.adsland.com/">성원애드피아</a>
+                        <a href="http://www.t-free.co.kr/"더팬스</a>
+                        <a href="http://www.huniprinting.com/main.asp">후니프린팅</a>
+                    </div>
+                    </div>
+                    <p>그 외 기타</p>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    let test = document.getElementById("example");
+
+    test.addEventListener("mouseover", function (event) {
+    //highlight the mouseover target
+    event.target.style.color = "red";
+    }, false);
+
+    test.addEventListener("mouseout", function (event) {
+    // highlight the mouseout target
+    event.target.style.color = "black";
+    }, false);
+</script>
 <!-- <a href="https://url.kr/kpbz96" class="ct">1</a>
 <a href="https://www.idus.com/" class="ct">아이디어스</a>
-<a href="https://url.kr/koxdmp" class="ct">마플</a> -->
+<a href="https://url.kr/koxdmp" class="ct">마플</a> --></div></body></html>
+
