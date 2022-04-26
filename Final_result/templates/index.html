@@ -30,26 +30,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/main.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/scroll.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/banner.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/slideshow.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/contact.css') }}"
-    />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/scroll.css" />
+    <link rel="stylesheet" href="../static/css/banner.css" />
+    <link rel="stylesheet" href="../static/css/slideshow.css" />
+    <link rel="stylesheet" href="../static/css/contact.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
     </style>
@@ -68,19 +53,22 @@
             <div class="slide"></div>
             <div class="overlay">
               <h1>Drawing your pet, LimnPet</h1>
-              <button
-                class="service_button"
-                type="button"
-                onClick="location.href='/service'"
-              >
-                <span class="image-title">림펫서비스로 이동</span>
-              </button>
+              <div id="service_button">
+                <button
+                  class="remove-image"
+                  type="button"
+                  onClick="location.href='/service'"
+                >
+                  <span class="image-title"
+                    >림펫서비스로 이동. 아래로 옮기기</span
+                  >
+                </button>
+              </div>
             </div>
           </section>
         </main>
       </div>
     </div>
-
     <div id="container" role="main">
       <div class="menu" id="header" role="menu">
         <nav class="menu navbar navbar-expand-lg navbar-dark nav-distance">
@@ -127,16 +115,24 @@
                     Languages
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <select name="lng">
-                      <option type="text" , value="en">한국어</option>
-                      <option type="text" , value="en">English</option>
-                      <option type="text" , value="ja">日本語</option>
-                      <option type="text" , value="es">español</option>
-                      <option type="text" , value="fr">français</option>
-                      <option type="text" , value="id">bahasa Indonesia</option>
-                      <option type="text" , value="zh-CN">简体中文</option>
-                      <option type="text" , value="zh-TW">繁體中文</option>
-                    </select>
+                    <form
+                      method="post"
+                      action="/languages"
+                      enctype="multipart/form-data"
+                    >
+                      <select name="lng">
+                        <option type="text" , value="en">한국어</option>
+                        <option type="text" , value="en">English</option>
+                        <option type="text" , value="ja">日本語</option>
+                        <option type="text" , value="es">español</option>
+                        <option type="text" , value="fr">français</option>
+                        <option type="text" , value="id">
+                          bahasa Indonesia
+                        </option>
+                        <option type="text" , value="zh-CN">简体中文</option>
+                        <option type="text" , value="zh-TW">繁體中文</option>
+                      </select>
+                    </form>
                   </ul>
                 </li>
               </ul>

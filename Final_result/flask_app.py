@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 import torch
 from torchvision import transforms, models
 from flask import Flask, render_template, request, send_from_directory
+
+
 # from werkzeug.utils import secure_filename
 
 # # real esrGAN 환경 설정
@@ -26,6 +28,36 @@ from flask import Flask, render_template, request, send_from_directory
 app = Flask(__name__) # 플라스크 인스턴스 생성
 app.debug = False
 app.use_reloader= False
+
+@app.route('/languages')
+def languages(text, lng):
+    client_id = "dqr5sx5kos"
+    client_secret = "OUaoy1OJwIzOEUGKmBfFktcCGYjBWZMdqKygJ8L6"
+
+    # lang = ko, ja, en, zh-CN, zh-TW, vi, th, es, fr, id, ru, de, it
+
+    lang = lng
+    encText = urllib.parse.quote(text)
+    data = "source=ko&target={}&text=".format(lang) + encText
+    url = "https://naveropenapi.apigw.ntruss.com/nmt/v1/translation"
+
+    request = urllib.request.Request(url)
+    request.add_header("X-NCP-APIGW-API-KEY-ID",client_id)
+    request.add_header("X-NCP-APIGW-API-KEY",client_secret)
+    response = urllib.request.urlopen(request, data=data.encode("utf-8"))
+    rescode = response.getcode()
+
+
+    if(rescode==200):
+        response_body = response.read()
+        response_encod = response_body.decode('utf-8')
+        dict = json.loads(response_encod )
+        mesge = dict['message']
+        return(mesge['result']['translatedText'])
+
+    else:
+        errormsg = ("Error Code:" + rescode)
+        return errormsg
 
 @app.route('/robots.txt')
 @app.route('/sitemap.xml')
