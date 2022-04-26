@@ -56,52 +56,69 @@ body {
   }
 }
 
-/* page 1 */
+/* Banner 1 */
 .one {
   background-size: cover;
   text-align: center;
   width: 100%;
   height: 100%;
-  /* padding-bottom: 3rem; */
 }
 
-/* page 2 */
+/* About 2 */
 .two {
   background-size: cover;
   text-align: center;
-  /* padding-top: 3rem; */
-  /* padding-bottom: 3rem; */
-}
-
-.profile {
-  width: 40rem;
-  border-radius: 30%;
-  display: inline-block;
-  padding: 0.5rem;
-  margin-bottom: 2rem;
-  background-color: rgba(255, 211, 16, 0.89);
-  border: 1px solid rgb(255, 255, 255, 0.5);
-}
-
-.profile img {
-  width: 38rem;
-  border-radius: 30%;
 }
 
 .intext {
   padding-top: 2rem;
 }
 
-/* page 3 */
+/* Service */
 .three {
   background-size: cover;
   text-align: center;
-  /* padding-top: 3rem;
-  padding-bottom: 3rem; */
+}
+.beforeafter {
+  display: block;
+  margin: 0 auto;
+  width: 100vh;
+  height: 100vh;
+  padding-top: 40px;
 }
 
-/* page 4 */
+@media screen and (max-width: 719px) {
+  .beforeafter {
+    width: 50vh;
+    height: 40vh;
+  }
+}
+.remove-image {
+  width: 18rem;
+  margin: 1rem;
+  color: rgb(255, 255, 255);
+  background: #f2b705;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+.remove-image:hover {
+  background: #f28b05;
+  color: #fff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.remove-image:active {
+  border: 0;
+  transition: all 0.2s ease;
+}
 
+/* Contact 4 */
 .four {
   text-align: center;
   align-items: center;
@@ -123,8 +140,7 @@ body {
   margin: 4rem;
 }
 
-/* page 5 */
-
+/* Goods 5 */
 .five {
   text-align: center;
   align-items: center;
@@ -146,8 +162,7 @@ body {
   margin: 5vh 2vh;
 }
 
-/* page 6 */
-
+/* 6 */
 .six {
   text-align: center;
   align-items: center;

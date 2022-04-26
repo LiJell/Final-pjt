@@ -1,23 +1,22 @@
 body {
-    background-color: #b39db3;
+  background-color: #b39db3;
 }
 
-.list {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 100px;
+.contact_list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .member {
-    margin: 2rem 2rem;;
-    display:inline-block;
-    padding-bottom: 1rem;
-  }
+  margin: 2rem 2rem;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
 
 .member img {
-    width:10rem;
-    height:10rem;
-    border: .4rem groove rgba(213, 33, 236, 0.247);
-    border-radius:2rem;
+  width: 10rem;
+  height: 10rem;
+  border: 0.4rem groove rgba(213, 33, 236, 0.247);
+  border-radius: 2rem;
 }
