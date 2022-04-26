@@ -1,5 +1,5 @@
 body {
-  font-family: 'Gowun Dodum', sans-serif;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 /* 상단바 */
@@ -22,8 +22,8 @@ body {
 }
 
 .menu {
-  opacity:0.5;
-  background-color:#000000;
+  opacity: 0.5;
+  background-color: #000000;
   font-size: 1.5rem;
   font-style: italic;
   align-items: center;
@@ -60,12 +60,21 @@ body {
 .one {
   background-size: cover;
   text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  width: 100%;
+  height: 100%;
+  /* padding-bottom: 3rem; */
+}
+
+/* page 2 */
+.two {
+  background-size: cover;
+  text-align: center;
+  /* padding-top: 3rem; */
+  /* padding-bottom: 3rem; */
 }
 
 .profile {
-  width : 40rem;
+  width: 40rem;
   border-radius: 30%;
   display: inline-block;
   padding: 0.5rem;
@@ -75,33 +84,20 @@ body {
 }
 
 .profile img {
-  width:38rem;
+  width: 38rem;
   border-radius: 30%;
 }
 
-/* page 2 */
-.two {
-  background-size: cover;
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.slide {
-  margin:0 auto; 
-  padding-bottom:3rem;
-  width:38rem;
-}
 .intext {
-  padding-top: 5rem;
-} 
+  padding-top: 2rem;
+}
 
 /* page 3 */
 .three {
   background-size: cover;
   text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  /* padding-top: 3rem;
+  padding-bottom: 3rem; */
 }
 
 /* page 4 */
@@ -124,9 +120,8 @@ body {
   color: white;
   font-size: 2rem;
   font-style: italic;
-  margin:4rem;
+  margin: 4rem;
 }
-
 
 /* page 5 */
 
