@@ -2,14 +2,21 @@
 
 
 
-[자료 및 코드 출처]
-segmentation : pytorch hub, https://github.com/kairess/semantic-segmentation-pytorch
-cartoonGAN : https://github.com/mnicnc404/CartoonGan-tensorflow
-Real_esrGAN : https://github.com/xinntao/Real-ESRGAN
+**[자료 및 코드 출처]**
+
+segmentation: [pytorch hub](https://github.com/kairess/semantic-segmentation-pytorch)
+
+cartoonGAN: https://github.com/mnicnc404/CartoonGan-tensorflow
+
+Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
+
+
+
+
 
 # 파일 저장 형식
 
-파일저장형식: 
+
 
 - 모델: 
   - 파일이름:파일이름(언더바)모델이름(언더바)작성자이름(언더바)
@@ -18,8 +25,6 @@ Real_esrGAN : https://github.com/xinntao/Real-ESRGAN
 - 웹/앱:
   - 파일이름(언더바)적용된모델이름(언더바)작성자이름(언더바)
   - 커밋이름:변견된 사항
-
-
 
 
 
