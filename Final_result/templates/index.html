@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="robots" content="index,follow" />
-    <met
+    <meta
       name="google-site-verification"
       content="0025mGEf2ZtX4gjWrrrs9xwChLlHo91qx0srZPNUsXw"
     />
@@ -30,26 +30,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/main.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/scroll.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/banner.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/slideshow.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/contact.css') }}"
-    />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link rel="stylesheet" href="../static/css/scroll.css" />
+    <link rel="stylesheet" href="../static/css/banner.css" />
+    <link rel="stylesheet" href="../static/css/slideshow.css" />
+    <link rel="stylesheet" href="../static/css/contact.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
     </style>
@@ -130,16 +115,24 @@
                     Languages
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <select name="lng">
-                      <option type="text" , value="en">한국어</option>
-                      <option type="text" , value="en">English</option>
-                      <option type="text" , value="ja">日本語</option>
-                      <option type="text" , value="es">español</option>
-                      <option type="text" , value="fr">français</option>
-                      <option type="text" , value="id">bahasa Indonesia</option>
-                      <option type="text" , value="zh-CN">简体中文</option>
-                      <option type="text" , value="zh-TW">繁體中文</option>
-                    </select>
+                    <form
+                      method="post"
+                      action="/languages"
+                      enctype="multipart/form-data"
+                    >
+                      <select name="lng">
+                        <option type="text" , value="en">한국어</option>
+                        <option type="text" , value="en">English</option>
+                        <option type="text" , value="ja">日本語</option>
+                        <option type="text" , value="es">español</option>
+                        <option type="text" , value="fr">français</option>
+                        <option type="text" , value="id">
+                          bahasa Indonesia
+                        </option>
+                        <option type="text" , value="zh-CN">简体中文</option>
+                        <option type="text" , value="zh-TW">繁體中文</option>
+                      </select>
+                    </form>
                   </ul>
                 </li>
               </ul>
@@ -185,22 +178,23 @@
             </div>
           </section>
 
-          <p style="font-size: 60px; font-weight: 400; color: aliceblue">
+          <p style="font-size: 60px; font-weight: 600; color: aliceblue">
             Hello, We are LimnPet! 🐶
           </p>
-          <p
-            style="
-              font-size: 18px;
-              font-style: italic;
-              font-weight: 200;
-              color: aliceblue;
-            "
-          >
+          <p style="font-size: 20px; font-style: italic; color: aliceblue">
             LimnPet is a styling service that makes your pet photos into various
             painting styles
           </p>
 
-          <div class="intext" style="font-size: 22px; color: aliceblue">
+          <div
+            class="intext"
+            style="
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 2;
+              color: aliceblue;
+            "
+          >
             You no longer have to pay for the styling of your pet photos.<br />
             Through LimnPet, We have simplified the complicated process for
             purchasing pet custom goods.<br />
@@ -210,38 +204,65 @@
             Goods from the menu.
           </div>
 
-          <p style="font-size: 45px; font-weight: 400; color: aliceblue">
-            <br />Future Plans
+          <p style="font-size: 40px; font-weight: 600; color: aliceblue">
+            <br /><br /><u>Future Plans</u>
           </p>
 
-          <div
-            class="'intext"
-            style="font-size: 25px; font-weight: 200; color: aliceblue"
-          >
-            <br />LimnPet's exclusive goods edition via
-            <span style="color: #f2e205; font-weight: 600"
-              >collaboration with artist, goods brand</span
-            >
-            <br />
-            Considering to add
-            <span style="color: #f2e205; font-weight: 600"
-              >photo manipulation Options</span
-            ><br />
-            Stylized pet photos into your own
-            <span style="color: #f2e205; font-weight: 600">emoji</span><br />
-            Stylized pet photos into
-            <span style="color: #f2e205; font-weight: 600">NFT</span><br />
+          <div class="futureplans">
+            <img
+              class="futureplans_img"
+              src="{{ url_for('static', filename = 'img/futureplans_collabo.jpg') }}"
+              alt=""
+            />
+            <p>
+              LimnPet's exclusive goods edition<br />
+              <span style="color: #ff483b; font-weight: 800"
+                >via collaboration with artist, goods brand</span
+              >
+            </p>
+          </div>
+          <div class="futureplans">
+            <img
+              class="futureplans_img"
+              src="{{ url_for('static', filename = 'img/futureplans_opt.jpg') }}"
+              alt=""
+            />
+            <p>
+              Considering to add<br />
+              <span style="color: #ff483b; font-weight: 800"
+                >photo manipulation Options</span
+              ><br />
+            </p>
+          </div>
+          <div class="futureplans">
+            <img
+              class="futureplans_img"
+              src="{{ url_for('static', filename = 'img/futureplans_emoji.png') }}"
+              alt=""
+            />
+            <p>
+              Stylized pet photos into your own<br />
+              <span style="color: #ff483b; font-weight: 800">emoji</span>
+            </p>
+          </div>
+          <div class="futureplans">
+            <img
+              class="futureplans_img"
+              src="{{ url_for('static', filename = 'img/futureplans_nft.jpg') }}"
+              alt=""
+            />
+            <p>
+              Stylized pet photos into<br />
+              <span style="color: #ff483b; font-weight: 800">NFT</span><br />
+            </p>
           </div>
         </div>
       </div>
 
       <div class="list">
         <div class="three">
-          <!-- <div class="iframebox" position="'relative" width="60% !important">
-            <iframe position="'absolute" frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6093a3be-c451-11ec-b5bb-6595d9b17862"></iframe>
-          </div> -->
-          <p style="font-size: 24px; font-weight: 600; color: aliceblue">
-            Service Before & After
+          <p style="font-size: 48px; font-weight: 600; color: aliceblue">
+            Service Before & After 🎨
           </p>
           <div class="beforeafter">
             <iframe
@@ -251,9 +272,18 @@
               src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6093a3be-c451-11ec-b5bb-6595d9b17862"
             ></iframe>
           </div>
-          <p style="margin: 0 auto; font-size: 20px; color: aliceblue">
-            바를 움직여 보세요
+          <p style="font-weight: 600; font-size: 30px; color: black">
+            <br />Move the navigation bar
           </p>
+          <div id="service_button">
+            <button
+              class="remove-image"
+              type="button"
+              onClick="location.href='/service'"
+            >
+              <span class="image-title">림펫서비스로 이동</span>
+            </button>
+          </div>
         </div>
       </div>
 

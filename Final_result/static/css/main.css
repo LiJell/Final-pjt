@@ -1,43 +1,47 @@
 body {
-	font-family: 'Gowun Dodum', sans-serif;
-} /* 상단바 */ /* .menu * { display: inline; } */
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 상단바 */
+/* .menu * { display: inline; } */
 
 .menu .navbar-dark {
-	font-family: 'Gowun Dodum', sans-serif;
-	opacity: 0.7;
-	background-color: #000000;
-	font-size: 1.5rem;
-	font-style: italic Bold;
-	align-items: center; /* text-align: center; */
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 3.2rem;
+  font-family: "Gowun Dodum", sans-serif;
+  opacity: 0.7;
+  background-color: #000000;
+  font-size: 1.5rem;
+  font-style: italic Bold;
+  align-items: center; /* text-align: center; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3.2rem;
+  z-index: 5;
 }
 
 .navbar-dark .navbar-toggler {
-	border-color: #000000;
+  border-color: #000000;
 }
 @media screen and (min-width: 1000px) {
-	.menu ul {
-		float: none;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	.menu li {
-		margin: 35px;
-	}
+  .menu ul {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .menu li {
+    margin: 35px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-	html {
-		font-size: 10px;
-	}
-	/* .menu ul {
+  html {
+    font-size: 10px;
+  }
+  /* .menu ul {
 		float: none;
 		position: fixed;
 		top: 0;
@@ -46,46 +50,16 @@ body {
 		bottom: 0; */
 }
 
-
 /* Banner 1 */
 .one {
-	background-size: cover;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-  }
-  
-  /* About 2 */
-  .two {
-	background-size: cover;
-	text-align: center;
-  }
-  
-  .intext {
-	padding-top: 2rem;
-  }
-
-/* Service */
-.three {
   background-size: cover;
   text-align: center;
-}
-.beforeafter {
-  display: block;
-  margin: 0 auto;
-  width: 80vh;
-  height: 80vh;
-  padding-top: 40px;
+  width: 100%;
+  height: 100%;
 }
 
-@media screen and (max-width: 719px) {
-  .beforeafter {
-    width: 50vh;
-    height: 40vh;
-  }
-}
-.remove-image {
-  width: 18rem;
+.service_button {
+  width: 14rem;
   margin: 1rem;
   color: rgb(255, 255, 255);
   background: #f2b705;
@@ -98,8 +72,78 @@ body {
   font-weight: bold;
   font-size: 24px;
 }
-.remove-image:hover {
+.service_button:hover {
   background: #f28b05;
+  color: #fff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.service_button:active {
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+/* About 2 */
+.two {
+  background-size: cover;
+  text-align: center;
+}
+
+.intext {
+  padding-top: 2rem;
+}
+
+.futureplans {
+  display: block;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  display: inline-block;
+}
+.futureplans_img {
+  background-color: #6ec5b8;
+  width: 350px;
+  height: 350px;
+  margin: 5vh 2vh;
+  border-radius: 5%;
+  box-shadow: 0 10px 10px -4px #000;
+}
+
+/* Service */
+.three {
+  background-size: cover;
+  text-align: center;
+}
+.beforeafter {
+  display: block;
+  margin: 0 auto;
+  width: 70vh;
+  height: 60vh;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 719px) {
+  .beforeafter {
+    width: 50vh;
+    height: 40vh;
+  }
+}
+.remove-image {
+  width: 10rem;
+  margin: 1rem;
+  color: rgb(255, 255, 255);
+  background: #4777e6e8;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+.remove-image:hover {
+  background: #4776e6;
   color: #fff;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -111,15 +155,15 @@ body {
 
 /* Contact 4 */
 .four {
-	text-align: center;
-	align-items: center;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+  text-align: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .contact_img {
-	margin: auto;
-	width: 70rem;
-	padding-bottom: 1rem;
+  margin: auto;
+  width: 70rem;
+  padding-bottom: 1rem;
 }
 .ct {
   text-decoration: none;
@@ -131,17 +175,17 @@ body {
 
 /* Goods 5 */
 .five {
-	text-align: center;
-	align-items: center;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+  text-align: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .lists {
-	display: block;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 1.5;
-	display: inline-block;
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  display: inline-block;
 }
 .list_img {
   width: 300px;
@@ -151,8 +195,8 @@ body {
 
 /* 6 */
 .six {
-	text-align: center;
-	align-items: center;
-	padding-top: 5rem;
-	padding-bottom: 3rem;
+  text-align: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
