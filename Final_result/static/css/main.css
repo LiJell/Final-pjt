@@ -1,78 +1,69 @@
 body {
-  font-family: "Gowun Dodum", sans-serif;
+	font-family: 'Gowun Dodum', sans-serif;
+} /* 상단바 */ /* .menu * { display: inline; } */
+
+.menu .navbar-dark {
+	font-family: 'Gowun Dodum', sans-serif;
+	opacity: 0.7;
+	background-color: #000000;
+	font-size: 1.5rem;
+	font-style: italic Bold;
+	align-items: center; /* text-align: center; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 3.2rem;
 }
 
-/* 상단바 */
-
-.menu * {
-  display: inline;
+.navbar-dark .navbar-toggler {
+	border-color: #000000;
+}
+@media screen and (min-width: 1000px) {
+	.menu ul {
+		float: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.menu li {
+		margin: 35px;
+	}
 }
 
-.menu li {
-  margin: 35px;
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 10px;
+	}
+	/* .menu ul {
+		float: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0; */
 }
 
-.menu li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-.menu ul {
-  padding-left: 0px;
-}
-
-.menu {
-  opacity: 0.5;
-  background-color: #000000;
-  font-size: 1.5rem;
-  font-style: italic;
-  align-items: center;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2.8rem;
-}
-@media screen and (max-width: 719px) {
-  .menu {
-    height: 5rem;
-  }
-}
-@media screen and (max-width: 419px) {
-  .menu {
-    height: 7rem;
-  }
-}
-@media screen and (max-width: 289px) {
-  .menu {
-    height: 9rem;
-  }
-}
-@media screen and (max-width: 269px) {
-  .menu {
-    height: 11rem;
-  }
-}
 
 /* Banner 1 */
 .one {
-  background-size: cover;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-/* About 2 */
-.two {
-  background-size: cover;
-  text-align: center;
-}
-
-.intext {
-  padding-top: 2rem;
-}
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+  }
+  
+  /* About 2 */
+  .two {
+	background-size: cover;
+	text-align: center;
+  }
+  
+  .intext {
+	padding-top: 2rem;
+  }
 
 /* Service */
 .three {
@@ -120,18 +111,16 @@ body {
 
 /* Contact 4 */
 .four {
-  text-align: center;
-  align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+	text-align: center;
+	align-items: center;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
-
 .contact_img {
-  margin: auto;
-  width: 70rem;
-  padding-bottom: 1rem;
+	margin: auto;
+	width: 70rem;
+	padding-bottom: 1rem;
 }
-
 .ct {
   text-decoration: none;
   color: white;
@@ -142,20 +131,18 @@ body {
 
 /* Goods 5 */
 .five {
-  text-align: center;
-  align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+	text-align: center;
+	align-items: center;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
-
 .lists {
-  display: block;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-  display: inline-block;
+	display: block;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+	display: inline-block;
 }
-
 .list_img {
   width: 300px;
   height: 300px;
@@ -164,8 +151,8 @@ body {
 
 /* 6 */
 .six {
-  text-align: center;
-  align-items: center;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+	text-align: center;
+	align-items: center;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
 }
