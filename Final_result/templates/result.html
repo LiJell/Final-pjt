@@ -3,41 +3,112 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>LimnPet 🐶</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/main.css') }}">
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/service.css') }}">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/service.css') }}"
+    />
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-  </style>
+      @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+    </style>
   </head>
 
   <body>
-    <div id="header" role="menu">
-      <nav class="menu">
-        <ul>
-          <li><a href = "/home"><b>Home</b></a></li>
-          <li><a href = "/about"><b>About</b></a></li>
-          <li><a href = "/service"><b>Service</b></a></li>
-          <li><a href = "/contact"><b>Contact</b></a></li>
-          <li><a href = "/goods" ><b>Goods</b></a></li>
-        </ul>
+    <div class="menu" id="header" role="menu">
+      <nav class="menu navbar navbar-expand-lg navbar-dark nav-distance">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/goods">Goods</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/languages"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Languages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <select name="lng">
+                    <option type="text" , value="en">한국어</option>
+                    <option type="text" , value="en">English</option>
+                    <option type="text" , value="ja">日本語</option>
+                    <option type="text" , value="es">español</option>
+                    <option type="text" , value="fr">français</option>
+                    <option type="text" , value="id">bahasa Indonesia</option>
+                    <option type="text" , value="zh-CN">简体中文</option>
+                    <option type="text" , value="zh-TW">繁體中文</option>
+                  </select>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
 
     <div class="list">
       <div class="three">
-
-        <div style="text-align: center" id='div_show'>
+        <div style="text-align: center" id="div_show">
           <h1 style="text-align: center">LimnPet</h1>
-          <h3 style="text-align: center">Draw your pet in the style of your choice</h3>
+          <h3 style="text-align: center">
+            Draw your pet in the style of your choice
+          </h3>
         </div>
-        
+
         <div class="file-upload">
           <div id="result_show">
-            <img src="{{url_for('static', filename = img_file)}}" style="width:10rem" alt="Error"/>
+            <img
+              src="{{url_for('static', filename = img_file)}}"
+              style="width: 10rem"
+              alt="Error"
+            />
           </div>
 
           <div id="download_button">
@@ -49,28 +120,34 @@
           </div>
 
           <div id="return_button">
-            <button class="remove-image" type="button" onClick="location.href='/service'">
+            <button
+              class="remove-image"
+              type="button"
+              onClick="location.href='/service'"
+            >
               <span class="image-title">다시하기</span>
             </button>
           </div>
 
           <div id="home_button">
-            <button class="remove-image" type="button" onClick="location.href='/home'">
+            <button
+              class="remove-image"
+              type="button"
+              onClick="location.href='/home'"
+            >
               <span class="image-title">홈으로돌아가기</span>
             </button>
           </div>
 
           <!-- addthis 위치 -->
-          <div style="margin:3rem" class="addthis_inline_share_toolbox"></div>
+          <div style="margin: 3rem" class="addthis_inline_share_toolbox"></div>
         </div>
       </div>
-
-      
     </div>
 
     <!--disqus 부분-->
     <div id="disqus_thread"></div>
-    
+
     <script>
       /**
        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -101,6 +178,10 @@
       type="text/javascript"
       src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-624d45d85b9c2167"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
-
