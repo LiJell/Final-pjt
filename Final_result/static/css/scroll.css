@@ -9,7 +9,7 @@
 }
 
 .list {
-  background: linear-gradient(to right, #F2994A, #F2C94C);
+  background: linear-gradient(to right, #f2994a, #f2c94c);
 
   width: 100%;
   height: 100vh;
@@ -27,7 +27,6 @@
 }
 
 .list:nth-child(2) {
-  /* background: linear-gradient(to right, #F2994A, #F2C94C); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -39,7 +38,6 @@
 }
 
 .list:nth-child(3) {
-  /* background: linear-gradient(to right, #11998e, #38ef7d); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -50,12 +48,10 @@
 }
 
 .list:nth-child(4) {
-  /* background: linear-gradient(to right, #1A2980, #26D0CE); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   height: 70vh;
-
 }
 @media screen and (max-width: 669px) {
   .list:nth-child(4) {
@@ -64,7 +60,6 @@
 }
 
 .list:nth-child(5) {
-  /* background: linear-gradient(to right, #1D2B64, #F8CDDA); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
