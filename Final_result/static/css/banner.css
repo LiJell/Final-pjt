@@ -1,5 +1,4 @@
 .slide_container {
-  /* --bg: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
   --bg: linear-gradient(to bottom right, #4776e6, pink);
   position: relative;
   height: 100vh;
@@ -86,10 +85,11 @@
   animation-delay: 1.9s;
 }
 .slide_container .slideshow .overlay h1 {
-  font-size: 350%;
+  font-size: 300%;
+  font-weight: 600;
   letter-spacing: 0.15em;
   color: white;
-  text-shadow: 0 4px 4px black;
+  text-shadow: 0 3px 3px black;
   opacity: 0;
   animation: fade-in 1.3s forwards;
   animation-delay: 2.6s;
