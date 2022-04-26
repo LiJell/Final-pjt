@@ -9,6 +9,8 @@
 }
 
 .list {
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+
   width: 100%;
   height: 100vh;
   /* display: flex; */
@@ -25,13 +27,6 @@
 }
 
 .list:nth-child(2) {
-  background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -43,7 +38,6 @@
 }
 
 .list:nth-child(3) {
-  background: linear-gradient(to bottom left, pink, yellow);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -54,10 +48,10 @@
 }
 
 .list:nth-child(4) {
-  background-color: #4836bf;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  height: 70vh;
 }
 @media screen and (max-width: 669px) {
   .list:nth-child(4) {
@@ -66,7 +60,6 @@
 }
 
 .list:nth-child(5) {
-  background-color: #9c99f2;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

@@ -57,7 +57,7 @@
 	  position: absolute;
 	  margin: 1rem auto;
 	  padding: 1rem;
-	  width: 10rem;
+	  width: 20rem;
 	  padding: 1rem;
 	  outline: none;
 	  opacity: 0;
@@ -68,11 +68,12 @@
 	  bottom: 0;
   }
   .image-upload-wrap {
-	  width: 10rem; 
+	  width: 20rem; 
 	  padding: 1rem;
 	  margin: .5rem auto;
 	  border: 4px dashed #1fb264;
 	  position: relative;
+	  z-index:4;
   }
   .image-upload-wrap:hover {
 	  background-color: #1fb264;
@@ -103,11 +104,11 @@
 	  margin: 0 auto;
   }
   .file-upload-image {
-	  width: 10rem;
+	  width: 20rem;
 	  display: block;
 	  margin: 1rem auto;
 	  padding: auto;
-	  position: relative;
+	  /* position: relative; */
   }
   .remove-image {
 	  width: 10rem;
@@ -133,9 +134,9 @@
 	  transition: all 0.2s ease;
   }
   
-  .nav-distance {
+  /* .nav-distance {
 	  padding: 2.1% 7.7%;
-  }
+  } */
   
   .navbar-light .navbar-brand {
 	  line-height: 1.68;
