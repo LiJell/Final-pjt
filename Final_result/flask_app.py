@@ -27,6 +27,11 @@ app = Flask(__name__) # 플라스크 인스턴스 생성
 app.debug = False
 app.use_reloader= False
 
+# @app.route('/favicon.ico')
+# def favicon():
+#     return send_from_directory(os.path.join(app.root_path, 'static'),
+#                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
 @app.route('/robots.txt')
 @app.route('/sitemap.xml')
 def static_from_root():
