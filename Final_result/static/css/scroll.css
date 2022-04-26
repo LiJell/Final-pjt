@@ -2,7 +2,7 @@
 
 #container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   /* overflow: auto;/ */
   /* scroll-behavior: smooth;
   scroll-snap-type: y mandatory; */
@@ -19,30 +19,36 @@
 }
 
 .list:nth-child(1) {
-  /* background-color: #ff6b6b; */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
 .list:nth-child(2) {
-  background-color: #ffd93d;
+  background-color: #391df2;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 110vh;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
+  /* height: 110vh; */
   /* overflow:hidden; */
 }
 
 .list:nth-child(3) {
-  background-color: #6bcb77;
+  background-color: #5941f2;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .list:nth-child(4) {
-  background-color: #b39db3;
+  background-color: #4836bf;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -54,7 +60,7 @@
 }
 
 .list:nth-child(5) {
-  background-color: #4d96ff;
+  background-color: #9c99f2;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -73,9 +79,9 @@
 }
 
 .list:nth-child(6) {
-  background-color: #000000;
+  background-color: #f2f2f2;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 30vh;
+  height: 20vh;
 }

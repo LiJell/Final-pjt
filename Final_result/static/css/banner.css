@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
-body {
-  margin: 0;
-}
-
 .slide_container {
   --bg: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   position: relative;
@@ -90,13 +85,12 @@ body {
   animation-delay: 1.9s;
 }
 .slide_container .slideshow .overlay h1 {
-  font-size: 250%;
-  font-family: Lora, serif;
-  letter-spacing: 0.2em;
+  font-size: 350%;
+  letter-spacing: 0.15em;
   color: white;
-  text-shadow: 0 2px 2px black;
+  text-shadow: 0 4px 4px black;
   opacity: 0;
-  animation: fade-in 1s forwards;
+  animation: fade-in 1.3s forwards;
   animation-delay: 2.6s;
 }
 
