@@ -1,14 +1,16 @@
 body {
-  background-color: #6bcb77;
+  background: linear-gradient(to right, #F2994A, #F2C94C);
 }
 
 select {
-  width: 5rem;
+  width: 10rem;
   padding: .5rem .5rem;
   margin: .5rem auto;
   border: 1px solid #999;
-  font-size: .8rem;
+  font-size: 1rem;
+  font-weight: 700;
   border-radius: 0.7rem;
+
   }
 
 
@@ -18,4 +20,3 @@ select {
   align-content: center;
   margin-top: 100px;
 }
-
