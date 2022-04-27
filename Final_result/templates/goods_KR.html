@@ -1,150 +1,12 @@
 <!DOCTYPE html>
 <!-- saved from url=(0028)https://www.limnpet.ml/goods -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Goods</title>
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-        crossorigin="anonymous"
-        />
-        <link
-        rel="stylesheet"
-        href="{{ url_for('static', filename = 'css/goods.css') }}"
-       />
-      <link
-        rel="stylesheet"
-        href="{{ url_for('static', filename = 'css/main.css') }}"
-      />
-      <style>
-          @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-          .lists1 {
-          display: block;
-          font-weight: 400;
-          font-family: "Pretendard-Thin";
-          font-size: 18px;
-          line-height: 1.5;
-          display: inline-block;
-          }
-          .lists2 {
-          display: block;
-          font-weight: 400;
-          font-family: "Pretendard-Thin";
-          font-size: 18px;
-          line-height: 1.5;
-          display: inline-block;
-          }
-          .lists3 {
-          display: block;
-          font-weight: 400;
-          font-family: "Pretendard-Thin";
-          font-size: 18px;
-          line-height: 1.5;
-          display: inline-block;
-          }
-          .lists4 {
-          display: block;
-          font-weight: 400;
-          font-family: "Pretendard-Thin";
-          font-size: 18px;
-          line-height: 1.5;
-          display: inline-block;
-          }
-          .img1 {
-          width:300px;
-          height:300px;
-          background-color:white;
-          margin: 5vh 2vh;
-          display:none;
-          }
-          .img2 {
-          width:300px;
-          height:300px;
-          background-color:white;
-          margin: 5vh 2vh;
-          display:none;
-          }
-          .img3 {
-          width:300px;
-          height:300px;
-          background-color:white;
-          margin: 5vh 2vh;
-          display:none;
-          }
-          .img4 {
-          width:300px;
-          height:300px;
-          background-color:white;
-          margin: 5vh 2vh;
-          display:none;
-          }
-          .list_img1 {
-          width: 300px;
-          height: 300px;
-          margin: 5vh 2vh;
-          display: block;
-          }
-          .list_img2 {
-          width: 300px;
-          height: 300px;
-          margin: 5vh 2vh;
-          display: block;
-          }
-          .list_img3 {
-          width: 300px;
-          height: 300px;
-          margin: 5vh 2vh;
-          display: block;
-          }
-          .list_img4 {
-          width: 300px;
-          height: 300px;
-          margin: 5vh 2vh;
-          display: block;
-          }
-          .lists1:hover .list_img1{
-              display:none;
-          }
-          .lists1:hover .img1{
-              display:block;
-          }
-          .lists2:hover .list_img2{
-              display:none;
-          }
-          .lists2:hover .img2{
-              display:block;
-          }
-          .lists3:hover .list_img3{
-              display:none;
-          }
-          .lists3:hover .img3{
-              display:block;
-          }
-          .lists4:hover .list_img4{
-              display:none;
-          }
-          .lists4:hover .img4{
-              display:block;
-          }
-      </style>
-    </head>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Goods</title>
-    <link
-      rel="shortcut icon"
-      href="{{ url_for('static', filename = 'favicon.ico') }}"
-      type="image/x-icon"
-    />
-    <link
-      rel="icon"
-      href="{{ url_for('static', filename = 'favicon.ico') }}"
-      type="image/x-icon"
-    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -197,60 +59,33 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  aria-label="Toggle navigation"
                 >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/home"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/service">Service</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/goods">Goods</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="/languages"
-                        id="navbarDropdown"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Languages
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <select name="lng">
-                          <option type="text" , value="en">한국어</option>
-                          <option type="text" , value="en">English</option>
-                          <option type="text" , value="ja">日本語</option>
-                          <option type="text" , value="es">español</option>
-                          <option type="text" , value="fr">français</option>
-                          <option type="text" , value="id">bahasa Indonesia</option>
-                          <option type="text" , value="zh-CN">简体中文</option>
-                          <option type="text" , value="zh-TW">繁體中文</option>
-                        </select>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
+                  Languages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <form
+                    method="post"
+                    action="/languages"
+                    enctype="multipart/form-data"
+                  >
+                    <select name="lng">
+                      <option type="text" , value="en">한국어</option>
+                      <option type="text" , value="en">English</option>
+                      <option type="text" , value="ja">日本語</option>
+                      <option type="text" , value="es">español</option>
+                      <option type="text" , value="fr">français</option>
+                      <option type="text" , value="id">bahasa Indonesia</option>
+                      <option type="text" , value="zh-CN">简体中文</option>
+                      <option type="text" , value="zh-TW">繁體中文</option>
+                    </select>
+                  </form>
+                </ul>
+              </li>
+            </ul>
           </div>
-        
-        <div id="container" role="main">
+        </div>
+      </nav>
+    </div>
 
     <div id="container" role="main">
       <div style="display: flex;justify-content: center;align-content: center;">
@@ -258,14 +93,14 @@
           <div style="padding-top:2rem;padding-bottom:2rem;">
          <p style="font-weight:900;font-size:32px">Goods Shops</p>
           <h4>
-            <p style="color:white;">Make your customized product with a limpet!</p>
-            <p style="color:white;">If you want to use the customized image as a product, please click the picture below.</p>
-            <p style='color:red;'>Warning! The below site can is only available in Korea.</p>
+            <p style="color:white;">림펫과 함께 당신만의 제품을 만들어 보세요!</p>
+            <p style="color:white;">만약 당신만의 제품을 만들고 싶다면, 아래의 그림을 클릭해주세요.</p>
+            <p style='color:red;'>주의! 아래의 사이트는 오직 한국내에서만 제작이 가능합니다.</p>
           </h4>
           </div>
           <div class="lists">
             <div class="list1">
-              <div style='background-image:url("../../static/img/cloth_modified.jpg")' class="img">
+              <div style='background-image:url("../../static/img/cloth_modified.jpg"' class="img">
                 <a href="https://www.bizhows.com/" class="ac1">
                   <div
                     class="imc1"
@@ -274,7 +109,7 @@
                     style="background-image: url('../../static/img/cloth_origin.jpg')"
                     class="dis1"
                   >
-                    Bizhows
+                    비즈하우스
                   </div>
                 </a>
                 <a href="https://www.publog.co.kr/Default.asp" class="ac2">
@@ -285,7 +120,7 @@
                     style="background-image: url('../../static/img/cloth_origin.jpg')"
                     class="dis2"
                   >
-                    Publog
+                    퍼블로그
                   </div>
                 </a>
                 <a href="https://www.tpana.com/" class="ac3">
@@ -296,7 +131,7 @@
                     style="background-image: url('../../static/img/cloth_origin.jpg')"
                     class="dis3"
                   >
-                    Tpana
+                    티파나
                   </div>
                 </a>
                 <a href="https://www.customzone.co.kr/" class="ac4">
@@ -307,13 +142,13 @@
                     style="background-image: url('../../static/img/cloth_origin.jpg')"
                     class="dis4"
                   >
-                    Customzone
+                    커스텀존
                   </div>
                 </a>
               </div>
             </div>
-            <p class="tes">Clothes</p>
-            <p class="tet">These links allow you to customize clothes such as T-shirts and Hood T-shirts. <p style="color:yellow" class="tet">Use a limpet to make your own clothes!</p></p>
+            <p class="tes">의류</p>
+            <p class="tet" style="height:40px;">위의 링크들은 T셔츠나 후드와 같은 의류들을 제작해줍니다.<p style="color:yellow" class="tet">림펫을 사용하여 당신만의 의류를 만들어보세요!</p></p>
           </div>
           <div class="lists">
             <div class="list2">
@@ -328,7 +163,7 @@
                     style="background-image: url('../../static/img/griptok_origin.jpg')"
                     class="dis1"
                   >
-                    Bandya
+                    반디야
                   </div>
                 </a>
                 <a href="https://www.marpple.com/kr/" class="ac2">
@@ -339,7 +174,7 @@
                     style="background-image: url('../../static/img/griptok_origin.jpg')"
                     class="dis2"
                   >
-                    MARPPLE
+                    마플
                   </div>
                 </a>
                 <a href="https://www.phoneppu.com/" class="ac3">
@@ -350,7 +185,7 @@
                     style="background-image: url('../../static/img/griptok_origin.jpg')"
                     class="dis3"
                   >
-                    Phoneppu
+                    폰뿌
                   </div>
                 </a>
                 <a href="https://shapely.co.kr/" class="ac4">
@@ -361,13 +196,13 @@
                     style="background-image: url('../../static/img/griptok_origin.jpg')"
                     class="dis4"
                   >
-                    Shapely
+                    셰어플리
                   </div>
                 </a>
               </div>
             </div>
-            <p class="tes">Phone-Accessory</p>
-            <p class="tet">These links allow you to customize phone-accessory such as phone-cases. <p style="color:yellow" class="tet">Use a limpet to make your own phone-accessory!</p></p>
+            <p class="tes">핸드폰 악세서리</p>
+            <p class="tet" style="height:40px;">위의 링크들은 핸드폰 케이스와 같은 휴대폰 악세서리들을 제작해줍니다. <p style="color:yellow" class="tet">림펫을 사용하여 당신만의 휴대폰 악세서리를 만들어보세요!</p></p>
           </div>
           <div class="lists">
             <div class="list3">
@@ -382,7 +217,7 @@
                     style="background-image: url('../../static/img/cup_origin.jpg')"
                     class="dis1"
                   >
-                    Handmadec
+                    핸드메이드씨
                   </div>
                 </a>
                 <a href="http://www.jjomool.com/" class="ac2">
@@ -393,7 +228,7 @@
                     style="background-image: url('../../static/img/cup_origin.jpg')"
                     class="dis2"
                   >
-                    Jjomoolshop
+                    쪼물샵
                   </div>
                 </a>
                 <a href="https://www.ruashop.co.kr/" class="ac3">
@@ -404,7 +239,7 @@
                     style="background-image: url('../../static/img/cup_origin.jpg')"
                     class="dis3"
                   >
-                    Ruashop
+                    루아샵
                   </div>
                 </a>
                 <a
@@ -418,13 +253,13 @@
                     style="background-image: url('../../static/img/cup_origin.jpg')"
                     class="dis4"
                   >
-                    Thankshop
+                    떙스샵
                   </div>
                 </a>
               </div>
             </div>
-            <p class="tes">Bottle & Cup</p>
-            <p class="tet">These links allow you to customize bottle & cup such as mug and tumbler. <p style="color:yellow" class="tet">Use a limpet to make your own bottle & cup!</p></p>
+            <p class="tes">컵과 병</p>
+            <p style="height:40px;" class="tet">위의 링크들은 머그컵과 텀블러와 같은 컵과 병을 제작해줍니다. <p style="color:yellow" class="tet">림펫을 사용하여 당신만의 컵과 병을 만들어보세요!</p></p>
           </div>
           <div class="lists">
             <div class="list4">
@@ -439,7 +274,7 @@
                     style="background-image: url('../../static/img/sticker_origin.jpg')"
                     class="dis1"
                   >
-                    Smilecat
+                    스마일캣
                   </div>
                 </a>
                 <a href="http://www.adsland.com/" class="ac2">
@@ -450,7 +285,7 @@
                     style="background-image: url('../../static/img/sticker_origin.jpg')"
                     class="dis2"
                   >
-                    Adsland
+                    애드스랜드
                   </div>
                 </a>
                 <a href="http://www.t-free.co.kr/" class="ac3">
@@ -461,7 +296,7 @@
                     style="background-image: url('../../static/img/sticker_origin.jpg')"
                     class="dis3"
                   >
-                    The Fancy & Stiker
+                    더팬스
                   </div>
                 </a>
                 <a href="http://www.huniprinting.com/" class="ac4">
@@ -472,16 +307,20 @@
                     style="background-image: url('../../static/img/sticker_origin.jpg')"
                     class="dis4"
                   >
-                    huniprinting
+                    후니프린팅
                   </div>
                 </a>
               </div>
             </div>
-            <p class='tes'>Bookbinding</p>
-            <p class="tet">These links allow you to customize bookbiding such as calendar and postcard. <p style="color:yellow" class="tet">Use a limpet to make your own bookbinding!</p></p>
+            <p class='tes'>제본</p>
+            <p class="tet" style="height:40px;">위의 링크들은 달력과 엽서등을 제본해줍니다. <p style="color:yellow" class="tet">림펫을 사용하여 당신만의 책자를 만들어보세요!</p></p>
           </div>
         </div>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+      </div>
+      <script
+        type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      >
         let test = document.getElementById("example");
 
         test.addEventListener("mouseover", function (event) {
@@ -493,8 +332,15 @@
         // highlight the mouseout target
         event.target.style.color = "black";
         }, false);
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<!-- <a href="https://url.kr/kpbz96" class="ct">1</a>
+      </script>
+      <!-- <a href="https://url.kr/kpbz96" class="ct">1</a>
 <a href="https://www.idus.com/" class="ct">아이디어스</a>
-<a href="https://url.kr/koxdmp" class="ct">마플</a> --></div></body></html>
+<a href="https://url.kr/koxdmp" class="ct">마플</a> -->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

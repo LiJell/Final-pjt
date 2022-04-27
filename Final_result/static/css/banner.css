@@ -32,43 +32,37 @@
   animation-delay: 0.15s;
 }
 .slide_container .slideshow .slide:nth-child(1)::after {
-  background: url("https://mcdn.wallpapersafari.com/medium/96/81/ojV1dH.jpg")
-    center/cover no-repeat;
+  background: url("../img/banner/1.jpg") center/cover no-repeat;
 }
 .slide_container .slideshow .slide:nth-child(2) {
   animation-delay: 0.3s;
 }
 .slide_container .slideshow .slide:nth-child(2)::after {
-  background: url("https://mcdn.wallpapersafari.com/medium/4/60/0nmBja.jpg")
-    center/cover no-repeat;
+  background: url("../img/banner/2.jpg") center/cover no-repeat;
 }
 .slide_container .slideshow .slide:nth-child(3) {
   animation-delay: 0.45s;
 }
 .slide_container .slideshow .slide:nth-child(3)::after {
-  background: url("https://mcdn.wallpapersafari.com/medium/62/14/0QzPuX.jpg")
-    center/cover no-repeat;
+  background: url("../img/banner/3.jpg") center/cover no-repeat;
 }
 .slide_container .slideshow .slide:nth-child(4) {
   animation-delay: 0.6s;
 }
 .slide_container .slideshow .slide:nth-child(4)::after {
-  background: url("https://mcdn.wallpapersafari.com/medium/60/49/c3VfPG.jpg")
-    center/cover no-repeat;
+  background: url("../img/banner/4.jpg") center/cover no-repeat;
 }
 .slide_container .slideshow .slide:nth-child(5) {
   animation-delay: 0.75s;
 }
 .slide_container .slideshow .slide:nth-child(5)::after {
-  background: url("https://mcdn.wallpapersafari.com/medium/41/29/FfKq8D.jpg")
-    center/cover no-repeat;
+  background: url("../img/banner/5.jpg") center/cover no-repeat;
 }
 .slide_container .slideshow .slide:nth-child(6) {
   animation-delay: 0.9s;
 }
 .slide_container .slideshow .slide:nth-child(6)::after {
-  background: url("https://mcdn.wallpapersafari.com/medium/92/44/3UD6zu.jpg")
-    center/cover no-repeat;
+  background: url("../img/banner/6.jpg") center/cover no-repeat;
 }
 .slide_container .slideshow .overlay {
   position: absolute;
@@ -109,4 +103,28 @@
   to {
     opacity: 1;
   }
+}
+
+.service_button {
+  width: 16rem;
+  color: rgb(255, 255, 255);
+  background: #f2b705;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+}
+.service_button:hover {
+  background: #f28b05;
+  color: #fff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.service_button:active {
+  border: 0;
+  transition: all 0.2s ease;
 }
