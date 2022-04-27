@@ -115,12 +115,34 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
 
 #### 웹
 
-- Docker을 기반으로한 groomide를 이용한 웹/앱 구현.
+- 기본 웹페이지 구성
+  - Home, About, Service, Contact, Goods, Languages 메뉴 제공
+- flask를 이용한 API 빌드
+- Pythonanywhere을 이용한 서버구축과 배포
+  - 추후 EC2로 옮길 예정
+- 도메인 설정
+  - Freenom에서 무료 DNS 구입
+- 검색엔진 최적화 SEO
+  - robots.txt, sitemap.xml 추가
+- favicon 추가
+
+- Home
+
+  - 서비스로 바로 이동하는 버튼 생성
+  - LimnPet이 제공하는 서비스관련 내용
+    - 슬라이드 형식 사진 제공
+
+- About
+
+  - LimnPet과 우리 팀에 대한 설명
+
+- Service
 
   - 웹/앱 사진 입력, 삭제기능 
 
     - codepen 사용하여 아주 기본적인 template 가져오기
       - HTML/CSS/Javascript 수정하여 완전히 다른 디자인과 UX/UI 변경
+  - 학습한 CartoonGAN과 연결 
 
   - 댓글창 구현
 
@@ -129,34 +151,23 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
       - SNS 공유, 움짤(gif), 이미지 첨부, 텍스트 꾸미기 기능, 좋아요, 싫어요, 대댓글 기능 등 엄청나게 다양한 기능 추가
       - SEO에도 도움됨( 검색엔진 최적화)
 
-    - AddThis로 공유하기 버튼 따로 만들기
-
+  - AddThis로 공유하기 버튼 따로 만들기
+    
       - SNS마다 API연결 안해도 됨
 
-  - Github와 Deploy 서비스 Netlify 연동하기
-  - 도메인 설정
-    - 도메인 구입
-      - Freenom에서 무료로 도메인 얻기
-        - 사용하고 싶은 도메인 이름 입력 후 원하는 도메인 이름 선택
-        - .com은 유료로 만원정도 함
-        - 무료도 있음
-          - 기간 최대 12개월
-          - 임시메일 이용하여 사용
-    - Services > My Domains 복사 > netfliy로 가서 변경
-    - check DNS configureation에서 설정
-      - A 타입으로 설정
-    - freenom으로 이동 후 > manage domain > Manage Freedom DNS > type 지정 후 연결 ( tareget에 IP 주소 입력)
-      - www.을 추가해서 해도 됨
-  - 검색엔진 최적화 SEO
-    - robots.txt, sitemap.xml 추가
-  - favicon generator ( 인터넷 창에 뜨는 이미지)
-    - 원하는 이미지 선택 후 
+
+- Contact
+  - 팀원들의 연락처 정보 제공
+- Goods
+  - 다양한 굿즈회사로 연결 
 
 ---
 
 
 
 #### 앱
+
+##### Plan1
 
 - ReatNative를 이용해서 앱 만들기
 
@@ -209,4 +220,8 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
     - 네이버
   - Applaunchpad
     - 앱 스크린 샷 (다양함)
+
+##### Plan2
+
+- PWA를 이용한 앱 생성
 
