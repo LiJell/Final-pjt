@@ -19,36 +19,28 @@ body {
   background-color: rgba(255, 211, 16, 0.89);
   border: 2px solid rgb(255, 255, 255, 0.5);
 } */
+
+.profile {
+  display:inline-block;
+  margin: 3rem auto;
+  width: 100%;
+}
+
+.profile img {
+  width:25rem;
+  /* height: 20rem; */
+  border: 0.4rem outset rgba(241, 143, 16, 0.87);
+  border-radius: 2rem;
+  vertical-align:middle;
+}
+
 .intext {
+  display:inline-block;
   font-size: 1.3rem;
   color: aliceblue;
   padding:2rem;  
+  vertical-align:middle;
+  width:60%;
 }
 
-.what {
-  padding:3rem;
-}
 
-.profile1 {
-  float:left;
-  display:inline-block;
-}
-
-.profile1 img {
-  width: 30rem;
-  border: 0.4rem outset rgba(241, 143, 16, 0.87);
-  border-radius: 2rem;
-  
-}
-
-.profile2 {
-  margin: 3rem;
-  float:right;
-  display:inline-block;
-}
-
-.profile2 img {
-  width: 30rem;
-  border: 0.4rem outset rgba(241, 143, 16, 0.87);
-  border-radius: 2rem;
-}

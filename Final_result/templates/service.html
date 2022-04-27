@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <html>
   <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -92,7 +92,6 @@
       <img src="{{ url_for('static', filename = 'img/loading_dog.gif') }}" style="width:10rem">
       <h2 style="text-align: center">Drawing in progress.....</h2>
       <h3 style="text-align: center">We are doing our best!, it may takes 1~5min</h3>
-
     </div>
 
      <!--홈페이지에서 보여지는 부분-->
@@ -187,6 +186,7 @@
         >comments powered by Disqus.</a
       ></noscript
     >
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script> // input file들이 들어오면 아래 코드들이 실행
       function readURL(input) {
         if (input.files && input.files[0]) {
