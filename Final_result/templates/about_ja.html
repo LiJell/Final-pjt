@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -80,21 +80,13 @@
                   Languages
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <select name="lng">
-                    <option type="text" , value="ko">
-                      <a class="ko" href="/index_ko">한국어</a>
-                    </option>
-                    <option type="text" , value="en">
-                      <a class="en" href="/index">English</a>
-                    </option>
-                    <option type="text" , value="ja">
-                      <a class="ja" href="/index_ja">日本語</a>
-                    </option>
-                    <option type="text" , value="es">
-                      <a class="es" href="/index_es">español</a>
-                    </option>
-                    <option type="text" , value="zh-CN">
-                      <a class="zh-CN" href="/index_zh-CN">简体中文</a>
+                  <select name="lng" onchange="window.open(value,'_blank');">
+                    <option type="text" , value="/index_ko">한국어</option>
+                    <option type="text" , value="/index">English</option>
+                    <option type="text" , value="/index_ja">日本語</option>
+                    <option type="text" , value="/index_es">español</option>
+                    <option type="text" , value="/index_zh-CN">
+                      简体中文
                     </option>
                   </select>
                 </ul>
