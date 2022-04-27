@@ -233,4 +233,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/flask,windows,jupyternotebooks,visualstudiocode
-/*.py
+
+Final_result/*.py
