@@ -58,31 +58,6 @@ body {
   height: 100%;
 }
 
-.service_button {
-  width: 14rem;
-  margin: 1rem;
-  color: rgb(255, 255, 255);
-  background: #f2b705;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 30px;
-  transition: all 0.2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 24px;
-}
-.service_button:hover {
-  background: #f28b05;
-  color: #fff;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-.service_button:active {
-  border: 0;
-  transition: all 0.2s ease;
-}
-
 /* About 2 */
 .two {
   background-size: cover;
@@ -94,12 +69,12 @@ body {
 }
 
 .futureplans {
-  display: block;
+  display: inline-block;
   font-size: 24px;
   color: rgb(255, 255, 255);
-  line-height: 1;
-  display: inline-block;
+  line-height: 1.2;
 }
+
 .futureplans_img {
   background-color: #6ec5b8;
   width: 350px;
@@ -115,11 +90,14 @@ body {
   text-align: center;
 }
 .beforeafter {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   width: 70vh;
   height: 60vh;
-  padding-top: 30px;
+  /* padding-top: 30px; */
+  /* position: relative;
+  left: -400px;
+  top: 40px; */
 }
 
 @media screen and (max-width: 719px) {
@@ -129,7 +107,7 @@ body {
   }
 }
 .remove-image {
-  width: 10rem;
+  width: 16rem;
   margin: 1rem;
   color: rgb(255, 255, 255);
   background: #4777e6e8;
@@ -140,7 +118,7 @@ body {
   outline: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
 }
 .remove-image:hover {
   background: #4776e6;
@@ -199,4 +177,9 @@ body {
   align-items: center;
   padding-top: 5rem;
   padding-bottom: 3rem;
+}
+
+/* 가로선 */
+hr.style {
+  border-top: 3px double #8c8b8b;
 }
