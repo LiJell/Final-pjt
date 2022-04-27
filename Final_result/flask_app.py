@@ -35,7 +35,6 @@ def languages(text, lng):
     client_secret = "OUaoy1OJwIzOEUGKmBfFktcCGYjBWZMdqKygJ8L6"
 
     # lang = ko, ja, en, zh-CN, zh-TW, vi, th, es, fr, id, ru, de, it
-
     lang = lng
     encText = urllib.parse.quote(text)
     data = "source=ko&target={}&text=".format(lang) + encText
