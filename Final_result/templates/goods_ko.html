@@ -79,7 +79,7 @@
                   Languages
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <select name="lng" onchange="window.open(value,'_blank');">
+                  <select name="lng" onchange="if(this.value) location.href(this.value);">
                     <option type="text" , value="/index_ko">한국어</option>
                     <option type="text" , value="/index">English</option>
                     <option type="text" , value="/index_ja">日本語</option>
