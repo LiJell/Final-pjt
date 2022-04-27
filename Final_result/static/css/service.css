@@ -10,7 +10,6 @@ select {
   font-size: 1rem;
   font-weight: 700;
   border-radius: 0.7rem;
-
   }
 
 
@@ -19,4 +18,23 @@ select {
   justify-content: center;
   align-content: center;
   margin-top: 100px;
+}
+
+.example {
+  display:inline-block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.example img {
+  width:10rem;
+  /* height: 20rem; */
+  border: 0.4rem outset rgba(241, 143, 16, 0.87);
+  border-radius: 2rem;
+  vertical-align:middle;
+}
+
+.sample {
+  display:inline-block;
+  vertical-align:middle;
 }
