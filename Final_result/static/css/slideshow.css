@@ -6,7 +6,7 @@
 #slideshow {
   margin: 0 auto;
   padding-top: 50px;
-  height: 500px;
+  height: 600px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -14,7 +14,7 @@
 .entire-content {
   margin: auto;
   width: 190px;
-  perspective: 300px;
+  perspective: 1000px;
   position: relative;
   padding-top: 80px;
 }

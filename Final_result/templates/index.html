@@ -30,11 +30,26 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../static/css/main.css" />
-    <link rel="stylesheet" href="../static/css/scroll.css" />
-    <link rel="stylesheet" href="../static/css/banner.css" />
-    <link rel="stylesheet" href="../static/css/slideshow.css" />
-    <link rel="stylesheet" href="../static/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/scroll.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/banner.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/slideshow.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/contact.css') }}"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
     </style>
@@ -52,23 +67,22 @@
             <div class="slide"></div>
             <div class="slide"></div>
             <div class="overlay">
-              <h1>Drawing your pet, LimnPet</h1>
-              <div id="service_button">
+              <h1>
+                <p>Drawing your pet, LimnPet</p>
                 <button
-                  class="remove-image"
+                  class="service_button"
                   type="button"
                   onClick="location.href='/service'"
                 >
-                  <span class="image-title"
-                    >림펫서비스로 이동. 아래로 옮기기</span
-                  >
+                  <span class="image-title">림펫서비스로 이동</span>
                 </button>
-              </div>
+              </h1>
             </div>
           </section>
         </main>
       </div>
     </div>
+
     <div id="container" role="main">
       <div class="menu" id="header" role="menu">
         <nav class="menu navbar navbar-expand-lg navbar-dark nav-distance">
@@ -115,24 +129,16 @@
                     Languages
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <form
-                      method="post"
-                      action="/languages"
-                      enctype="multipart/form-data"
-                    >
-                      <select name="lng">
-                        <option type="text" , value="en">한국어</option>
-                        <option type="text" , value="en">English</option>
-                        <option type="text" , value="ja">日本語</option>
-                        <option type="text" , value="es">español</option>
-                        <option type="text" , value="fr">français</option>
-                        <option type="text" , value="id">
-                          bahasa Indonesia
-                        </option>
-                        <option type="text" , value="zh-CN">简体中文</option>
-                        <option type="text" , value="zh-TW">繁體中文</option>
-                      </select>
-                    </form>
+                    <select name="lng">
+                      <option type="text" , value="en">한국어</option>
+                      <option type="text" , value="en">English</option>
+                      <option type="text" , value="ja">日本語</option>
+                      <option type="text" , value="es">español</option>
+                      <option type="text" , value="fr">français</option>
+                      <option type="text" , value="id">bahasa Indonesia</option>
+                      <option type="text" , value="zh-CN">简体中文</option>
+                      <option type="text" , value="zh-TW">繁體中文</option>
+                    </select>
                   </ul>
                 </li>
               </ul>
@@ -148,30 +154,32 @@
               <div class="content-carrousel">
                 <figure class="shadow">
                   <img
-                    src="https://images.mubicdn.net/images/cast_member/1419/cache-10-1535963981/image-w856.jpg?size=800x"
-                  />
-                </figure>
-                <figure class="shadow">
-                  <img src="https://wallpaperaccess.com/full/6608526.jpg" />
-                </figure>
-                <figure class="shadow">
-                  <img
-                    src="https://mblogthumb-phinf.pstatic.net/MjAxNzA3MThfMTkx/MDAxNTAwMzEyOTMzNzI2.Jr6gdX_6k6Ywkof6W3dc2J9oIpc6QQbnYSK0MZgCoJog.qZ7pfbkng1P0vDaDKb9Q0lTwFQm-RFpM65lBsxGSFKEg.JPEG.joonicarus/movie_image_%2811%29.jpg?type=w800"
+                    src="{{ url_for('static', filename = 'img/slideshow/disney.jpg') }}"
                   />
                 </figure>
                 <figure class="shadow">
                   <img
-                    src="https://lumiere-a.akamaihd.net/v1/images/og_disney_4a3148aa.jpeg?region=0%2C0%2C1200%2C630"
+                    src="{{ url_for('static', filename = 'img/slideshow/hayao.jpg') }}"
                   />
                 </figure>
                 <figure class="shadow">
                   <img
-                    src="http://cdn.bosa.co.kr/news/photo/202112/2163722_195185_3526.jpg"
+                    src="{{ url_for('static', filename = 'img/slideshow/shinkai.jpg') }}"
                   />
                 </figure>
                 <figure class="shadow">
                   <img
-                    src="http://itimg.chosun.com/sitedata/image/201910/26/2019102600772_0.jpg"
+                    src="{{ url_for('static', filename = 'img/slideshow/monet.jpg') }}"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="{{ url_for('static', filename = 'img/slideshow/ladyoscar.jpg') }}"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="{{ url_for('static', filename = 'img/slideshow/onepiece.jpg') }}"
                   />
                 </figure>
               </div>
@@ -189,9 +197,9 @@
           <div
             class="intext"
             style="
-              font-size: 24px;
-              font-weight: 400;
-              line-height: 2;
+              font-size: 28px;
+              font-weight: 500;
+              line-height: 3;
               color: aliceblue;
             "
           >
@@ -204,14 +212,14 @@
             Goods from the menu.
           </div>
 
-          <p style="font-size: 40px; font-weight: 600; color: aliceblue">
+          <p style="font-size: 48px; font-weight: 600; color: aliceblue">
             <br /><br /><u>Future Plans</u>
           </p>
 
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_collabo.jpg') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/collabo.jpg') }}"
               alt=""
             />
             <p>
@@ -224,20 +232,20 @@
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_opt.jpg') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/option.jpg') }}"
               alt=""
             />
             <p>
               Considering to add<br />
               <span style="color: #ff483b; font-weight: 800"
-                >photo manipulation Options</span
+                >photo manipulation options</span
               ><br />
             </p>
           </div>
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_emoji.png') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/emoji.png') }}"
               alt=""
             />
             <p>
@@ -248,7 +256,7 @@
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_nft.jpg') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/nft.jpg') }}"
               alt=""
             />
             <p>
@@ -260,19 +268,21 @@
       </div>
 
       <div class="list">
-        <div class="three">
-          <p style="font-size: 48px; font-weight: 600; color: aliceblue">
+        <div class="three" style="padding-top: 15rem; color: aliceblue">
+          <p style="font-size: 48px; font-weight: 600">
             Service Before & After 🎨
           </p>
+
           <div class="beforeafter">
             <iframe
               style="width: 100%; height: 100%"
               frameborder="0"
               class="juxtapose"
               src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6093a3be-c451-11ec-b5bb-6595d9b17862"
-            ></iframe>
+            >
+            </iframe>
           </div>
-          <p style="font-weight: 600; font-size: 30px; color: black">
+          <p style="font-weight: 600; font-size: 30px">
             <br />Move the navigation bar
           </p>
           <div id="service_button">
@@ -287,48 +297,55 @@
         </div>
       </div>
 
-      <div class="list">
-        <div class="four">
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>김한주</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>김민지</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>성연재</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>송종호</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>정영훈</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
-          </div>
-          <div>
-            <a href="https://www.limnpet.ml" class="ct">Home</a>
-            <a href="" class="ct">Notion</a>
-            <a href="https://github.com/LiJell/Final-pjt" class="ct">Github</a>
-          </div>
+      <div class="four">
+        <div style="padding-top: 15rem">
+          <p style="font-size: 48px; font-weight: 600; color: aliceblue">
+            Contact
+          </p>
+        </div>
+        <div class="member" style="font-weight: 500">
+          <img src="{{ url_for('static', filename = 'img/syj.png') }}" />
+          <p style="font-size: x-large"><strong>김한주</strong></p>
+          <p>&ltE-mail&gt<br />hanjukim0922@gmail.com</p>
+          <p>&ltKakaoTalk&gt<br />hj0922</p>
+        </div>
+        <div class="member" style="font-weight: 500">
+          <img src="{{ url_for('static', filename = 'img/syj.png') }}" />
+          <p style="font-size: x-large"><strong>김민지</strong></p>
+          <p>&ltE-mail&gt<br />vp9397@naver.com</p>
+          <p>&ltKakaoTalk&gt<br />woodbvo12</p>
+        </div>
+        <div class="member" style="font-weight: 500">
+          <img src="{{ url_for('static', filename = 'img/syj.png') }}" />
+          <p style="font-size: x-large"><strong>성연재</strong></p>
+          <p>&ltE-mail&gt<br />siriyay@naver.com</p>
+          <p>&ltKakaoTalk&gt<br />proofreadd</p>
+        </div>
+        <div class="member" style="font-weight: 500">
+          <img src="{{ url_for('static', filename = 'img/syj.png') }}" />
+          <p style="font-size: x-large"><strong>송종호</strong></p>
+          <p>&ltE-mail&gt<br />sjh7397@naver.com</p>
+          <p>&ltKakaoTalk&gt<br />Lilac3</p>
+        </div>
+        <div class="member" style="font-weight: 500">
+          <img src="{{ url_for('static', filename = 'img/syj.png') }}" />
+          <p style="font-size: x-large"><strong>정영훈</strong></p>
+          <p>&ltE-mail&gt<br />gi93008@naver.com</p>
+          <p>&ltKakaoTalk&gt<br />gannak8</p>
+        </div>
+        <div style="font-weight: 600">
+          <a href="https://www.limnpet.ml" class="ct">Home</a>
+          <a
+            href="https://limnpet.notion.site/LimnPet-537f6461d3234937ab94dee11671d22a"
+            class="ct"
+            >Notion</a
+          >
+          <a href="https://github.com/LiJell/Final-pjt" class="ct">Github</a>
         </div>
       </div>
 
       <div class="list">
-        <div class="five">
+        <div class="five" style="padding-top: 15rem">
           <h1 styl="text-align:center">🐶 Goods Shops 🐶</h1>
           <div class="lists">
             <img
