@@ -51,7 +51,7 @@
       href="{{ url_for('static', filename = 'css/contact.css') }}"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto&family=Oswald:wght@300;400&display=swap");
     </style>
   </head>
 
@@ -68,13 +68,24 @@
             <div class="slide"></div>
             <div class="overlay">
               <h1>
-                <p>Drawing your pet, LimnPet</p>
+                <p
+                  style="
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  "
+                >
+                  Drawing your pet, LimnPet
+                </p>
+                <br /><br /><br /><br /><br />
+                <br /><br /><br /><br /><br />
                 <button
-                  class="service_button"
+                  class="button btn2"
                   type="button"
                   onClick="location.href='/service'"
                 >
-                  <span class="image-title">Try Limnpet Service</span>
+                  <span>Try Limnpet Service</span>
                 </button>
               </h1>
             </div>
@@ -193,31 +204,39 @@
             Hello, We are LimnPet! 🐶
           </p>
           <p style="font-size: 20px; font-style: italic; color: aliceblue">
-            LimnPet is a styling service that makes your pet photos into various
-            painting styles
+            Transform your pet photos into a variety of drawings with LimnPet!
           </p>
-
+          <br /><br />
+          <h1 style="font-weight: bold; color: aliceblue">
+            What Is
+            <span style="font-weight: bold; color: rgb(255, 81, 0)"
+              >LimnPet</span
+            >?
+          </h1>
           <div
             class="intext"
             style="
               font-size: 28px;
-              font-weight: 500;
+              font-weight: 300;
               line-height: 3;
-              color: aliceblue;
+              color: rgba(0, 0, 0, 0.733);
+              font-family: 'Oswald', sans-serif;
             "
           >
             You no longer have to pay for the styling of your pet photos.<br />
-            Through <a href="/service">LimnPet</a>, We have simplified the
-            complicated process for purchasing pet custom goods.<br />
+            Through
+            <a href="/about" style="color: #7122fa">LimnPet</a>, We have
+            simplified the complicated process for purchasing pet custom
+            goods.<br />
             From now on, all you need to do is upload a picture of your pet to
-            <a href="/service">LimnPet</a> service and save your newly styled
-            picture!<br />
+            <a href="/service" style="color: #7122fa">LimnPet </a> serviceand
+            save your newly styled picture!<br />
             If you want to purchase stylized pet printed custom goods, select
-            <a href="/goods">Goods</a> from the menu.
+            <a href="/goods" style="color: #7122fa">Goods</a> from the menu.
           </div>
 
-          <p style="font-size: 48px; font-weight: 600; color: aliceblue">
-            <br /><br /><u>Future Plans</u>
+          <p style="font-size: 48px; font-weight: 500; color: aliceblue">
+            <br /><br /><u>Considering Future Plans</u>
           </p>
 
           <div class="futureplans">
@@ -228,7 +247,7 @@
             />
             <p>
               LimnPet's exclusive goods edition<br />
-              <span style="color: #ff483b; font-weight: 800"
+              <span style="color: #e00546; font-weight: 800"
                 >via collaboration with artist, goods brand</span
               >
             </p>
@@ -241,8 +260,8 @@
             />
             <p>
               Considering to add<br />
-              <span style="color: #ff483b; font-weight: 800"
-                >photo manipulation options</span
+              <span style="color: #e00546; font-weight: 800">
+                photo manipulation options</span
               ><br />
             </p>
           </div>
@@ -254,7 +273,7 @@
             />
             <p>
               Stylized pet photos into your own<br />
-              <span style="color: #ff483b; font-weight: 800">emoji</span>
+              <span style="color: #e00546; font-weight: 800">EMOJI</span>
             </p>
           </div>
           <div class="futureplans">
@@ -265,7 +284,7 @@
             />
             <p>
               Stylized pet photos into<br />
-              <span style="color: #ff483b; font-weight: 800">NFT</span><br />
+              <span style="color: #e00546; font-weight: 800">NFT</span><br />
             </p>
           </div>
         </div>
@@ -302,49 +321,18 @@
       </div>
 
       <div class="list">
-        <div class="four">
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>Hanju Kim</p>
-            <p>E-mail : hanjukim0922@gmail.com</p>
-            <p>KakaoTalk : hj0922</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>Minji Kim</p>
-            <p>E-mail : vp9397@naver.com</p>
-            <p>KakaoTalk : woodbvo12</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>Yeonjae Sung</p>
-            <p>E-mail : siriyay@naver.com</p>
-            <p>KakaoTalk : proofreadd</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>Jongho Song</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>KakaoTalk : Lilac3</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>JeongYeong Hoon</p>
-            <p>E-mail : gi93008@naver.com</p>
-            <p>KakaoTalk : gannak8</p>
-          </div>
-          <div>
-            <a href="https://www.limnpet.ml" class="ct">Home</a>
-            <a href="" class="ct">Notion</a>
-            <a href="https://github.com/LiJell/Final-pjt" class="ct">Github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="list">
-        <div class="five" style="padding-top: 15rem">
-          <h1 styl="text-align:center">🐶 Goods Shops 🐶</h1>
-          <div class="lists">
+        <div class="four" style="padding-top: 15rem">
+          <h1
+            style="
+              text-align: center;
+              font-size: 48px;
+              font-weight: 600;
+              color: aliceblue;
+            "
+          >
+            Goods Shops 🎁
+          </h1>
+          <div class="lists" style="padding-top: 5rem">
             <img
               class="list_img"
               src="{{ url_for('static', filename = 'img/goods_clothes.jpg') }}"
@@ -380,8 +368,95 @@
       </div>
 
       <div class="list">
+        <div class="five" style="padding-top: 15rem">
+          <div>
+            <h1
+              style="
+                text-align: center;
+                font-size: 48px;
+                font-weight: 600;
+                color: aliceblue;
+                padding-bottom: 5rem;
+              "
+            >
+              Contact 📧
+            </h1>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/syj.png') }}" />
+            <p>Hanju Kim</p>
+            <p>E-mail : hanjukim0922@gmail.com</p>
+            <p>KakaoTalk : hj0922</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p>Minji Kim</p>
+            <p>E-mail : vp9397@naver.com</p>
+            <p>KakaoTalk : woodbvo12</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p>Yeonjae Sung</p>
+            <p>E-mail : siriyay@naver.com</p>
+            <p>KakaoTalk : proofreadd</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p>Jongho Song</p>
+            <p>E-mail : sjh7397@naver.com</p>
+            <p>KakaoTalk : Lilac3</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p>JeongYeong Hoon</p>
+            <p>E-mail : gi93008@naver.com</p>
+            <p>KakaoTalk : gannak8</p>
+          </div>
+          <div>
+            <a href="https://www.limnpet.ml" class="ct">Home</a>
+            <a
+              href="http://limnpet.notion.site/LimnPet-537f6461d3234937ab94dee11671d22a"
+              class="ct"
+              >Notion</a
+            >
+            <a href="https://github.com/LiJell/Final-pjt" class="ct">Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="list">
         <div class="six">
-          <h5 style="color: white">정보 입력?</h5>
+          <div class="footer-info">
+            <p class="footer-info__name">
+              <img src="{{ url_for('static', filename = 'img/footer.png') }}" />
+            </p>
+            <p class="footer-info__text">
+              <span>림펫 LIMNPET</span>
+              |
+              <span>
+                <em>출처</em>
+                <a href="image_src.html" style="text-decoration: none">
+                  사용 이미지 출처</a
+                >
+              </span>
+              |
+              <span>
+                <em>made by</em>
+                LIMNPET TEAM
+              </span>
+              |
+              <span>
+                <em>team_email</em>
+                allislijell@gmail.com
+              </span>
+              <br />
+              <br />
+              Copyright Policy
+              <br />
+              This service is limited only for educational purpose. All Rights
+              of copy right are reserved to each artists who we provides.
+            </p>
+          </div>
         </div>
       </div>
     </div>

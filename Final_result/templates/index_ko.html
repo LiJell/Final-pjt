@@ -52,21 +52,34 @@
             <div class="slide"></div>
             <div class="slide"></div>
             <div class="overlay">
-              <h1>Drawing your pet, LimnPet</h1>
-              <div id="service_button">
+              <h1>
+                <p
+                  style="
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  "
+                >
+                  Drawing your pet, LimnPet
+                </p>
+                <br /><br /><br /><br /><br />
+                <br /><br /><br /><br /><br />
                 <button
-                  class="remove-image"
+                  class="button btn2"
                   type="button"
                   onClick="location.href='/service_ko'"
                 >
                   <span class="image-title">림펫서비스로 이동</span>
                 </button>
+               </h1>
               </div>
             </div>
           </section>
         </main>
       </div>
     </div>
+
     <div id="container" role="main">
       <div class="menu" id="header" role="menu">
         <nav class="menu navbar navbar-expand-lg navbar-dark nav-distance">
@@ -141,30 +154,32 @@
               <div class="content-carrousel">
                 <figure class="shadow">
                   <img
-                    src="https://images.mubicdn.net/images/cast_member/1419/cache-10-1535963981/image-w856.jpg?size=800x"
-                  />
-                </figure>
-                <figure class="shadow">
-                  <img src="https://wallpaperaccess.com/full/6608526.jpg" />
-                </figure>
-                <figure class="shadow">
-                  <img
-                    src="https://mblogthumb-phinf.pstatic.net/MjAxNzA3MThfMTkx/MDAxNTAwMzEyOTMzNzI2.Jr6gdX_6k6Ywkof6W3dc2J9oIpc6QQbnYSK0MZgCoJog.qZ7pfbkng1P0vDaDKb9Q0lTwFQm-RFpM65lBsxGSFKEg.JPEG.joonicarus/movie_image_%2811%29.jpg?type=w800"
+                    src="{{ url_for('static', filename = 'img/slideshow/disney.jpg') }}"
                   />
                 </figure>
                 <figure class="shadow">
                   <img
-                    src="https://lumiere-a.akamaihd.net/v1/images/og_disney_4a3148aa.jpeg?region=0%2C0%2C1200%2C630"
+                    src="{{ url_for('static', filename = 'img/slideshow/hayao.jpg') }}"
                   />
                 </figure>
                 <figure class="shadow">
                   <img
-                    src="http://cdn.bosa.co.kr/news/photo/202112/2163722_195185_3526.jpg"
+                    src="{{ url_for('static', filename = 'img/slideshow/shinkai.jpg') }}"
                   />
                 </figure>
                 <figure class="shadow">
                   <img
-                    src="http://itimg.chosun.com/sitedata/image/201910/26/2019102600772_0.jpg"
+                    src="{{ url_for('static', filename = 'img/slideshow/monet.jpg') }}"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="{{ url_for('static', filename = 'img/slideshow/ladyoscar.jpg') }}"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="{{ url_for('static', filename = 'img/slideshow/onepiece.jpg') }}"
                   />
                 </figure>
               </div>
@@ -177,7 +192,7 @@
           <p style="font-size: 20px; font-style: italic; color: aliceblue">
             LimnPet으로 반려견의 사진을 다양한 그림체로 변환해 보세요!
           </p>
-
+          <br /><br />
           <div class="intext">
             <h1 style="color: aliceblue">
               What Is
@@ -208,7 +223,7 @@
           </div>
 
           <p style="font-size: 40px; font-weight: 600; color: aliceblue">
-            <br /><br /><u>Future Plans</u>
+            <br /><br /><u>Considering Future Plans</u>
           </p>
 
           <div class="futureplans">
@@ -291,49 +306,18 @@
       </div>
 
       <div class="list">
-        <div class="four">
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>김한주</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>김민지</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>성연재</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>송종호</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>정영훈</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
-          </div>
-          <div>
-            <a href="https://www.limnpet.ml" class="ct">Home</a>
-            <a href="" class="ct">Notion</a>
-            <a href="https://github.com/LiJell/Final-pjt" class="ct">Github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="list">
-        <div class="five">
-          <h1 styl="text-align:center">🐶 Goods Shops 🐶</h1>
-          <div class="lists">
+        <div class="four" style="padding-top: 15rem">
+          <h1
+            style="
+              text-align: center;
+              font-size: 48px;
+              font-weight: 600;
+              color: aliceblue;
+            "
+          >
+            Goods Shops 🎁
+          </h1>
+          <div class="lists" style="padding-top: 5rem">
             <img
               class="list_img"
               src="{{ url_for('static', filename = 'img/goods_clothes.jpg') }}"
@@ -364,6 +348,63 @@
               alt=""
             />
             <p>그 외 기타</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="five" style="padding-top: 15rem">
+          <div>
+            <h1
+              style="
+                text-align: center;
+                font-size: 48px;
+                font-weight: 600;
+                color: aliceblue;
+                padding-bottom: 5rem;
+              "
+            >
+              Contact 📧
+            </h1>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/syj.png') }}" />
+            <p>김한주</p>
+            <p>E-mail : hanjukim0922@gmail.com</p>
+            <p>카카오톡 : hj0922</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p>김민지</p>
+            <p>E-mail : vp9397@naver.com</p>
+            <p>카카오톡 : woodbvo12</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p>성연재</p>
+            <p>E-mail : siriyay@naver.com</p>
+            <p>카카오톡 : proofreadd</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p>송종호</p>
+            <p>E-mail : sjh7397@naver.com</p>
+            <p>카카오톡 : Lilac3</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p>정영훈</p>
+            <p>E-mail : gi93008@naver.com</p>
+            <p>카카오톡 : gannak8</p>
+          </div>
+          <div>
+            <a href="https://www.limnpet.ml" class="ct">Home</a>
+            <a
+              href="http://limnpet.notion.site/LimnPet-537f6461d3234937ab94dee11671d22a"
+              class="ct"
+              >Notion</a
+            >
+            <a href="https://github.com/LiJell/Final-pjt" class="ct">Github</a>
           </div>
         </div>
       </div>

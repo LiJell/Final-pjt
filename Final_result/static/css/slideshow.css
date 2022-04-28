@@ -9,6 +9,7 @@
   height: 600px;
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .entire-content {

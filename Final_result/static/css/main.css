@@ -73,6 +73,7 @@ body {
   font-size: 24px;
   color: rgb(255, 255, 255);
   line-height: 1.2;
+  font-family: "Roboto", sans-serif;
 }
 
 .futureplans_img {
@@ -80,6 +81,7 @@ body {
   width: 350px;
   height: 350px;
   margin: 5vh 2vh;
+  border: 2mm ridge #8b6332;
   border-radius: 5%;
   box-shadow: 0 10px 10px -4px #000;
 }
@@ -94,7 +96,7 @@ body {
   margin: 0 auto;
   width: 70vh;
   height: 60vh;
-  /* padding-top: 30px; */
+  padding-top: 39px;
   /* position: relative;
   left: -400px;
   top: 40px; */
@@ -107,7 +109,7 @@ body {
   }
 }
 .remove-image {
-  width: 16rem;
+  width: 20rem;
   margin: 1rem;
   color: rgb(255, 255, 255);
   background: #4777e6e8;
@@ -118,7 +120,7 @@ body {
   outline: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
 }
 .remove-image:hover {
   background: #4776e6;
@@ -131,28 +133,32 @@ body {
   transition: all 0.2s ease;
 }
 
+/* .service_button {
+  width: 24rem;
+  color: rgb(255, 255, 255);
+  background: #f2b705;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.service_button:hover {
+  background: #f28b05;
+  color: #fff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.service_button:active {
+  border: 0;
+  transition: all 0.2s ease;
+} */
+
 /* Contact 4 */
 .four {
-  text-align: center;
-  align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.contact_img {
-  margin: auto;
-  width: 70rem;
-  padding-bottom: 1rem;
-}
-.ct {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-  font-style: italic;
-  margin: 4rem;
-}
-
-/* Goods 5 */
-.five {
   text-align: center;
   align-items: center;
   padding-top: 3rem;
@@ -171,15 +177,49 @@ body {
   margin: 5vh 2vh;
 }
 
+/* Goods 5 */
+
+.five {
+  text-align: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.contact_img {
+  margin: auto;
+  width: 70rem;
+  padding-bottom: 1rem;
+}
+.ct {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  margin: 4rem;
+}
+
 /* 6 */
 .six {
   text-align: center;
   align-items: center;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
 }
 
-/* 가로선 */
-hr.style {
-  border-top: 3px double #8c8b8b;
+.footer-info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info__text {
+  gap: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.footer-info__text span em {
+  color: rgb(90, 90, 90);
+  font-weight: 200;
+  margin-right: 0.3em;
 }

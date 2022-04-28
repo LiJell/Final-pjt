@@ -48,14 +48,18 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  /* height: 100vh;
-  padding-top: 300px; */
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 669px) {
+
+@media screen and (max-width: 1376px) {
   .list:nth-child(4) {
-    height: 110vh;
+    height: 120vh;
+  }
+}
+@media screen and (max-width: 694px) {
+  .list:nth-child(4) {
+    height: 210vh;
   }
 }
 
@@ -63,24 +67,26 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 70vh;
+  /* height: 100vh;
+  padding-top: 300px; */
+  width: 100%;
+  height: 100%;
 }
-
-@media screen and (max-width: 1376px) {
+@media screen and (max-width: 669px) {
   .list:nth-child(5) {
-    height: 120vh;
-  }
-}
-@media screen and (max-width: 694px) {
-  .list:nth-child(5) {
-    height: 210vh;
+    height: 110vh;
   }
 }
 
 .list:nth-child(6) {
-  background-color: #f2f2f2;
+  background: #212121;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   height: 20vh;
+}
+@media screen and (max-width: 669px) {
+  .list:nth-child(6) {
+    height: 25vh;
+  }
 }
