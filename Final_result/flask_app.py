@@ -38,26 +38,98 @@ def static_from_root():
 @app.route('/home')  # 기본 홈 경로 설정
 def home():  # 경로에 대한 요청이 있을 때 실행될 함수 정의
     return render_template('index.html')  # 저장된 html 템플릿 렌더링
+@app.route('/home_ko') 
+def home():  
+    return render_template('index_ko.html') 
+@app.route('/home_ja') 
+def home():  
+    return render_template('index_ja.html') 
+@app.route('/home_es') 
+def home():  
+    return render_template('index_es.html') 
+@app.route('/home_zh-CN') 
+def home():  
+    return render_template('index_zh-CN.html') 
+
+
 
 
 @app.route('/service')
 def service():
     return render_template('service.html')
+@app.route('/service_ko')
+def service():
+    return render_template('service_ko.html')
+@app.route('/service_ja')
+def service():
+    return render_template('service_ja.html')
+@app.route('/service_es')
+def service():
+    return render_template('service_es.html')
+@app.route('/service_zh-CN')
+def service():
+    return render_template('service_zh-CN.html')
 
 
 @app.route('/about')
 def about():
     return render_template('about.html')
+@app.route('/about_ko')
+def about():
+    return render_template('about_ko.html')
+@app.route('/about_ja')
+def about():
+    return render_template('about_ja.html')
+@app.route('/about_es')
+def about():
+    return render_template('about_es.html')
+@app.route('/about_zh-CN')
+def about():
+    return render_template('about_zh-CN.html')
 
 
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+@app.route('/contact_ko')
+def contact():
+    return render_template('contact_ko.html')
+@app.route('/contact_ja')
+def contact():
+    return render_template('contact_ja.html')
+@app.route('/contact_es')
+def contact():
+    return render_template('contact_es.html')
+@app.route('/contact_zh-CN')
+def contact():
+    return render_template('contact_zh-CN.html')
+
 
 
 @app.route('/goods')
 def goods():
     return render_template('goods.html')
+@app.route('/goods_ko')
+def goods():
+    return render_template('goods_ko.html')
+@app.route('/goods_ja')
+def goods():
+    return render_template('goods_ja.html')
+@app.route('/goods_es')
+def goods():
+    return render_template('goods_es.html')
+@app.route('/goods_zh-CN')
+def goods():
+    return render_template('goods_zh-CN.html')
+
+
+
+
+
+
+
+
+
 
 # @app.route('/fileUpload', methods = ['GET', 'POST'])
 # def upload_file():

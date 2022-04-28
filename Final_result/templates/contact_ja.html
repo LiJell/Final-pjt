@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ja">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>LimnPet 🐶</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
     <link
       rel="shortcut icon"
       href="{{ url_for('static', filename = 'favicon.ico') }}"
@@ -23,17 +23,12 @@
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/style.css') }}"
-    />
-    <link
-      rel="stylesheet"
       href="{{ url_for('static', filename = 'css/main.css') }}"
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/service.css') }}"
+      href="{{ url_for('static', filename = 'css/contact.css') }}"
     />
-
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
     </style>
@@ -57,21 +52,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/home_ko"
+                <a class="nav-link active" aria-current="page" href="/home_ja"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about_ko">About</a>
+                <a class="nav-link" href="/about_ja">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/service_ko">Service</a>
+                <a class="nav-link" href="/service_ja">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contact_ko">Contact</a>
+                <a class="nav-link" href="/contact_ja">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/goods_ko">Goods</a>
+                <a class="nav-link" href="/goods_ja">Goods</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -104,91 +99,55 @@
       </nav>
     </div>
 
-    <div class="list">
-      <div class="three">
-        <div style="text-align: center" id="div_show">
-          <h1 style="text-align: center">LimnPet</h1>
-          <h3 style="text-align: center">
-            Draw your pet in the style of your choice
-          </h3>
-        </div>
-
-        <div class="file-upload">
-          <div id="result_show">
-            <img
-              src="{{url_for('static', filename = img_file)}}"
-              style="width: 10rem"
-              alt="Error"
-            />
+    <div id="container" role="main">
+      <div class="contact_list">
+        <div class="four">
+          <div style="padding-top: 3rem">
+            <h1><strong>Contact</strong></h1>
+            <h3>ご不明な点がございましたら、下記までお問い合わせください。</h3>
           </div>
-
-          <div id="download_button">
-            <a href="{{url_for('static', filename = img_file)}}" download>
-              <button class="remove-image">
-                <span class="image-title">저장하기</span>
-              </button>
-            </a>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p style="font-size: x-large"><strong>Hanju Kim</strong></p>
+            <p>&ltE-mail&gt<br />hanjukim0922@gmail.com</p>
+            <p>&ltKakaoTalk&gt<br />hj0922</p>
           </div>
-
-          <div id="return_button">
-            <button
-              class="remove-image"
-              type="button"
-              onClick="location.href='/service_ko'"
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p style="font-size: x-large"><strong>Minji Kim </strong></p>
+            <p>&ltE-mail&gt<br />vp9397@naver.com</p>
+            <p>&ltKakaoTalk&gt<br />woodbvo12</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p style="font-size: x-large"><strong>Yeonjae Sung </strong></p>
+            <p>&ltE-mail&gt<br />siriyay@naver.com</p>
+            <p>&ltKakaoTalk&gt<br />proofreadd</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p style="font-size: x-large"><strong>Jongho Song </strong></p>
+            <p>&ltE-mail&gt<br />sjh7397@naver.com</p>
+            <p>&ltKakaoTalk&gt<br />Lilac3</p>
+          </div>
+          <div class="member">
+            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <p style="font-size: x-large"><strong>YeongHoon Jeong </strong></p>
+            <p>&ltE-mail&gt<br />gi93008@naver.com</p>
+            <p>&ltKakaoTalk&gt<br />gannak8</p>
+          </div>
+          <div>
+            <a href="https://www.limnpet.ml" class="ct">Home</a>
+            <a
+              href="https://limnpet.notion.site/LimnPet-537f6461d3234937ab94dee11671d22a"
+              class="ct"
+              >Notion</a
             >
-              <span class="image-title">다시하기</span>
-            </button>
+            <a href="https://github.com/LiJell/Final-pjt" class="ct">Github</a>
           </div>
-
-          <div id="home_button">
-            <button
-              class="remove-image"
-              type="button"
-              onClick="location.href='/home_ko'"
-            >
-              <span class="image-title">홈으로돌아가기</span>
-            </button>
-          </div>
-
-          <!-- addthis 위치 -->
-          <div style="margin: 3rem" class="addthis_inline_share_toolbox"></div>
         </div>
       </div>
     </div>
-
-    <!--disqus 부분-->
-    <div id="disqus_thread"></div>
-
-    <script>
-      /**
-       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-      /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-      (function () {
-        // DON'T EDIT BELOW THIS LINE
-        var d = document,
-          s = d.createElement("script");
-        s.src = "https://limnpet.disqus.com/embed.js";
-        s.setAttribute("data-timestamp", +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript
-      >Please enable JavaScript to view the
-      <a href="https://disqus.com/?ref_noscript"
-        >comments powered by Disqus.</a
-      ></noscript
-    >
-    <!-- addthis -->
-    <script
-      type="text/javascript"
-      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-624d45d85b9c2167"
-    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
