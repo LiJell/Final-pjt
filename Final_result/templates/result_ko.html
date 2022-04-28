@@ -57,7 +57,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/home"
+                <a class="nav-link active" aria-current="page" href="/home_ko"
                   >Home</a
                 >
               </li>
@@ -85,14 +85,15 @@
                   Languages
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <select name="lng" onchange="if(this.value) location.href(this.value);">
+                  <select
+                    name="lng"
+                    onchange="if(this.value) location.href(this.value);"
+                  >
                     <option type="text" , value="/index_ko">한국어</option>
                     <option type="text" , value="/index">English</option>
                     <option type="text" , value="/index_ja">日本語</option>
                     <option type="text" , value="/index_es">español</option>
-                    <option type="text" , value="/index_zh-CN">
-                      简体中文
-                    </option>
+                    <option type="text" , value="/index_zh-CN">简体中文</option>
                   </select>
                 </ul>
               </li>
@@ -132,7 +133,7 @@
             <button
               class="remove-image"
               type="button"
-              onClick="location.href='/service'"
+              onClick="location.href='/service_ko'"
             >
               <span class="image-title">다시하기</span>
             </button>
@@ -142,7 +143,7 @@
             <button
               class="remove-image"
               type="button"
-              onClick="location.href='/home'"
+              onClick="location.href='/home_ko'"
             >
               <span class="image-title">홈으로돌아가기</span>
             </button>
