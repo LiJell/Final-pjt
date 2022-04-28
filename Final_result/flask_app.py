@@ -39,16 +39,16 @@ def static_from_root():
 def home():  # 경로에 대한 요청이 있을 때 실행될 함수 정의
     return render_template('index.html')  # 저장된 html 템플릿 렌더링
 @app.route('/home_ko') 
-def home():  
+def home_ko():  
     return render_template('index_ko.html') 
 @app.route('/home_ja') 
-def home():  
+def home_ja():  
     return render_template('index_ja.html') 
 @app.route('/home_es') 
-def home():  
+def home_es():  
     return render_template('index_es.html') 
 @app.route('/home_zh-CN') 
-def home():  
+def home_zh_CN():  
     return render_template('index_zh-CN.html') 
 
 
@@ -58,16 +58,16 @@ def home():
 def service():
     return render_template('service.html')
 @app.route('/service_ko')
-def service():
+def service_ko():
     return render_template('service_ko.html')
 @app.route('/service_ja')
-def service():
+def service_ja():
     return render_template('service_ja.html')
 @app.route('/service_es')
-def service():
+def service_es():
     return render_template('service_es.html')
 @app.route('/service_zh-CN')
-def service():
+def service_zh_CN():
     return render_template('service_zh-CN.html')
 
 
@@ -75,16 +75,16 @@ def service():
 def about():
     return render_template('about.html')
 @app.route('/about_ko')
-def about():
+def about_ko():
     return render_template('about_ko.html')
 @app.route('/about_ja')
-def about():
+def about_ja():
     return render_template('about_ja.html')
 @app.route('/about_es')
-def about():
+def about_es():
     return render_template('about_es.html')
 @app.route('/about_zh-CN')
-def about():
+def about_zh_CN():
     return render_template('about_zh-CN.html')
 
 
@@ -92,16 +92,16 @@ def about():
 def contact():
     return render_template('contact.html')
 @app.route('/contact_ko')
-def contact():
+def contact_ko():
     return render_template('contact_ko.html')
 @app.route('/contact_ja')
-def contact():
+def contact_ja():
     return render_template('contact_ja.html')
 @app.route('/contact_es')
-def contact():
+def contact_es():
     return render_template('contact_es.html')
 @app.route('/contact_zh-CN')
-def contact():
+def contact_zh_CN():
     return render_template('contact_zh-CN.html')
 
 
@@ -110,16 +110,16 @@ def contact():
 def goods():
     return render_template('goods.html')
 @app.route('/goods_ko')
-def goods():
+def goods_ko():
     return render_template('goods_ko.html')
 @app.route('/goods_ja')
-def goods():
+def goods_ja():
     return render_template('goods_ja.html')
 @app.route('/goods_es')
-def goods():
+def goods_es():
     return render_template('goods_es.html')
 @app.route('/goods_zh-CN')
-def goods():
+def goods_zh_CN():
     return render_template('goods_zh-CN.html')
 
 
