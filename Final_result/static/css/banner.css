@@ -105,26 +105,47 @@
   }
 }
 
-.service_button {
-  width: 16rem;
-  color: rgb(255, 255, 255);
-  background: #f2b705;
-  border: none;
-  padding: 0.6rem;
-  border-radius: 30px;
-  transition: all 0.2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 28px;
-}
-.service_button:hover {
-  background: #f28b05;
+/* 서비스로 가기 버튼 */
+.button {
+  display: inline-block;
+  margin: 0 10px 20px;
+  background-color: #ff9f40;
   color: #fff;
-  transition: all 0.2s ease;
-  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px 40px;
+  position: relative;
+  overflow: hidden;
 }
-.service_button:active {
-  border: 0;
-  transition: all 0.2s ease;
+.button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #fff;
+}
+.button span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn2 {
+  transition: all 0.4s;
+}
+.btn2:before {
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 0;
+  transform: translate3d(-50%, -50%, 0) rotate(45deg);
+  transition: all 0.45s;
+}
+.btn2:hover {
+  color: #ff7f00;
+}
+.btn2:hover:before {
+  height: 400%;
 }
