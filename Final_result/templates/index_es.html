@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="es">
   <head>
     <meta name="robots" content="index,follow" />
     <meta
@@ -30,11 +30,26 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../static/css/main.css" />
-    <link rel="stylesheet" href="../static/css/scroll.css" />
-    <link rel="stylesheet" href="../static/css/banner.css" />
-    <link rel="stylesheet" href="../static/css/slideshow.css" />
-    <link rel="stylesheet" href="../static/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/scroll.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/banner.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/slideshow.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/contact.css') }}"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
     </style>
@@ -52,21 +67,22 @@
             <div class="slide"></div>
             <div class="slide"></div>
             <div class="overlay">
-              <h1>Drawing your pet, LimnPet</h1>
-              <div id="service_button">
+              <h1>
+                <p>Drawing your pet, LimnPet</p>
                 <button
-                  class="remove-image"
+                  class="service_button"
                   type="button"
-                  onClick="location.href='/service_ko'"
+                  onClick="location.href='/service_es'"
                 >
-                  <span class="image-title">림펫서비스로 이동</span>
+                  <span class="image-title">Pruebe el servicio Limnpet</span>
                 </button>
-              </div>
+              </h1>
             </div>
           </section>
         </main>
       </div>
     </div>
+
     <div id="container" role="main">
       <div class="menu" id="header" role="menu">
         <nav class="menu navbar navbar-expand-lg navbar-dark nav-distance">
@@ -85,21 +101,21 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/home_ko"
+                  <a class="nav-link active" aria-current="page" href="/home_es"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/about_ko">About</a>
+                  <a class="nav-link" href="/about_es">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/service_ko">Service</a>
+                  <a class="nav-link" href="/service_es">Service</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/contact_ko">Contact</a>
+                  <a class="nav-link" href="/contact_es">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/goods_ko">Goods</a>
+                  <a class="nav-link" href="/goods_es">Goods</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -141,30 +157,32 @@
               <div class="content-carrousel">
                 <figure class="shadow">
                   <img
-                    src="https://images.mubicdn.net/images/cast_member/1419/cache-10-1535963981/image-w856.jpg?size=800x"
-                  />
-                </figure>
-                <figure class="shadow">
-                  <img src="https://wallpaperaccess.com/full/6608526.jpg" />
-                </figure>
-                <figure class="shadow">
-                  <img
-                    src="https://mblogthumb-phinf.pstatic.net/MjAxNzA3MThfMTkx/MDAxNTAwMzEyOTMzNzI2.Jr6gdX_6k6Ywkof6W3dc2J9oIpc6QQbnYSK0MZgCoJog.qZ7pfbkng1P0vDaDKb9Q0lTwFQm-RFpM65lBsxGSFKEg.JPEG.joonicarus/movie_image_%2811%29.jpg?type=w800"
+                    src="{{ url_for('static', filename = 'img/slideshow/disney.jpg') }}"
                   />
                 </figure>
                 <figure class="shadow">
                   <img
-                    src="https://lumiere-a.akamaihd.net/v1/images/og_disney_4a3148aa.jpeg?region=0%2C0%2C1200%2C630"
+                    src="{{ url_for('static', filename = 'img/slideshow/hayao.jpg') }}"
                   />
                 </figure>
                 <figure class="shadow">
                   <img
-                    src="http://cdn.bosa.co.kr/news/photo/202112/2163722_195185_3526.jpg"
+                    src="{{ url_for('static', filename = 'img/slideshow/shinkai.jpg') }}"
                   />
                 </figure>
                 <figure class="shadow">
                   <img
-                    src="http://itimg.chosun.com/sitedata/image/201910/26/2019102600772_0.jpg"
+                    src="{{ url_for('static', filename = 'img/slideshow/monet.jpg') }}"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="{{ url_for('static', filename = 'img/slideshow/ladyoscar.jpg') }}"
+                  />
+                </figure>
+                <figure class="shadow">
+                  <img
+                    src="{{ url_for('static', filename = 'img/slideshow/onepiece.jpg') }}"
                   />
                 </figure>
               </div>
@@ -172,119 +190,116 @@
           </section>
 
           <p style="font-size: 60px; font-weight: 600; color: aliceblue">
-            Hello, We are LimnPet! 🐶
+            ¡Hola, somos LimnPet! 🐶
           </p>
           <p style="font-size: 20px; font-style: italic; color: aliceblue">
-            LimnPet으로 반려견의 사진을 다양한 그림체로 변환해 보세요!
+            LimnPet es un servicio de estilismo que convierte las fotos de tus
+            mascotas en varios estilos de pintura.
           </p>
 
-          <div class="intext">
-            <h1 style="color: aliceblue">
-              What Is
-              <span
-                style="
-                  color: rgb(255, 94, 0);
-                  -webkit-text-stroke: 0.02rem black;
-                "
-                >LimnPet</span
-              >? 🐶
-            </h1>
-            <span
-              style="color: rgb(255, 94, 0); -webkit-text-stroke: 0.02rem black"
-              >LimnPet</span
-            >은 반려동물의 사진을 다양한 스타일의 그림체 사진으로 변환해주는
-            <a href="/service_ko">서비스</a>입니다.<br />
-            여러분은 더이상 반려동물의 그림을 얻기위해 돈을 지불할 필요가
-            없습니다.<br />이제부터 당신은 LimnPet
-            <a href="/service_ko">서비스</a>에 사진을 넣고 변환된 사진을 저장만
-            하면됩니다.<br />
-            <span
-              style="color: rgb(255, 94, 0); -webkit-text-stroke: 0.02rem black"
-              >LimnPet</span
-            >을 통해서 생성된 사진을 다양한 <a href="/service_ko">서비스</a>에
-            적용시켜보세요.<br />
-            만약 반려견의 그림 사진이 들어간 커스텀 굿즈를 구매하고 싶으시면,
-            메뉴에서 <a href="/goods_ko">Goods</a> 항목을 선택하세요.
+          <div
+            class="intext"
+            style="
+              font-size: 28px;
+              font-weight: 500;
+              line-height: 3;
+              color: aliceblue;
+            "
+          >
+            Ya no tienes que pagar por el estilo de las fotos de tus
+            mascotas.<br />
+            A través de <a href="/service_es">LimnPet</a>, hemos simplificado el
+            complicado proceso de compra de productos personalizados para
+            mascotas.<br />
+            A partir de ahora, todo lo que necesita hacer es cargar una imagen
+            de su mascota en el servicio <a href="/service_es">LimnPet</a> y
+            guardar su nueva imagen.<br />
+            Si desea comprar artículos personalizados con estampados de mascotas
+            estilizados, seleccione
+            <a href="/goods_es">Artículos</a> en el menú.
           </div>
 
-          <p style="font-size: 40px; font-weight: 600; color: aliceblue">
+          <p style="font-size: 48px; font-weight: 600; color: aliceblue">
             <br /><br /><u>Future Plans</u>
           </p>
 
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_collabo.jpg') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/collabo.jpg') }}"
               alt=""
             />
             <p>
-              LimnPet의 굿즈 에디션!<br />
+              Edición de artículos exclusivos de LimnPet<br />
               <span style="color: #ff483b; font-weight: 800"
-                >다양한 아티스트, 브랜드와 콜라보레이션</span
+                >a través de la colaboración con el artista, la marca de
+                productos</span
               >
             </p>
           </div>
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_opt.jpg') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/option.jpg') }}"
               alt=""
             />
             <p>
-              Considering to add<br />
-              <span style="color: #ff483b; font-weight: 800">포토샵 옵션</span
+              considerando agregar<br />
+              <span style="color: #ff483b; font-weight: 800"
+                >opciones de manipulación de fotos</span
               ><br />
             </p>
           </div>
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_emoji.png') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/emoji.png') }}"
               alt=""
             />
             <p>
-              나만의 반려견
-              <span style="color: #ff483b; font-weight: 800">이모티콘</span
-              >만들기
+              Fotos de mascotas estilizadas en tu propio<br />
+              <span style="color: #ff483b; font-weight: 800">emoji</span>
             </p>
           </div>
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_nft.jpg') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/nft.jpg') }}"
               alt=""
             />
             <p>
-              변환된 사진을<br />
-              <span style="color: #ff483b; font-weight: 800">NFT</span>로<br />
+              Fotos de mascotas estilizadas en<br />
+              <span style="color: #ff483b; font-weight: 800">NFT</span><br />
             </p>
           </div>
         </div>
       </div>
 
       <div class="list">
-        <div class="three">
-          <p style="font-size: 48px; font-weight: 600; color: aliceblue">
+        <div class="three" style="padding-top: 15rem; color: aliceblue">
+          <p style="font-size: 48px; font-weight: 600">
             Service Before & After 🎨
           </p>
+
           <div class="beforeafter">
             <iframe
               style="width: 100%; height: 100%"
               frameborder="0"
               class="juxtapose"
               src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=6093a3be-c451-11ec-b5bb-6595d9b17862"
-            ></iframe>
+            >
+            </iframe>
           </div>
-          <p style="font-weight: 600; font-size: 30px; color: black">
-            <br />바를 움직여보세요
+          <p style="font-weight: 600; font-size: 30px">
+            <br />Move the navigation bar
           </p>
           <div id="service_button">
             <button
               class="remove-image"
               type="button"
-              onClick="location.href='/service_ko'"
+              onClick="location.href='/service_es'"
             >
-              <span class="image-title">림펫서비스로 이동</span>
+              <span class="image-title">Move to Limnpet Service</span>
             </button>
           </div>
         </div>
@@ -294,33 +309,33 @@
         <div class="four">
           <div class="member">
             <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>김한주</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
+            <p>Hanju Kim</p>
+            <p>E-mail : hanjukim0922@gmail.com</p>
+            <p>KakaoTalk : hj0922</p>
           </div>
           <div class="member">
             <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>김민지</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
+            <p>Minji Kim</p>
+            <p>E-mail : vp9397@naver.com</p>
+            <p>KakaoTalk : woodbvo12</p>
           </div>
           <div class="member">
             <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>성연재</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
+            <p>Yeonjae Sung</p>
+            <p>E-mail : siriyay@naver.com</p>
+            <p>KakaoTalk : proofreadd</p>
           </div>
           <div class="member">
             <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>송종호</p>
+            <p>Jongho Song</p>
             <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
+            <p>KakaoTalk : Lilac3</p>
           </div>
           <div class="member">
             <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>정영훈</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>카카오톡 : Lilac3</p>
+            <p>JeongYeong Hoon</p>
+            <p>E-mail : gi93008@naver.com</p>
+            <p>KakaoTalk : gannak8</p>
           </div>
           <div>
             <a href="https://www.limnpet.ml" class="ct">Home</a>
@@ -331,7 +346,7 @@
       </div>
 
       <div class="list">
-        <div class="five">
+        <div class="five" style="padding-top: 15rem">
           <h1 styl="text-align:center">🐶 Goods Shops 🐶</h1>
           <div class="lists">
             <img
@@ -339,7 +354,7 @@
               src="{{ url_for('static', filename = 'img/goods_clothes.jpg') }}"
               alt=""
             />
-            <p>의류</p>
+            <p>Clothing</p>
           </div>
           <div class="lists">
             <img
@@ -347,7 +362,7 @@
               src="{{ url_for('static', filename = 'img/goods_griptok.jpg') }}"
               alt=""
             />
-            <p>휴대폰 액세서리</p>
+            <p>Accessories</p>
           </div>
           <div class="lists">
             <img
@@ -355,7 +370,7 @@
               src="{{ url_for('static', filename = 'img/goods_cup.jpg') }}"
               alt=""
             />
-            <p>생활용품</p>
+            <p>Household Goods</p>
           </div>
           <div class="lists">
             <img
@@ -363,7 +378,7 @@
               src="{{ url_for('static', filename = 'img/goods_sticker.jpg') }}"
               alt=""
             />
-            <p>그 외 기타</p>
+            <p>Others</p>
           </div>
         </div>
       </div>

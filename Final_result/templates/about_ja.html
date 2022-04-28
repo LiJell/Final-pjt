@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -52,21 +52,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/home"
+                <a class="nav-link active" aria-current="page" href="/home_ja"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="/about_ja">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/service">Service</a>
+                <a class="nav-link" href="/service_ja">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="/contact_ja">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/goods">Goods</a>
+                <a class="nav-link" href="/goods_ja">Goods</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -80,22 +80,16 @@
                   Languages
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <select name="lng">
-                    <option type="text" , value="ko">
-                      <a class="ko" href="/index_ko">한국어</a>
-                    </option>
-                    <option type="text" , value="en">
-                      <a class="en" href="/index">English</a>
-                    </option>
-                    <option type="text" , value="ja">
-                      <a class="ja" href="/index_ja">日本語</a>
-                    </option>
-                    <option type="text" , value="es">
-                      <a class="es" href="/index_es">español</a>
-                    </option>
-                    <option type="text" , value="zh-CN">
-                      <a class="zh-CN" href="/index_zh-CN">简体中文</a>
-                    </option>
+                  <select
+                    name="lng"
+                    onchange="if(this.value) location.href = this.value;"
+                  >
+                    <option type="text">--select--</option>
+                    <option type="text" , value="/home_ko">한국어</option>
+                    <option type="text" , value="/home">English</option>
+                    <option type="text" , value="/home_ja">日本語</option>
+                    <option type="text" , value="/home_es">español</option>
+                    <option type="text" , value="/home_zh-CN">简体中文</option>
                   </select>
                 </ul>
               </li>
@@ -128,14 +122,21 @@
                 >
                 Get Started? 🐶
               </h1>
-              림펫은 멀티캠퍼스 주관 "빅데이터 기반 지능형 서비스 개발과정"에서
-              수행한<br />
-              기업 요구사항 기반의 문제해결 팀 프로젝트입니다.<br />
-              반려견 커스텀 굿즈 제작을 위한 GAN 기반 cartoon stylization
-              상용서비스 개발이라는 주제로 진행된 프로젝트이며,<br />
-              2022년 4월 11일부터 동년 5월 5일까지 진행되었습니다.<br />
-              프로젝트에 대한 자세한 정보는 Contact 메뉴의 Notion을 참고해주시면
-              감사하겠습니다.
+              Limnpetは、ペット犬の絵が入ったカスタムグッズ制作のために、絵とグッズ制作<a
+                href="/service_ja"
+                >サービス</a
+              >を別々に進めなければならない消費者の不便さを解消し始めました。<br />
+              私たちの最初の目標は、ペットの写真をさまざまな絵に変換する<a
+                href="/service_ja"
+                >サービス</a
+              >であり、変換された写真をさまざまな<a href="/service_ja"
+                >サービス</a
+              >と結び付ける夢を持っています。<br />
+              プロジェクトの詳細については、<a href="/contact_ja">Contact</a
+              >メニューの<a
+                href="https://limnpet.notion.site/LimnPet-537f6461d3234937ab94dee11671d22a"
+                >Notion</a
+              >を参照していただきありがとうございます。
             </div>
           </div>
 
@@ -161,20 +162,19 @@
                   -webkit-text-stroke: 0.02rem black;
                 "
                 >LimnPet</span
-              >
-              is a styling service that makes your pet photos into various
-              painting styles.<br />
-              You no longer have to pay for the styling of your pet photos.<br />
-              Through
+              >はペットの写真をさまざまなスタイルの絵の写真に変換するサービスです。
+              <br />
+              あなたはもうペットの絵を手に入れるためにお金を払う必要はありません。<br />
+              今からあなたは
               <span
                 style="
                   color: rgb(255, 94, 0);
                   -webkit-text-stroke: 0.02rem black;
                 "
                 >LimnPet</span
-              >, We have simplified the complicated process for purchasing pet
-              custom goods.<br />
-              From now on, all you need to do is upload a picture of your pet to
+              >の<a href="/service_ja">サービス</a
+              >に写真を置き、変換された写真を保存するだけです。
+              <br />
               <span
                 style="
                   color: rgb(255, 94, 0);
@@ -182,9 +182,12 @@
                 "
                 >LimnPet</span
               >
-              service and save your newly styled picture!<br />
-              If you want to purchase stylized pet printed custom goods, select
-              Goods from the menu.
+              で作成された写真をさまざまな<a href="/service_ja">サービス</a
+              >に適用します。<br />
+              ペットの写真が入ったカスタムグッズを購入したい場合は、メニューから<a
+                href="/goods_ja"
+                >Goods</a
+              >アイテムを選択してください。
             </div>
           </div>
 
@@ -205,16 +208,12 @@
                 >
                 Are? 🐶
               </h1>
-              림펫 개발팀은 김한주, 성연재, 김민지, 송종호, 정영훈, 총 5명으로
-              이루어져있습니다.<br />
-              다양한 전공과 배경을 가진 팀원들이지만 하나의 목표를 함께 이루기
-              위해 노력하고 있습니다.<br />
-              인공지능은 더 이상 어렵고 낯설기만한 분야가 아니라, 개개인의 생활
-              속에 녹아들고 있습니다.<br />
-              저희는 이러한 인공지능을 이용해, 가족의 일원으로 여겨지는
-              반려동물에 대한 서비스를 제공하고자 합니다.<br />
-              반려견을 그려주는 서비스는 시작일 뿐입니다.<br />
-              앞으로 더욱 다양한 서비스를 제공할 수 있도록 노력하겠습니다.
+              LimnPet開発チームはキム・ハンジュ、ソン・ヨンジェ、キム・ミンジ、ソン・ジョンホ、チョン・ヨンフン、計5人で構成されています。<br />
+              多様な専攻と背景を持つチームメンバーが一つの目標に取り組んでいます。<br />
+              生活の中に溶け込んでいる人工知能は、もはや困難で見慣れない分野ではありません。<br />
+              したがって、私たちは人工知能を利用して家族の一員と考えられるペットにサービスを提供したいと思います。<br />
+              ペットを描くサービスは始まりに過ぎません。<br />
+              今後、さらに多様なサービスを提供できるよう努めてまいります。
             </div>
           </div>
         </div>

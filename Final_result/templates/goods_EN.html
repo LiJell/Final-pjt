@@ -13,8 +13,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/goods.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/goods.css') }}"
+    />
   </head>
 
   <body>
@@ -63,22 +69,17 @@
                   Languages
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <form
-                    method="post"
-                    action="/languages"
-                    enctype="multipart/form-data"
+                  <select
+                    name="lng"
+                    onchange="if(this.value) location.href = this.value;"
                   >
-                    <select name="lng">
-                      <option type="text" , value="en">한국어</option>
-                      <option type="text" , value="en">English</option>
-                      <option type="text" , value="ja">日本語</option>
-                      <option type="text" , value="es">español</option>
-                      <option type="text" , value="fr">français</option>
-                      <option type="text" , value="id">bahasa Indonesia</option>
-                      <option type="text" , value="zh-CN">简体中文</option>
-                      <option type="text" , value="zh-TW">繁體中文</option>
-                    </select>
-                  </form>
+                    <option type="text">--select--</option>
+                    <option type="text" , value="/home_ko">한국어</option>
+                    <option type="text" , value="/home">English</option>
+                    <option type="text" , value="/home_ja">日本語</option>
+                    <option type="text" , value="/home_es">español</option>
+                    <option type="text" , value="/home_zh-CN">简体中文</option>
+                  </select>
                 </ul>
               </li>
             </ul>
@@ -88,58 +89,73 @@
     </div>
 
     <div id="container" role="main">
-      <div style="display: flex;justify-content: center;align-content: center;">
-        <div class="five" >
-          <div style="padding-top:2rem;padding-bottom:2rem;">
-         <p style="font-weight:900;font-size:32px">Goods Shops</p>
-          <h4>
-            <p style="color:white;">Make your customized product with a limpet!</p>
-            <p style="color:white;">If you want to use the customized image as a product, please click the picture below.</p>
-            <p style='color:red;'>Warning! The below site can is only available in Korea.</p>
-          </h4>
+      <div
+        style="display: flex; justify-content: center; align-content: center"
+      >
+        <div class="five">
+          <div style="padding-top: 2rem; padding-bottom: 2rem">
+            <p style="font-weight: 900; font-size: 32px">Goods Shops</p>
+            <h4>
+              <p style="color: white">
+                Make your customized pet goods with converted picture via
+                Limnpet!
+              </p>
+              <p style="color: white">
+                If you want to use the newly stylized image as a product, please
+                click the picture below.
+              </p>
+              <p style="color: red">
+                Goods websites are only available in Korea for now.
+              </p>
+            </h4>
           </div>
           <div class="lists">
             <div class="list1">
-              <div style='background-image:url("../../static/img/cloth_modified.jpg")' class="img">
+              <div
+                style="
+                  background-image: url('../../static/img/cloth_modified.jpg');
+                "
+                class="img"
+              >
                 <a href="https://www.bizhows.com/" class="ac1">
+                  <div class="imc1"></div>
                   <div
-                    class="imc1"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cloth_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
                     class="dis1"
                   >
                     Bizhows
                   </div>
                 </a>
                 <a href="https://www.publog.co.kr/Default.asp" class="ac2">
+                  <div class="imc2"></div>
                   <div
-                    class="imc2"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cloth_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
                     class="dis2"
                   >
                     Publog
                   </div>
                 </a>
                 <a href="https://www.tpana.com/" class="ac3">
+                  <div class="imc3"></div>
                   <div
-                    class="imc3"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cloth_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
                     class="dis3"
                   >
                     Tpana
                   </div>
                 </a>
                 <a href="https://www.customzone.co.kr/" class="ac4">
+                  <div class="imc4"></div>
                   <div
-                    class="imc4"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cloth_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
                     class="dis4"
                   >
                     Customzone
@@ -147,53 +163,55 @@
                 </a>
               </div>
             </div>
-            <p class="tes">Clothes</p>
-            <p class="tet">These links allow you to customize clothes such as T-shirts and Hood T-shirts. <p style="color:yellow" class="tet">Use a limpet to make your own clothes!</p></p>
+            <p class="tes">Clothing</p>
           </div>
           <div class="lists">
             <div class="list2">
               <div
-              style="background-image: url('../../static/img/griptok_modified.jpg')"
-              class="img">
+                style="
+                  background-image: url('../../static/img/griptok_modified.jpg');
+                "
+                class="img"
+              >
                 <a href="http://www.bandya.com/" class="ac1">
+                  <div class="imc1"></div>
                   <div
-                    class="imc1"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/griptok_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
                     class="dis1"
                   >
                     Bandya
                   </div>
                 </a>
                 <a href="https://www.marpple.com/kr/" class="ac2">
+                  <div class="imc2"></div>
                   <div
-                    class="imc2"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/griptok_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
                     class="dis2"
                   >
                     MARPPLE
                   </div>
                 </a>
                 <a href="https://www.phoneppu.com/" class="ac3">
+                  <div class="imc3"></div>
                   <div
-                    class="imc3"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/griptok_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
                     class="dis3"
                   >
                     Phoneppu
                   </div>
                 </a>
                 <a href="https://shapely.co.kr/" class="ac4">
+                  <div class="imc4"></div>
                   <div
-                    class="imc4"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/griptok_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
                     class="dis4"
                   >
                     Shapely
@@ -202,41 +220,43 @@
               </div>
             </div>
             <p class="tes">Phone-Accessory</p>
-            <p class="tet">These links allow you to customize phone-accessory such as phone-cases. <p style="color:yellow" class="tet">Use a limpet to make your own phone-accessory!</p></p>
           </div>
           <div class="lists">
             <div class="list3">
               <div
-              style="background-image: url('../../static/img/cup_modified.jpg')"
-              class="img">
+                style="
+                  background-image: url('../../static/img/cup_modified.jpg');
+                "
+                class="img"
+              >
                 <a href="http://www.handmc.com/" class="ac1">
+                  <div class="imc1"></div>
                   <div
-                    class="imc1"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cup_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
                     class="dis1"
                   >
                     Handmadec
                   </div>
                 </a>
                 <a href="http://www.jjomool.com/" class="ac2">
+                  <div class="imc2"></div>
                   <div
-                    class="imc2"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cup_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
                     class="dis2"
                   >
                     Jjomoolshop
                   </div>
                 </a>
                 <a href="https://www.ruashop.co.kr/" class="ac3">
+                  <div class="imc3"></div>
                   <div
-                    class="imc3"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cup_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
                     class="dis3"
                   >
                     Ruashop
@@ -246,11 +266,11 @@
                   href="http://www.thankshop.co.kr/shopuser/index.html/"
                   class="ac4"
                 >
+                  <div class="imc4"></div>
                   <div
-                    class="imc4"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cup_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
                     class="dis4"
                   >
                     Thankshop
@@ -259,52 +279,54 @@
               </div>
             </div>
             <p class="tes">Bottle & Cup</p>
-            <p class="tet">These links allow you to customize bottle & cup such as mug and tumbler. <p style="color:yellow" class="tet">Use a limpet to make your own bottle & cup!</p></p>
           </div>
           <div class="lists">
             <div class="list4">
               <div
-              style="background-image: url('../../static/img/sticker_modified.jpg')"
-              class="img">
+                style="
+                  background-image: url('../../static/img/sticker_modified.jpg');
+                "
+                class="img"
+              >
                 <a href="https://www.smilecat.com/" class="ac1">
+                  <div class="imc1"></div>
                   <div
-                    class="imc1"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/sticker_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
                     class="dis1"
                   >
                     Smilecat
                   </div>
                 </a>
                 <a href="http://www.adsland.com/" class="ac2">
+                  <div class="imc2"></div>
                   <div
-                    class="imc2"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/sticker_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
                     class="dis2"
                   >
                     Adsland
                   </div>
                 </a>
                 <a href="http://www.t-free.co.kr/" class="ac3">
+                  <div class="imc3"></div>
                   <div
-                    class="imc3"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/sticker_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
                     class="dis3"
                   >
                     The Fancy & Stiker
                   </div>
                 </a>
                 <a href="http://www.huniprinting.com/" class="ac4">
+                  <div class="imc4"></div>
                   <div
-                    class="imc4"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/sticker_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
                     class="dis4"
                   >
                     huniprinting
@@ -312,8 +334,7 @@
                 </a>
               </div>
             </div>
-            <p class='tes'>Bookbinding</p>
-            <p class="tet">These links allow you to customize bookbiding such as calendar and postcard. <p style="color:yellow" class="tet">Use a limpet to make your own bookbinding!</p></p>
+            <p class="tes">Bookbinding</p>
           </div>
         </div>
       </div>

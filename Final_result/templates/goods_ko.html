@@ -51,21 +51,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/home"
+                <a class="nav-link active" aria-current="page" href="/home_ko"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="/about_ko">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/service">Service</a>
+                <a class="nav-link" href="/service_ko">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="/contact_ko">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/goods">Goods</a>
+                <a class="nav-link" href="/goods_ko">Goods</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -79,22 +79,16 @@
                   Languages
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <select name="lng">
-                    <option type="text" , value="ko">
-                      <a class="ko" href="/index_ko">한국어</a>
-                    </option>
-                    <option type="text" , value="en">
-                      <a class="en" href="/index">English</a>
-                    </option>
-                    <option type="text" , value="ja">
-                      <a class="ja" href="/index_ja">日本語</a>
-                    </option>
-                    <option type="text" , value="es">
-                      <a class="es" href="/index_es">español</a>
-                    </option>
-                    <option type="text" , value="zh-CN">
-                      <a class="zh-CN" href="/index_zh-CN">简体中文</a>
-                    </option>
+                  <select
+                    name="lng"
+                    onchange="if(this.value) location.href = this.value;"
+                  >
+                    <option type="text">--select--</option>
+                    <option type="text" , value="/home_ko">한국어</option>
+                    <option type="text" , value="/home">English</option>
+                    <option type="text" , value="/home_ja">日本語</option>
+                    <option type="text" , value="/home_es">español</option>
+                    <option type="text" , value="/home_zh-CN">简体中文</option>
                   </select>
                 </ul>
               </li>
@@ -105,19 +99,31 @@
     </div>
 
     <div id="container" role="main">
-      <div class="list">
+      <div
+        style="display: flex; justify-content: center; align-content: center"
+      >
         <div class="five">
-          <h1 styl="text-align:center">🐶 Goods Shops 🐶</h1>
+          <div style="padding-top: 2rem; padding-bottom: 2rem">
+            <p style="font-weight: 900; font-size: 32px">Goods Shops</p>
+            <h4>
+              <p style="color: white">
+                림펫으로 변환한 사진으로 당신만의 제품을 만들어 보세요!
+              </p>
+              <p style="color: white">
+                아래의 그림을 클릭하면 추천 사이트로 이동합니다.
+              </p>
+            </h4>
+          </div>
           <div class="lists">
             <div class="list1">
-              <div class="img">
+              <div
+                style="
+                  background-image: url('../../static/img/cloth_modified.jpg');
+                "
+                class="img"
+              >
                 <a href="https://www.bizhows.com/" class="ac1">
-                  <div
-                    style="
-                      background-image: url('../../static/img/cloth_modified.jpg');
-                    "
-                    class="imc1"
-                  ></div>
+                  <div class="imc1"></div>
                   <div
                     style="
                       background-image: url('../../static/img/cloth_origin.jpg');
@@ -128,12 +134,7 @@
                   </div>
                 </a>
                 <a href="https://www.publog.co.kr/Default.asp" class="ac2">
-                  <div
-                    style="
-                      background-image: url('../../static/img/cloth_modified.jpg');
-                    "
-                    class="imc2"
-                  ></div>
+                  <div class="imc2"></div>
                   <div
                     style="
                       background-image: url('../../static/img/cloth_origin.jpg');
@@ -144,12 +145,7 @@
                   </div>
                 </a>
                 <a href="https://www.tpana.com/" class="ac3">
-                  <div
-                    style="
-                      background-image: url('../../static/img/cloth_modified.jpg');
-                    "
-                    class="imc3"
-                  ></div>
+                  <div class="imc3"></div>
                   <div
                     style="
                       background-image: url('../../static/img/cloth_origin.jpg');
@@ -160,12 +156,7 @@
                   </div>
                 </a>
                 <a href="https://www.customzone.co.kr/" class="ac4">
-                  <div
-                    style="
-                      background-image: url('../../static/img/cloth_modified.jpg');
-                    "
-                    class="imc4"
-                  ></div>
+                  <div class="imc4"></div>
                   <div
                     style="
                       background-image: url('../../static/img/cloth_origin.jpg');
@@ -177,18 +168,18 @@
                 </a>
               </div>
             </div>
-            <p>의류</p>
+            <p class="tes">의류</p>
           </div>
           <div class="lists">
             <div class="list2">
-              <div class="img">
+              <div
+                style="
+                  background-image: url('../../static/img/griptok_modified.jpg');
+                "
+                class="img"
+              >
                 <a href="http://www.bandya.com/" class="ac1">
-                  <div
-                    style="
-                      background-image: url('../../static/img/griptok_modified.jpg');
-                    "
-                    class="imc1"
-                  ></div>
+                  <div class="imc1"></div>
                   <div
                     style="
                       background-image: url('../../static/img/griptok_origin.jpg');
@@ -199,28 +190,18 @@
                   </div>
                 </a>
                 <a href="https://www.marpple.com/kr/" class="ac2">
-                  <div
-                    style="
-                      background-image: url('../../static/img/griptok_modified.jpg');
-                    "
-                    class="imc2"
-                  ></div>
+                  <div class="imc2"></div>
                   <div
                     style="
                       background-image: url('../../static/img/griptok_origin.jpg');
                     "
                     class="dis2"
                   >
-                    MARPPLE
+                    마플
                   </div>
                 </a>
                 <a href="https://www.phoneppu.com/" class="ac3">
-                  <div
-                    style="
-                      background-image: url('../../static/img/griptok_modified.jpg');
-                    "
-                    class="imc3"
-                  ></div>
+                  <div class="imc3"></div>
                   <div
                     style="
                       background-image: url('../../static/img/griptok_origin.jpg');
@@ -231,35 +212,30 @@
                   </div>
                 </a>
                 <a href="https://shapely.co.kr/" class="ac4">
-                  <div
-                    style="
-                      background-image: url('../../static/img/griptok_modified.jpg');
-                    "
-                    class="imc4"
-                  ></div>
+                  <div class="imc4"></div>
                   <div
                     style="
                       background-image: url('../../static/img/griptok_origin.jpg');
                     "
                     class="dis4"
                   >
-                    셰이플리
+                    셰어플리
                   </div>
                 </a>
               </div>
             </div>
-            <p>휴대폰 악세서리</p>
+            <p class="tes">핸드폰 악세서리</p>
           </div>
           <div class="lists">
             <div class="list3">
-              <div class="img">
+              <div
+                style="
+                  background-image: url('../../static/img/cup_modified.jpg');
+                "
+                class="img"
+              >
                 <a href="http://www.handmc.com/" class="ac1">
-                  <div
-                    style="
-                      background-image: url('../../static/img/cup_modified.jpg');
-                    "
-                    class="imc1"
-                  ></div>
+                  <div class="imc1"></div>
                   <div
                     style="
                       background-image: url('../../static/img/cup_origin.jpg');
@@ -270,12 +246,7 @@
                   </div>
                 </a>
                 <a href="http://www.jjomool.com/" class="ac2">
-                  <div
-                    style="
-                      background-image: url('../../static/img/cup_modified.jpg');
-                    "
-                    class="imc2"
-                  ></div>
+                  <div class="imc2"></div>
                   <div
                     style="
                       background-image: url('../../static/img/cup_origin.jpg');
@@ -286,12 +257,7 @@
                   </div>
                 </a>
                 <a href="https://www.ruashop.co.kr/" class="ac3">
-                  <div
-                    style="
-                      background-image: url('../../static/img/cup_modified.jpg');
-                    "
-                    class="imc3"
-                  ></div>
+                  <div class="imc3"></div>
                   <div
                     style="
                       background-image: url('../../static/img/cup_origin.jpg');
@@ -305,35 +271,30 @@
                   href="http://www.thankshop.co.kr/shopuser/index.html/"
                   class="ac4"
                 >
-                  <div
-                    style="
-                      background-image: url('../../static/img/cup_modified.jpg');
-                    "
-                    class="imc4"
-                  ></div>
+                  <div class="imc4"></div>
                   <div
                     style="
                       background-image: url('../../static/img/cup_origin.jpg');
                     "
                     class="dis4"
                   >
-                    땡스샵
+                    떙스샵
                   </div>
                 </a>
               </div>
             </div>
-            <p>생활용품</p>
+            <p class="tes">생활기구</p>
           </div>
           <div class="lists">
             <div class="list4">
-              <div class="img">
+              <div
+                style="
+                  background-image: url('../../static/img/sticker_modified.jpg');
+                "
+                class="img"
+              >
                 <a href="https://www.smilecat.com/" class="ac1">
-                  <div
-                    style="
-                      background-image: url('../../static/img/sticker_modified.jpg');
-                    "
-                    class="imc1"
-                  ></div>
+                  <div class="imc1"></div>
                   <div
                     style="
                       background-image: url('../../static/img/sticker_origin.jpg');
@@ -344,28 +305,18 @@
                   </div>
                 </a>
                 <a href="http://www.adsland.com/" class="ac2">
-                  <div
-                    style="
-                      background-image: url('../../static/img/sticker_modified.jpg');
-                    "
-                    class="imc2"
-                  ></div>
+                  <div class="imc2"></div>
                   <div
                     style="
                       background-image: url('../../static/img/sticker_origin.jpg');
                     "
                     class="dis2"
                   >
-                    성원애드피아
+                    애드스랜드
                   </div>
                 </a>
                 <a href="http://www.t-free.co.kr/" class="ac3">
-                  <div
-                    style="
-                      background-image: url('../../static/img/sticker_modified.jpg');
-                    "
-                    class="imc3"
-                  ></div>
+                  <div class="imc3"></div>
                   <div
                     style="
                       background-image: url('../../static/img/sticker_origin.jpg');
@@ -376,12 +327,7 @@
                   </div>
                 </a>
                 <a href="http://www.huniprinting.com/" class="ac4">
-                  <div
-                    style="
-                      background-image: url('../../static/img/sticker_modified.jpg');
-                    "
-                    class="imc4"
-                  ></div>
+                  <div class="imc4"></div>
                   <div
                     style="
                       background-image: url('../../static/img/sticker_origin.jpg');
@@ -393,7 +339,7 @@
                 </a>
               </div>
             </div>
-            <p>그 외 기타</p>
+            <p class="tes">그 외</p>
           </div>
         </div>
       </div>
