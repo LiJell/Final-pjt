@@ -101,7 +101,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/home_zh-CN"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/home_zh-CN"
                     >Home</a
                   >
                 </li>
@@ -131,13 +134,14 @@
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <select
                       name="lng"
-                      onchange="if(this.value) location.href(this.value);"
+                      onchange="if(this.value) location.href = this.value;"
                     >
-                      <option type="text" , value="/index_ko">한국어</option>
-                      <option type="text" , value="/index">English</option>
-                      <option type="text" , value="/index_ja">日本語</option>
-                      <option type="text" , value="/index_es">español</option>
-                      <option type="text" , value="/index_zh-CN">
+                      <option type="text">--select--</option>
+                      <option type="text" , value="/home_ko">한국어</option>
+                      <option type="text" , value="/home">English</option>
+                      <option type="text" , value="/home_ja">日本語</option>
+                      <option type="text" , value="/home_es">español</option>
+                      <option type="text" , value="/home_zh-CN">
                         简体中文
                       </option>
                     </select>
@@ -208,7 +212,8 @@
             通过 <a href="/service_zh-CN">LimnPet</a>,
             我们简化了购买宠物定制商品的复杂流程。<br />
             从现在开始，您只需将您的宠物照片上传到
-            <a href="/service_zh-CN">LimnPet</a> 服务并保存您新样式的照片！<br />
+            <a href="/service_zh-CN">LimnPet</a>
+            服务并保存您新样式的照片！<br />
             如果您想购买风格化的宠物印花定制商品，请从菜单中选择商品。
           </div>
 
