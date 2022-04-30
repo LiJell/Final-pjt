@@ -1,13 +1,13 @@
-body {
+/* body {
   background: linear-gradient(to right, #f2994a, #f2c94c);
-}
-
+} */
+/* 
 .list {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 100px;
-}
+} */
 .img {
   width: 300px;
   height: 300px;
@@ -15,20 +15,20 @@ body {
   background-size: 300px 300px;
 }
 .tet {
-width:300px;
-height:70px;
-background-color:none;
-background-size:300px 100px;
-color: white;
-} 
-.tes{
-font-weight:200;
-font-size:24px;
-color:white;
+  width: 300px;
+  height: 70px;
+  background-color: none;
+  background-size: 300px 100px;
+  color: white;
 }
-a:link{
-    color:black;
-    text-decoration:none;
+.tes {
+  font-weight: 200;
+  font-size: 24px;
+  color: white;
+}
+a:link {
+  color: black;
+  text-decoration: none;
 }
 a:visited {
   color: black;
