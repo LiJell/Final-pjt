@@ -48,10 +48,14 @@
     />
     <link
       rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/goods.css') }}"
+    />
+    <link
+      rel="stylesheet"
       href="{{ url_for('static', filename = 'css/contact.css') }}"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Roboto&family=Oswald:wght@300;400&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
     </style>
   </head>
 
@@ -217,10 +221,9 @@
             class="intext"
             style="
               font-size: 28px;
-              font-weight: 300;
+              font-weight: 400;
               line-height: 3;
-              color: rgba(0, 0, 0, 0.733);
-              font-family: 'Oswald', sans-serif;
+              color: rgba(255, 255, 255, 0.733);
             "
           >
             You no longer have to pay for the styling of your pet photos.<br />
@@ -320,6 +323,14 @@
         </div>
       </div>
 
+      <!-- 수정 -->
+      <!-- 수정 -->
+      <!-- 수정 -->
+      <!-- 수정 -->
+      <!-- 수정 -->
+      <!-- 수정 -->
+      <!-- 수정 -->
+
       <div class="list">
         <div class="four" style="padding-top: 15rem">
           <h1
@@ -332,40 +343,257 @@
           >
             Goods Shops 🎁
           </h1>
-          <div class="lists" style="padding-top: 5rem">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_clothes.jpg') }}"
-              alt=""
-            />
-            <p>Clothing</p>
+          <div style="padding-top: 2rem; padding-bottom: 2rem">
+            <h4>
+              <p style="color: white">
+                Make your customized pet goods with converted picture via
+                Limnpet!
+              </p>
+              <p style="color: white">
+                If you want to use the newly stylized image as a product, please
+                click the picture below.
+              </p>
+              <p style="color: red">
+                Goods websites are only available in Korea for now.
+              </p>
+            </h4>
           </div>
           <div class="lists">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_griptok.jpg') }}"
-              alt=""
-            />
-            <p>Accessories</p>
+            <div class="list1">
+              <div
+                style="
+                  background-image: url('../../static/img/cloth_modified.jpg');
+                "
+                class="img"
+              >
+                <a href="https://www.bizhows.com/" class="ac1">
+                  <div class="imc1"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
+                    class="dis1"
+                  >
+                    Bizhows
+                  </div>
+                </a>
+                <a href="https://www.publog.co.kr/Default.asp" class="ac2">
+                  <div class="imc2"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
+                    class="dis2"
+                  >
+                    Publog
+                  </div>
+                </a>
+                <a href="https://www.tpana.com/" class="ac3">
+                  <div class="imc3"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
+                    class="dis3"
+                  >
+                    Tpana
+                  </div>
+                </a>
+                <a href="https://www.customzone.co.kr/" class="ac4">
+                  <div class="imc4"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
+                    class="dis4"
+                  >
+                    Customzone
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p class="tes">Clothing</p>
           </div>
           <div class="lists">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_cup.jpg') }}"
-              alt=""
-            />
-            <p>Household Goods</p>
+            <div class="list2">
+              <div
+                style="
+                  background-image: url('../../static/img/griptok_modified.jpg');
+                "
+                class="img"
+              >
+                <a href="http://www.bandya.com/" class="ac1">
+                  <div class="imc1"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
+                    class="dis1"
+                  >
+                    Bandya
+                  </div>
+                </a>
+                <a href="https://www.marpple.com/kr/" class="ac2">
+                  <div class="imc2"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
+                    class="dis2"
+                  >
+                    MARPPLE
+                  </div>
+                </a>
+                <a href="https://www.phoneppu.com/" class="ac3">
+                  <div class="imc3"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
+                    class="dis3"
+                  >
+                    Phoneppu
+                  </div>
+                </a>
+                <a href="https://shapely.co.kr/" class="ac4">
+                  <div class="imc4"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
+                    class="dis4"
+                  >
+                    Shapely
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p class="tes">Phone-Accessory</p>
           </div>
           <div class="lists">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_sticker.jpg') }}"
-              alt=""
-            />
-            <p>Others</p>
+            <div class="list3">
+              <div
+                style="
+                  background-image: url('../../static/img/cup_modified.jpg');
+                "
+                class="img"
+              >
+                <a href="http://www.handmc.com/" class="ac1">
+                  <div class="imc1"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
+                    class="dis1"
+                  >
+                    Handmadec
+                  </div>
+                </a>
+                <a href="http://www.jjomool.com/" class="ac2">
+                  <div class="imc2"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
+                    class="dis2"
+                  >
+                    Jjomoolshop
+                  </div>
+                </a>
+                <a href="https://www.ruashop.co.kr/" class="ac3">
+                  <div class="imc3"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
+                    class="dis3"
+                  >
+                    Ruashop
+                  </div>
+                </a>
+                <a
+                  href="http://www.thankshop.co.kr/shopuser/index.html/"
+                  class="ac4"
+                >
+                  <div class="imc4"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
+                    class="dis4"
+                  >
+                    Thankshop
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p class="tes">Bottle & Cup</p>
+          </div>
+          <div class="lists">
+            <div class="list4">
+              <div
+                style="
+                  background-image: url('../../static/img/sticker_modified.jpg');
+                "
+                class="img"
+              >
+                <a href="https://www.smilecat.com/" class="ac1">
+                  <div class="imc1"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
+                    class="dis1"
+                  >
+                    Smilecat
+                  </div>
+                </a>
+                <a href="http://www.adsland.com/" class="ac2">
+                  <div class="imc2"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
+                    class="dis2"
+                  >
+                    Adsland
+                  </div>
+                </a>
+                <a href="http://www.t-free.co.kr/" class="ac3">
+                  <div class="imc3"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
+                    class="dis3"
+                  >
+                    The Fancy & Stiker
+                  </div>
+                </a>
+                <a href="http://www.huniprinting.com/" class="ac4">
+                  <div class="imc4"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
+                    class="dis4"
+                  >
+                    huniprinting
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p class="tes">Bookbinding</p>
           </div>
         </div>
       </div>
+      <!-- 수정 -->
+      <!-- 수정 -->
+      <!-- 수정 -->
+      <!-- 수정 -->
+      <!-- 수정 -->
+      <!-- 수정 -->
+      <!-- 수정 -->
 
       <div class="list">
         <div class="five" style="padding-top: 15rem">
@@ -383,31 +611,41 @@
             </h1>
           </div>
           <div class="member">
-            <img src="{{ url_for('static', filename = 'img/syj.png') }}" />
+            <img
+              src="{{ url_for('static', filename = 'img/contact/khj.png') }}"
+            />
             <p>Hanju Kim</p>
             <p>E-mail : hanjukim0922@gmail.com</p>
             <p>KakaoTalk : hj0922</p>
           </div>
           <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <img
+              src="{{ url_for('static', filename = 'img/contact/kmj.png') }}"
+            />
             <p>Minji Kim</p>
             <p>E-mail : vp9397@naver.com</p>
             <p>KakaoTalk : woodbvo12</p>
           </div>
           <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <img
+              src="{{ url_for('static', filename = 'img/contact/syj.png') }}"
+            />
             <p>Yeonjae Sung</p>
             <p>E-mail : siriyay@naver.com</p>
             <p>KakaoTalk : proofreadd</p>
           </div>
           <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <img
+              src="{{ url_for('static', filename = 'img/contact/sjh.png') }}"
+            />
             <p>Jongho Song</p>
             <p>E-mail : sjh7397@naver.com</p>
             <p>KakaoTalk : Lilac3</p>
           </div>
           <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <img
+              src="{{ url_for('static', filename = 'img/contact/jyh.png') }}"
+            />
             <p>JeongYeong Hoon</p>
             <p>E-mail : gi93008@naver.com</p>
             <p>KakaoTalk : gannak8</p>
@@ -435,7 +673,11 @@
               |
               <span>
                 <em>출처</em>
-                <a href="image_src.html" style="text-decoration: none">
+                <a
+                  href="/img_src"
+                  target="_blank"
+                  style="text-decoration: none; color: white"
+                >
                   사용 이미지 출처</a
                 >
               </span>
@@ -460,6 +702,22 @@
         </div>
       </div>
     </div>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    >
+      let test = document.getElementById("example");
+
+      test.addEventListener("mouseover", function (event) {
+      //highlight the mouseover target
+      event.target.style.color = "red";
+      }, false);
+
+      test.addEventListener("mouseout", function (event) {
+      // highlight the mouseout target
+      event.target.style.color = "black";
+      }, false);
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
