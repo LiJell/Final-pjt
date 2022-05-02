@@ -50,6 +50,10 @@
       rel="stylesheet"
       href="{{ url_for('static', filename = 'css/contact.css') }}"
     />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename = 'css/goods.css') }}"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
     </style>
@@ -299,90 +303,364 @@
         </div>
       </div>
 
-      <div class="list">
-        <div class="four">
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>Hanju Kim</p>
-            <p>E-mail : hanjukim0922@gmail.com</p>
-            <p>KakaoTalk : hj0922</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>Minji Kim</p>
-            <p>E-mail : vp9397@naver.com</p>
-            <p>KakaoTalk : woodbvo12</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>Yeonjae Sung</p>
-            <p>E-mail : siriyay@naver.com</p>
-            <p>KakaoTalk : proofreadd</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>Jongho Song</p>
-            <p>E-mail : sjh7397@naver.com</p>
-            <p>KakaoTalk : Lilac3</p>
-          </div>
-          <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
-            <p>JeongYeong Hoon</p>
-            <p>E-mail : gi93008@naver.com</p>
-            <p>KakaoTalk : gannak8</p>
-          </div>
-          <div>
-            <a href="https://www.limnpet.ml" class="ct">Home</a>
-            <a href="" class="ct">Notion</a>
-            <a href="https://github.com/LiJell/Final-pjt" class="ct">Github</a>
-          </div>
+      <div class="four">
+        <div
+          style="
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            width: 100vw;
+            height: 53vh;
+          "
+        >
+          <p style="font-weight: 900; font-size: 32px">Goods Shops</p>
+          <h4>
+            <p style="color: white; padding-top: 7rem">
+              通过 Limnpet 制作带有转换图片的定制宠物用品！
+            </p>
+            <p style="color: white">
+              如果您想将新风格化的图像用作产品，请单击下面的图片。
+            </p>
+            <p style="color: red">商品网站目前仅在韩国可用。</p>
+          </h4>
         </div>
-      </div>
-
-      <div class="list">
-        <div class="five" style="padding-top: 15rem">
-          <h1 styl="text-align:center">🐶 Goods Shops 🐶</h1>
-          <div class="lists">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_clothes.jpg') }}"
-              alt=""
-            />
-            <p>服装</p>
+        <div class="lists">
+          <div class="list1">
+            <div style='background-image:url("../../static/img/cloth_modified.jpg"' class="img">
+              <a href="https://www.bizhows.com/v/category?mock=product_list_007&categoryName=%ED%8B%B0%EC%85%94%EC%B8%A0" class="ac1" target="blank">
+                <div
+                  class="imc1"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/cloth_origin.jpg')"
+                  class="dis1"
+                >
+                  Bizhows
+                </div>
+              </a>
+              <a href="https://www.publog.co.kr/apparel/" class="ac2" target="blank">
+                <div
+                  class="imc2"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/cloth_origin.jpg')"
+                  class="dis2"
+                >
+                  Publog
+                </div>
+              </a>
+              <a href="https://www.tpana.com/" class="ac3" target="blank">
+                <div
+                  class="imc3"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/cloth_origin.jpg')"
+                  class="dis3"
+                >
+                  Tpana
+                </div>
+              </a>
+              <a href="https://www.customzone.co.kr/" class="ac4" target="blank">
+                <div
+                  class="imc4"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/cloth_origin.jpg')"
+                  class="dis4"
+                >
+                  Customzone
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="lists">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_griptok.jpg') }}"
-              alt=""
-            />
-            <p>配件</p>
-          </div>
-          <div class="lists">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_cup.jpg') }}"
-              alt=""
-            />
-            <p>家庭用品</p>
-          </div>
-          <div class="lists">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_sticker.jpg') }}"
-              alt=""
-            />
-            <p>其他</p>
-          </div>
+          <p class="tes">服装</p>
         </div>
-      </div>
-
-      <div class="list">
-        <div class="six">
-          <h5 style="color: white">정보 입력?</h5>
+        <div class="lists">
+          <div class="list2">
+            <div
+            style="background-image: url('../../static/img/griptok_modified.jpg')"
+            class="img">
+              <a href="http://www.bandya.com/product/list.html?cate_no=152" class="ac1" target="blank">
+                <div
+                  class="imc1"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/griptok_origin.jpg')"
+                  class="dis1"
+                >
+                  Bandya
+                </div>
+              </a>
+              <a href="https://www.marpple.com/kr/cases" class="ac2" target="blank">
+                <div
+                  class="imc2"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/griptok_origin.jpg')"
+                  class="dis2"
+                >
+                  MARPPLE
+                </div>
+              </a>
+              <a href="https://www.phoneppu.com/product/custom_list.html?cate_no=3275" class="ac3" target="blank">
+                <div
+                  class="imc3"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/griptok_origin.jpg')"
+                  class="dis3"
+                >
+                  Phoneppu
+                </div>
+              </a>
+              <a href="https://shapely.co.kr/" class="ac4" target="blank">
+                <div
+                  class="imc4"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/griptok_origin.jpg')"
+                  class="dis4"
+                >
+                  Shapely
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="tes">手机配件</p>
+        </div>
+        <div class="lists">
+          <div class="list3">
+            <div
+            style="background-image: url('../../static/img/cup_modified.jpg')"
+            class="img">
+              <a href="http://www.handmc.com/" class="ac1" target="blank">
+                <div
+                  class="imc1"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/cup_origin.jpg')"
+                  class="dis1"
+                >
+                  Handmadec
+                </div>
+              </a>
+              <a href="http://www.jjomool.com/" class="ac2" target="blank">
+                <div
+                  class="imc2"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/cup_origin.jpg')"
+                  class="dis2"
+                >
+                  Jjomoolshop
+                </div>
+              </a>
+              <a href="https://www.tobuymall.com/goods/goods_list.php?cateCd=025002" class="ac3" target="blank">
+                <div
+                  class="imc3"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/cup_origin.jpg')"
+                  class="dis3"
+                >
+                  TBL
+                </div>
+              </a>
+              <a
+                href="http://www.thankshop.co.kr/shopuser/goods/productList.html?largeno=92&kind=normal"
+                class="ac4" target="blank"
+              >
+                <div
+                  class="imc4"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/cup_origin.jpg')"
+                  class="dis4"
+                >
+                  Thankshop
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="tes">瓶子和杯子</p>
+        </div>
+        <div class="lists">
+          <div class="list4">
+            <div
+            style="background-image: url('../../static/img/sticker_modified.jpg')"
+            class="img">
+              <a href="https://www.smilecat.com/" class="ac1" target="blank">
+                <div
+                  class="imc1"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/sticker_origin.jpg')"
+                  class="dis1"
+                >
+                  Smilecat
+                </div>
+              </a>
+              <a href="http://www.adsland.com/" class="ac2" target="blank">
+                <div
+                  class="imc2"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/sticker_origin.jpg')"
+                  class="dis2"
+                >
+                  Adsland
+                </div>
+              </a>
+              <a href="https://www.snaps.com/store/calendar/overview?g_media=google&g_keyword=%EB%8B%AC%EB%A0%A5%EC%A3%BC%EB%AC%B8%EC%A0%9C%EC%9E%91&gclid=Cj0KCQjw37iTBhCWARIsACBt1IzYqwP6nrQ9phP3ijLab9ZUS_XVVxpXajcShzw3rKgPN3-i7cy8jSwaAkElEALw_wcB" class="ac3" target="blank">
+                <div
+                  class="imc3"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/sticker_origin.jpg')"
+                  class="dis3"
+                >
+                  Snaps
+                </div>
+              </a>
+              <a href="http://www.huniprinting.com/" class="ac4" target="blank">
+                <div
+                  class="imc4"
+                ></div>
+                <div
+                  style="background-image: url('../../static/img/sticker_origin.jpg')"
+                  class="dis4"
+                >
+                  huniprinting
+                </div>
+              </a>
+            </div>
+          </div>
+          <p class="tes">装订</p>
         </div>
       </div>
     </div>
+
+    <div class="list">
+      <div class="five" style="padding-top: 15rem">
+        <div>
+          <h1
+            style="
+              text-align: center;
+              font-size: 48px;
+              font-weight: 600;
+              color: aliceblue;
+              padding-bottom: 5rem;
+            "
+          >
+            Contact 📧
+          </h1>
+        </div>
+        <div class="member">
+          <img
+            src="{{ url_for('static', filename = 'img/contact/khj.png') }}"
+          />
+          <p>Hanju Kim</p>
+          <p>E-mail : hanjukim0922@gmail.com</p>
+          <p>KakaoTalk : hj0922</p>
+        </div>
+        <div class="member">
+          <img
+            src="{{ url_for('static', filename = 'img/contact/kmj.png') }}"
+          />
+          <p>Minji Kim</p>
+          <p>E-mail : vp9397@naver.com</p>
+          <p>KakaoTalk : woodbvo12</p>
+        </div>
+        <div class="member">
+          <img
+            src="{{ url_for('static', filename = 'img/contact/syj.png') }}"
+          />
+          <p>Yeonjae Sung</p>
+          <p>E-mail : siriyay@naver.com</p>
+          <p>KakaoTalk : proofreadd</p>
+        </div>
+        <div class="member">
+          <img
+            src="{{ url_for('static', filename = 'img/contact/sjh.png') }}"
+          />
+          <p>Jongho Song</p>
+          <p>E-mail : sjh7397@naver.com</p>
+          <p>KakaoTalk : Lilac3</p>
+        </div>
+        <div class="member">
+          <img
+            src="{{ url_for('static', filename = 'img/contact/jyh.png') }}"
+          />
+          <p>JeongYeong Hoon</p>
+          <p>E-mail : gi93008@naver.com</p>
+          <p>KakaoTalk : gannak8</p>
+        </div>
+        <div>
+          <a href="https://www.limnpet.ml" class="ct">Home</a>
+          <a
+            href="http://limnpet.notion.site/LimnPet-537f6461d3234937ab94dee11671d22a"
+            class="ct"
+            >Notion</a
+          >
+          <a href="https://github.com/LiJell/Final-pjt" class="ct">Github</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="six">
+        <div class="footer-info">
+          <p class="footer-info__name">
+            <img src="{{ url_for('static', filename = 'img/footer.png') }}" />
+          </p>
+          <p class="footer-info__text">
+            <span>림펫 LIMNPET</span>
+            |
+            <span>
+              <em>출처</em>
+              <a
+                href="/img_src"
+                target="_blank"
+                style="text-decoration: none; color: white"
+              >
+                사용 이미지 출처</a
+              >
+            </span>
+            |
+            <span>
+              <em>made by</em>
+              LIMNPET TEAM
+            </span>
+            |
+            <span>
+              <em>team_email</em>
+              allislijell@gmail.com
+            </span>
+            <br />
+            <br />
+              移动导航栏
+            <br />
+              此服务仅限于教育目的。版权保留给我们提供的每一位艺术家。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    >
+      let test = document.getElementById("example");
+
+      test.addEventListener("mouseover", function (event) {
+      //highlight the mouseover target
+      event.target.style.color = "red";
+      }, false);
+
+      test.addEventListener("mouseout", function (event) {
+      // highlight the mouseout target
+      event.target.style.color = "black";
+      }, false);
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
