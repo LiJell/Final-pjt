@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta charset="utf-8" />
@@ -98,11 +98,11 @@
 
      <!--로딩이 되어지는 부분-->
     <div id="div_load_image" style="text-align:center">
-      <h1 style="text-align:center; margin-top:5rem"><strong>LimnPet Service</strong></h1>
-      <h3 style="text-align: center">Draw your pet in the style of your choice</h3>
+      <h1 style="text-align:center; margin-top:5rem"><strong>LimnPet 서비스</strong></h1>
+      <h3 style="text-align: center">원하는대로 스타일을 선택하고 그려보세요</h3>
       <img src="{{ url_for('static', filename = 'img/loading_dog.gif') }}" style="width:10rem">
-      <h2 style="text-align: center">Drawing in progress.....</h2>
-      <h3 style="text-align: center">We are doing our best!, it may takes 1~5min</h3>
+      <h2 style="text-align: center">그리기 진행중.....</h2>
+      <h3 style="text-align: center">최선을 다하는 중이에요! 1~5분이 걸릴수 있습니다</h3>
     </div>
 
      <!--홈페이지에서 보여지는 부분-->
@@ -110,29 +110,80 @@
       <div class="three">
 
         <div style="text-align: center" id='div_show'>
-          <h1 style="text-align:center"><strong>LimnPet Service</strong></h1>
-          <h3 style="text-align: center">Draw your pet in the style of your choice</h3>
+          <h1 style="text-align:center"><strong>LimnPet 서비스</strong></h1>
+          <h3 style="text-align: center">원하는대로 스타일을 선택하고 그려보세요</h3>
+          <div style="text-align:center">현재는 반려견 사진만 가능합니다(추후에 다른 동물들도 추가될 예정)</div>
+
+          <div class="example">
+            <div class="sample">
+              <img
+                  src="{{ url_for('static', filename = 'img/dog.125.jpg') }}"
+                  alt="cannot load a image"
+              />
+              <p>Original</p>
+            </div>
+            <div class="sample">
+              <p style="font-size:xx-large">
+              &#10140;
+              </p>
+            </div>
+            <div class="sample">
+              <img
+                  src="{{ url_for('static', filename = 'img/paprika_27042022070335.png') }}"
+                  alt="cannot load a image"
+              />
+              <p>Paprika</p>
+            </div>
+            <div class="sample">
+              <img
+                  src="{{ url_for('static', filename = 'img/hayao_27042022070301.png') }}"
+                  alt="cannot load a image"
+              />
+              <p>Hayao</p>
+            </div>
+            <div class="sample">
+              <img
+                  src="{{ url_for('static', filename = 'img/monet_27042022070404.png') }}"
+                  alt="cannot load a image"
+              />
+              <p>Monet</p>
+            </div>
+            <div class="sample">
+              <img
+                  src="{{ url_for('static', filename = 'img/ladyOscar_27042022070502.png') }}"
+                  alt="cannot load a image"
+              />
+              <p>ladyOscar</p>
+            </div>
+            <div class="sample">
+              <img
+                  src="{{ url_for('static', filename = 'img/Onepiece_27042022070533.png') }}"
+                  alt="cannot load a image"
+              />
+              <p>Onepiece</p>
+            </div>
+          </div>
         </div>
 
         <div style="text-align:center">
           <section>
             <div class="file-upload">
-              <form name="frm1" method="POST" enctype="multipart/form-data">
+              <form name="frm1" method="POST" enctype="multipart/form-data" onsubmit="return blocker()">
                 <div>스타일 선택</div>
                 <select name="style" class="select" style="text-align: center; display:inline">
-                  <option value="hayao">Hayao</option>
                   <option value="paprika">Paprika</option>
-                  <option value="disney">Disney</option>
+                  <option value="hayao">Hayao</option>
                   <option value="monet">Monet</option>
                   <option value="ladyOscar">Ladyoscar</option>
                   <option value="Onepiece">Onepiece</option>
                 </select>
-                <div style="margin-top:1rem">사진 업로드</div>
+                <div style="margin-top:1rem">사진 올리기</div>
                 <div class="image-upload-wrap">
-                  <input class="file-upload-input" name="file" type="file" accept="image/*" onchange="readURL(this);"/>
+                  <input class="file-upload-input" name="file" type="file" accept=".jpg,.png,.jpeg" onchange="readURL(this);"/>
                     <div class="drag-text">
                       <img src="static/img/icon-1294806.svg" class="mt-5 pt-2 upload" style="width: 30%"/>
-                      <h5 class="mb-5 pd-5 pt-4 upload-text">Drop or Select a image</h5>
+                      <h4 class="mb-5 pd-5 pt-4 upload-text">사진을 끌어놓거나 선택하세요</h4>
+                      <div style="text-align:center">jpg/png 파일만 가능해요</div>
                     </div>
                 </div>
                 <div class="file-upload-content">
@@ -144,24 +195,20 @@
                   />
                   <div class="image-title-wrap">
                     <button type="button" onclick="removeUpload(this)" class="remove-image">
-                      <span class="image-title">사진 다시 올리기</span>
+                      <span class="image-title">사진 다시올리기</span>
                     </button>
                   </div>
                 </div>
                 <div id="submit_button">
-                  <input class="remove-image" style="font-size: large;" value="Draw picture" type="submit" onClick="btn_click('draw');search();">
+                  <input class="remove-image" style="font-size: large;" value="그림 그리기" type="submit" onClick="btn_click('draw');search();">
                   </input>
-                  <input class="remove-image" style="font-size: large;" value="Improve Resolution" type="submit" onClick="btn_click('hires');search();">
+                  <input class="remove-image" style="font-size: large;" value="해상도 개선하기" type="submit" onClick="btn_click('hires');search();">
                   </input>
-                  <!-- <button class="remove-image" type="submit" onClick="location.href='/test';search();">
-                    <span class="image-title">그림 그리기</span>
-                  </button>
-                  <button class="remove-image" type="submit" onClick="location.href='/hires';search();">
-                    <span class="image-title">화질 올리기</span>
-                  </button> -->
                 </div>
               </form>
+              <p>※ 너무 큰 용량의 파일은 제대로 수행되지 않을 수 있습니다</p>
             </div>
+            
           </section>
         </div>
 
@@ -198,7 +245,7 @@
       ></noscript
     >
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script> // input file들이 들어오면 아래 코드들이 실행
+    <script>
       function readURL(input) {
         if (input.files && input.files[0]) {
           var reader = new FileReader();
@@ -228,17 +275,10 @@
       $(".image-upload-wrap").bind("dragleave", function () {
         $(".image-upload-wrap").removeClass("image-dropping");
       });
-      //원래 그림이 존재하지만, 이 스크립트로 그림이 숨겨짐 window.onload -> 뒤로가기 누르면 버튼이 무효화 onpageshow -> 뒤로가기 눌러도 유지
 
       window.onpageshow = function() {
         $("#div_load_image").hide();
         $("#div_show").show();
-      }
-      // 숨겨진 그림을 onclick으로 불러낼 함수
-
-      function search(){
-        $("#div_load_image").show();
-        $("#div_show").hide();
       }
 
     </script>
@@ -246,13 +286,35 @@
     <script>
       function btn_click(str){
         if(str=="draw"){
-          frm1.action="/test";
+          frm1.action="/test?lang=ko";
         }
         else{
-          frm1.action="/hires";
+          frm1.action="/hires?lang=ko";
+        }}
+    </script>
+    <script>
+      function blocker() {
+        theForm = document.frm1;
+        if (theForm.file.value == "") {
+          alert('사진을 넣어주세요')
+          return false;
         }
-      }
+        else {
+          $("#div_load_image").show();
+          $("#div_show").hide();
+
+        }
+      };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
+  <!-- Copyright (c) 2022 by Michael Vieth (https://codepen.io/mavieth/pen/evJjpo)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ -->
 </html>
