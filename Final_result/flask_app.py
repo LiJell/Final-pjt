@@ -122,7 +122,9 @@ def goods_es():
 def goods_zh_CN():
     return render_template('goods_zh-CN.html')
 
-
+@app.route('/img_src')
+def img_src():
+    return render_template('img_src.html')
 
 
 
