@@ -57,21 +57,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/home"
+                <a class="nav-link active" aria-current="page" href="/home_ko"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="/about_ko">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/service">Service</a>
+                <a class="nav-link" href="/service_ko">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="/contact_ko">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/goods">Goods</a>
+                <a class="nav-link" href="/goods_ko">Goods</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -107,15 +107,15 @@
     <div class="list">
       <div class="three">
         <div style="text-align: center" id="div_show">
-          <h1 style="text-align: center">LimnPet Service</h1>
+          <h1 style="text-align: center">LimnPet 서비스</h1>
           <h3 style="text-align: center">
-            Draw your pet in the style of your choice
+            원하는대로 스타일을 선택하고 그려보세요
           </h3>
           <p style="padding-top:1rem;text-align: center">
-            Save the result<br>
-            Back to the Service page to improve resolution<br>
-            or<br>
-            Move to the Goods page & Select a goods shop
+            결과를 저장하세요<br>
+            해상도를 개선하시려면 서비스 페이지로 돌아가세요<br>
+            또는<br>
+            굿즈 페이지로 이동해 굿즈 샵을 선택하세요!
           </p>
         </div>
 
@@ -131,7 +131,7 @@
           <div id="download_button">
             <a href="{{url_for('static', filename = img_file)}}" download>
               <button class="remove-image">
-                <span class="image-title">Save</span>
+                <span class="image-title">저장</span>
               </button>
             </a>
           </div>
@@ -140,9 +140,9 @@
             <button
               class="remove-image"
               type="button"
-              onClick="location.href='/service'"
+              onClick="location.href='/service_ko'"
             >
-              <span class="image-title">Try Again</span>
+              <span class="image-title">다시 하기</span>
             </button>
           </div>
 
@@ -151,9 +151,9 @@
               class="remove-image"
               style="font-size:medium"
               type="button"
-              onClick="location.href='/goods'"
+              onClick="location.href='/goods_ko'"
             >
-              <span class="image-title">Move to Goods shop list</span>
+              <span class="image-title">굿즈샵 목록으로 이동</span>
             </button>
           </div>
           
@@ -161,9 +161,9 @@
             <button
               class="remove-image"
               type="button"
-              onClick="location.href='/home'"
+              onClick="location.href='/home_ko'"
             >
-              <span class="image-title">Back Home</span>
+              <span class="image-title">홈으로 이동</span>
             </button>
           </div>
 
