@@ -10,7 +10,7 @@ import PIL
 import matplotlib.pyplot as plt
 import torch
 from torchvision import transforms, models
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, render_template, request
 # from werkzeug.utils import secure_filename
 
 # # real esrGAN 환경 설정
@@ -24,112 +24,139 @@ from flask import Flask, render_template, request, send_from_directory
 
 
 app = Flask(__name__)  # 플라스크 인스턴스 생성
-# app.debug = False
-# app.use_reloader = False
-
-
-@app.route('/robots.txt')
-@app.route('/sitemap.xml')
-def static_from_root():
-    return send_from_directory(app.static_folder, request.path[1:])
+app.debug = True
+app.use_reloader = False
 
 
 @app.route('/')
 @app.route('/home')  # 기본 홈 경로 설정
 def home():  # 경로에 대한 요청이 있을 때 실행될 함수 정의
     return render_template('index.html')  # 저장된 html 템플릿 렌더링
-@app.route('/home_ko') 
-def home():  
-    return render_template('index_ko.html') 
-@app.route('/home_ja') 
-def home():  
-    return render_template('index_ja.html') 
-@app.route('/home_es') 
-def home():  
-    return render_template('index_es.html') 
-@app.route('/home_zh-CN') 
-def home():  
-    return render_template('index_zh-CN.html') 
 
 
+@app.route('/home_ko')
+def home_ko():
+    return render_template('index_ko.html')
+
+
+@app.route('/home_ja')
+def home_ja():
+    return render_template('index_ja.html')
+
+
+@app.route('/home_es')
+def home_es():
+    return render_template('index_es.html')
+
+
+@app.route('/home_zh-CN')
+def home_zh_CN():
+    return render_template('index_zh-CN.html')
 
 
 @app.route('/service')
 def service():
     return render_template('service.html')
+
+
 @app.route('/service_ko')
-def service():
+def service_ko():
     return render_template('service_ko.html')
+
+
 @app.route('/service_ja')
-def service():
+def service_ja():
     return render_template('service_ja.html')
+
+
 @app.route('/service_es')
-def service():
+def service_es():
     return render_template('service_es.html')
+
+
 @app.route('/service_zh-CN')
-def service():
+def service_zh_CN():
     return render_template('service_zh-CN.html')
 
 
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+
 @app.route('/about_ko')
-def about():
+def about_ko():
     return render_template('about_ko.html')
+
+
 @app.route('/about_ja')
-def about():
+def about_ja():
     return render_template('about_ja.html')
+
+
 @app.route('/about_es')
-def about():
+def about_es():
     return render_template('about_es.html')
+
+
 @app.route('/about_zh-CN')
-def about():
+def about_zh_CN():
     return render_template('about_zh-CN.html')
 
 
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
-@app.route('/contact_ko')
-def contact():
-    return render_template('contact_ko.html')
-@app.route('/contact_ja')
-def contact():
-    return render_template('contact_ja.html')
-@app.route('/contact_es')
-def contact():
-    return render_template('contact_es.html')
-@app.route('/contact_zh-CN')
-def contact():
-    return render_template('contact_zh-CN.html')
 
+
+@app.route('/contact_ko')
+def contact_ko():
+    return render_template('contact_ko.html')
+
+
+@app.route('/contact_ja')
+def contact_ja():
+    return render_template('contact_ja.html')
+
+
+@app.route('/contact_es')
+def contact_es():
+    return render_template('contact_es.html')
+
+
+@app.route('/contact_zh-CN')
+def contact_zh_CN():
+    return render_template('contact_zh-CN.html')
 
 
 @app.route('/goods')
 def goods():
     return render_template('goods.html')
+
+
 @app.route('/goods_ko')
-def goods():
+def goods_ko():
     return render_template('goods_ko.html')
+
+
 @app.route('/goods_ja')
-def goods():
+def goods_ja():
     return render_template('goods_ja.html')
+
+
 @app.route('/goods_es')
-def goods():
+def goods_es():
     return render_template('goods_es.html')
+
+
 @app.route('/goods_zh-CN')
-def goods():
+def goods_zh_CN():
     return render_template('goods_zh-CN.html')
 
 
-
-
-
-
-
-
-
+@app.route('/img_src')
+def img_src():
+    return render_template('img_src.html')
 
 # @app.route('/fileUpload', methods = ['GET', 'POST'])
 # def upload_file():
@@ -147,11 +174,13 @@ def hires():
     if request.method == 'POST':
         f = request.files['file']
         # 저장할 경로 + 파일명
-        f.save('D:/Final-pjt/Final_result/static/input_img/'+f.filename)
+        f.save(
+            'C:/Users/user/LimnPet/Limnpet_pythonanywhere/static/input_img/'+f.filename)
         # 해상도 개선
+        os.chdir('./model/Real-ESRGAN')
         os.system(
-            f'python inference_realesrgan.py -n RealESRGAN_x4plus_anime_6B -i /home/sjh7397/test_pythonanywhere/static/input_img/{f.filename}  -o /home/sjh7397/test_pythonanywhere/static/output_img')
-
+            f'python inference_realesrgan.py -n RealESRGAN_x4plus_anime_6B -i C:/Users/user/LimnPet/Limnpet_pythonanywhere/static/input_img/{f.filename}  -o C:/Users/user/LimnPet/Limnpet_pythonanywhere/static/output_img')
+        os.chdir('C:/Users/user/LimnPet/Limnpet_pythonanywhere')
         return render_template('result.html', img_file=f'output_img/{f.filename[:-4]}_out.png')
 
 
@@ -161,8 +190,9 @@ def test():
     if request.method == 'POST':
         f = request.files['file']
         # 저장할 경로 + 파일명
-        f.save('D:/Final-pjt/Final_result/static/input_img/'+f.filename)
-        image_path = f'D:/Final-pjt/Final_result/static/input_img/{f.filename}'
+        f.save(
+            'C:/Users/user/LimnPet/Limnpet_pythonanywhere/static/input_img/'+f.filename)
+        image_path = f'C:/Users/user/LimnPet/Limnpet_pythonanywhere/static/input_img/{f.filename}'
         # style = 'hayao' # 원하는 스타일명 지정(나중에 값 받아오도록 수정해야함)
         style = request.form.get('style')  # 원하는 스타일명 지정(나중에 값 받아오도록 수정해야함)
         date_string = datetime.now().strftime("%d%m%Y%H%M%S")  # 파일명 중복 방지를 위한 변수 지정
@@ -471,10 +501,10 @@ def test():
 
             return model
 
-         # cartoonGAN
+        # cartoonGAN
         if (style == "hayao") | (style == "paprika"):
             # 저장된 pretrained 모델 가중치 파일 경로
-            PRETRAINED_WEIGHT_DIR = 'D:/Final-pjt/Final_result/model/cartoongan/pretrained_weights'
+            PRETRAINED_WEIGHT_DIR = 'C:/Users/user/LimnPet/Limnpet_pythonanywhere/model/cartoongan/pretrained_weights'
             cartoonGAN_model = load_model(style)
             input_image = cv2.cvtColor(result, cv2.COLOR_RGB2BGR)
             input_image = np.expand_dims(input_image, axis=0)
@@ -490,11 +520,11 @@ def test():
             alpha_output_2 = alpha_output_2.astype(np.uint8)
             alpha_output_2 = cv2.cvtColor(alpha_output_2, cv2.COLOR_BGRA2RGBA)
             cv2.imwrite(
-                f'D:/Final-pjt/Final_result/static/output_img/{style}_{date_string}.png', alpha_output_2)
+                f'C:/Users/user/LimnPet/Limnpet_pythonanywhere/static/output_img/{style}_{date_string}.png', alpha_output_2)
 
         else:
             # 저장한 모델 디렉토리 경로
-            model_dir = f'D:/Final-pjt/Final_result/model/saved_model/{style}'
+            model_dir = f'C:/Users/user/LimnPet/Limnpet_pythonanywhere/model/saved_model/{style}'
             model = tf.saved_model.load(model_dir)
             f = model.signatures["serving_default"]
             input_image = result
@@ -511,7 +541,7 @@ def test():
             alpha_output_2 = alpha_output_2.astype(np.uint8)
             alpha_output_2 = cv2.cvtColor(alpha_output_2, cv2.COLOR_RGBA2BGRA)
             cv2.imwrite(
-                f'D:/Final-pjt/Final_result/static/output_img/{style}_{date_string}.png', alpha_output_2)
+                f'C:/Users/user/LimnPet/Limnpet_pythonanywhere/static/output_img/{style}_{date_string}.png', alpha_output_2)
 
         # 해상도 개선
         # os.system(f'python inference_realesrgan.py -n RealESRGAN_x4plus_anime_6B -i /home/sjh7397/test_pythonanywhere/static/output_img/{style}_{date_string}.png  -o /home/sjh7397/test_pythonanywhere/static/output_img')

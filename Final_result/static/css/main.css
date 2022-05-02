@@ -2,9 +2,6 @@ body {
   font-family: "Gowun Dodum", sans-serif;
 }
 
-/* 상단바 */
-/* .menu * { display: inline; } */
-
 .menu .navbar-dark {
   font-family: "Gowun Dodum", sans-serif;
   background: rgba(0, 0, 0, 0.7);
@@ -21,7 +18,7 @@ body {
 }
 
 .navbar-dark .navbar-toggler {
-  border-color: rgba(0,0,0,0);
+  border-color: rgba(0, 0, 0, 0);
 }
 @media screen and (min-width: 992px) {
   .menu ul {
@@ -42,8 +39,7 @@ body {
   } */
 }
 .nav-link {
-  padding: 0rem-0rem;
-
+  padding: 0rem 0rem;
 }
 
 /* Banner 1 */
@@ -93,9 +89,6 @@ body {
   width: 70vh;
   height: 60vh;
   padding-top: 39px;
-  /* position: relative;
-  left: -400px;
-  top: 40px; */
 }
 
 @media screen and (max-width: 719px) {
@@ -129,30 +122,6 @@ body {
   transition: all 0.2s ease;
 }
 
-/* .service_button {
-  width: 24rem;
-  color: rgb(255, 255, 255);
-  background: #f2b705;
-  border: none;
-  padding: 0.6rem;
-  border-radius: 30px;
-  transition: all 0.2s ease;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 20px;
-}
-.service_button:hover {
-  background: #f28b05;
-  color: #fff;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-.service_button:active {
-  border: 0;
-  transition: all 0.2s ease;
-} */
-
 /* Contact 4 */
 .four {
   text-align: center;
@@ -167,11 +136,6 @@ body {
   line-height: 1.5;
   display: inline-block;
 }
-.list_img {
-  width: 300px;
-  height: 300px;
-  margin: 5vh 2vh;
-}
 
 /* Goods 5 */
 
@@ -181,11 +145,7 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.contact_img {
-  margin: auto;
-  width: 70rem;
-  padding-bottom: 1rem;
-}
+
 .ct {
   text-decoration: none;
   color: white;
@@ -204,14 +164,15 @@ body {
 .footer-info {
   flex-direction: column;
   align-items: center;
+  padding-bottom: 0.5rem;
 }
 
 .footer-info__text {
   gap: 12px;
   color: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 1rem;
   align-items: center;
-  margin-bottom: 14px;
+  /* margin-bottom: 14px; */
 }
 
 .footer-info__text span em {
