@@ -39,16 +39,16 @@ def static_from_root():
 def home():  # 경로에 대한 요청이 있을 때 실행될 함수 정의
     return render_template('index.html')  # 저장된 html 템플릿 렌더링
 @app.route('/home_ko') 
-def home_ko():  
+def home():  
     return render_template('index_ko.html') 
 @app.route('/home_ja') 
-def home_ja():  
+def home():  
     return render_template('index_ja.html') 
 @app.route('/home_es') 
-def home_es():  
+def home():  
     return render_template('index_es.html') 
 @app.route('/home_zh-CN') 
-def home_zh_CN():  
+def home():  
     return render_template('index_zh-CN.html') 
 
 
@@ -58,16 +58,16 @@ def home_zh_CN():
 def service():
     return render_template('service.html')
 @app.route('/service_ko')
-def service_ko():
+def service():
     return render_template('service_ko.html')
 @app.route('/service_ja')
-def service_ja():
+def service():
     return render_template('service_ja.html')
 @app.route('/service_es')
-def service_es():
+def service():
     return render_template('service_es.html')
 @app.route('/service_zh-CN')
-def service_zh_CN():
+def service():
     return render_template('service_zh-CN.html')
 
 
@@ -75,16 +75,16 @@ def service_zh_CN():
 def about():
     return render_template('about.html')
 @app.route('/about_ko')
-def about_ko():
+def about():
     return render_template('about_ko.html')
 @app.route('/about_ja')
-def about_ja():
+def about():
     return render_template('about_ja.html')
 @app.route('/about_es')
-def about_es():
+def about():
     return render_template('about_es.html')
 @app.route('/about_zh-CN')
-def about_zh_CN():
+def about():
     return render_template('about_zh-CN.html')
 
 
@@ -92,16 +92,16 @@ def about_zh_CN():
 def contact():
     return render_template('contact.html')
 @app.route('/contact_ko')
-def contact_ko():
+def contact():
     return render_template('contact_ko.html')
 @app.route('/contact_ja')
-def contact_ja():
+def contact():
     return render_template('contact_ja.html')
 @app.route('/contact_es')
-def contact_es():
+def contact():
     return render_template('contact_es.html')
 @app.route('/contact_zh-CN')
-def contact_zh_CN():
+def contact():
     return render_template('contact_zh-CN.html')
 
 
@@ -110,49 +110,43 @@ def contact_zh_CN():
 def goods():
     return render_template('goods.html')
 @app.route('/goods_ko')
-def goods_ko():
+def goods():
     return render_template('goods_ko.html')
 @app.route('/goods_ja')
-def goods_ja():
+def goods():
     return render_template('goods_ja.html')
 @app.route('/goods_es')
-def goods_es():
+def goods():
     return render_template('goods_es.html')
 @app.route('/goods_zh-CN')
-def goods_zh_CN():
+def goods():
     return render_template('goods_zh-CN.html')
 
 @app.route('/img_src')
 def img_src():
     return render_template('img_src.html')
 
-
-
-
-
-
-
-
-# @app.route('/fileUpload', methods = ['GET', 'POST'])
-# def upload_file():
-#     if request.method == 'POST':
-#         f = request.files['file']
-#         # 저장할 경로 + 파일명
-#         filename = f.filename
-#         f.save('/home/sjh7397/test_pythonanywhere/static/input_img/'+filename)
-#         return render_template('index_1_1.html', img_file=f'input_img/{filename}' )
-
-
 # 실제 프로젝트의 내용이 구현될 부분에 대한 경로 및 함수 정의
 @app.route('/hires', methods=['GET', 'POST'])
 def hires():
     if request.method == 'POST':
+        lang = request.args.get('lang')
         f = request.files['file']
         # 저장할 경로 + 파일명
         f.save('/home/sjh7397/test_pythonanywhere/static/input_img/'+f.filename)
         # 해상도 개선
         os.system(
             f'python inference_realesrgan.py -n RealESRGAN_x4plus_anime_6B -i /home/sjh7397/test_pythonanywhere/static/input_img/{f.filename}  -o /home/sjh7397/test_pythonanywhere/static/output_img')
+
+        if lang:
+            if lang == 'es':
+                return render_template('result_es.html', img_file=f'output_img/{f.filename[:-4]}_out.png')
+            elif lang == 'ja':
+                return render_template('result_ja.html', img_file=f'output_img/{f.filename[:-4]}_out.png')
+            elif lang == 'ko':
+                return render_template('result_ko.html', img_file=f'output_img/{f.filename[:-4]}_out.png')
+            elif lang == 'zh-CN':
+                return render_template('result_zh-CN.html', img_file=f'output_img/{f.filename[:-4]}_out.png')
 
         return render_template('result.html', img_file=f'output_img/{f.filename[:-4]}_out.png')
 
@@ -161,6 +155,7 @@ def hires():
 @app.route('/test', methods=['GET', 'POST'])
 def test():
     if request.method == 'POST':
+        lang = request.args.get('lang')
         f = request.files['file']
         # 저장할 경로 + 파일명
         f.save('/home/sjh7397/test_pythonanywhere/static/input_img/'+f.filename)
@@ -515,8 +510,15 @@ def test():
             cv2.imwrite(
                 f'/home/sjh7397/test_pythonanywhere/static/output_img/{style}_{date_string}.png', alpha_output_2)
 
-        # 해상도 개선
-        # os.system(f'python inference_realesrgan.py -n RealESRGAN_x4plus_anime_6B -i /home/sjh7397/test_pythonanywhere/static/output_img/{style}_{date_string}.png  -o /home/sjh7397/test_pythonanywhere/static/output_img')
+        if lang:
+            if lang == 'es':
+                return render_template('result_es.html', img_file=f'output_img/{style}_{date_string}.png')
+            elif lang == 'ja':
+                return render_template('result_ja.html', img_file=f'output_img/{style}_{date_string}.png')
+            elif lang == 'ko':
+                return render_template('result_ko.html', img_file=f'output_img/{style}_{date_string}.png')
+            elif lang == 'zh-CN':
+                return render_template('result_zh-CN.html', img_file=f'output_img/{style}_{date_string}.png')
 
         return render_template('result.html', img_file=f'output_img/{style}_{date_string}.png')
 
