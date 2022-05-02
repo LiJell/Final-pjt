@@ -48,11 +48,11 @@
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/contact.css') }}"
+      href="{{ url_for('static', filename = 'css/goods.css') }}"
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename = 'css/goods.css') }}"
+      href="{{ url_for('static', filename = 'css/contact.css') }}"
     />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
@@ -72,13 +72,24 @@
             <div class="slide"></div>
             <div class="overlay">
               <h1>
-                <p>Drawing your pet, LimnPet</p>
+                <p
+                  style="
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  "
+                >
+                  dibujando a tu mascota, LimnPet
+                </p>
+                <br /><br /><br /><br /><br />
+                <br /><br /><br /><br /><br />
                 <button
-                  class="service_button"
+                  class="button btn2"
                   type="button"
                   onClick="location.href='/service_es'"
                 >
-                  <span class="image-title">Pruebe el servicio Limnpet</span>
+                  <span>Pruebe el servicio Limnpet</span>
                 </button>
               </h1>
             </div>
@@ -200,19 +211,25 @@
             LimnPet es un servicio de estilismo que convierte las fotos de tus
             mascotas en varios estilos de pintura.
           </p>
-
+          <br /><br />
+          <h1 style="font-weight: bold; color: aliceblue">
+            Qué es
+            <span style="font-weight: bold; color: rgb(255, 81, 0)"
+              >LimnPet</span
+            >?
+          </h1>
           <div
             class="intext"
             style="
               font-size: 28px;
-              font-weight: 500;
+              font-weight: 400;
               line-height: 3;
-              color: aliceblue;
+              color: rgba(255, 255, 255, 0.733);
             "
           >
             Ya no tienes que pagar por el estilo de las fotos de tus
             mascotas.<br />
-            A través de <a href="/service_es">LimnPet</a>, hemos simplificado el
+            A través de <a href="/about_es">LimnPet</a>, hemos simplificado el
             complicado proceso de compra de productos personalizados para
             mascotas.<br />
             A partir de ahora, todo lo que necesita hacer es cargar una imagen
@@ -223,8 +240,8 @@
             <a href="/goods_es">Artículos</a> en el menú.
           </div>
 
-          <p style="font-size: 48px; font-weight: 600; color: aliceblue">
-            <br /><br /><u>Future Plans</u>
+          <p style="font-size: 48px; font-weight: 500; color: aliceblue">
+            <br /><br /><u>Planes futuros</u>
           </p>
 
           <div class="futureplans">
@@ -282,7 +299,7 @@
       <div class="list">
         <div class="three" style="padding-top: 15rem; color: aliceblue">
           <p style="font-size: 48px; font-weight: 600">
-            Service Before & After 🎨
+            Servicio Antes y Después 🎨
           </p>
 
           <div class="beforeafter">
@@ -310,18 +327,20 @@
       </div>
 
       <div class="list">
-        <div class="four">
-          <div
+        <div class="four" style="padding-top: 15rem">
+          <h1
             style="
-              padding-top: 2rem;
-              padding-bottom: 2rem;
-              width: 100vw;
-              height: 53vh;
+              text-align: center;
+              font-size: 48px;
+              font-weight: 600;
+              color: aliceblue;
             "
           >
-            <p style="font-weight: 900; font-size: 32px">Goods Shops</p>
+            tienda de productos 🎁
+          </h1>
+          <div style="padding-top: 2rem; padding-bottom: 2rem">
             <h4>
-              <p style="color: white; padding-top: 7rem">
+              <p style="color: white">
                 ¡Haga sus productos para mascotas personalizados con una imagen
                 convertida a través de Limnpet!
               </p>
@@ -337,46 +356,63 @@
           </div>
           <div class="lists">
             <div class="list1">
-              <div style='background-image:url("../../static/img/cloth_modified.jpg"' class="img">
-                <a href="https://www.bizhows.com/v/category?mock=product_list_007&categoryName=%ED%8B%B0%EC%85%94%EC%B8%A0" class="ac1" target="blank">
+              <div
+                style="
+                  background-image: url('../../static/img/cloth_modified.jpg');
+                "
+                class="img"
+              >
+                <a
+                  href="https://www.bizhows.com/v/category?mock=product_list_007&categoryName=%ED%8B%B0%EC%85%94%EC%B8%A0"
+                  class="ac1"
+                  target="blank"
+                >
+                  <div class="imc1"></div>
                   <div
-                    class="imc1"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cloth_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
                     class="dis1"
                   >
                     Bizhows
                   </div>
                 </a>
-                <a href="https://www.publog.co.kr/apparel/" class="ac2" target="blank">
+                <a
+                  href="https://www.publog.co.kr/apparel/"
+                  class="ac2"
+                  target="blank"
+                >
+                  <div class="imc2"></div>
                   <div
-                    class="imc2"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cloth_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
                     class="dis2"
                   >
                     Publog
                   </div>
                 </a>
                 <a href="https://www.tpana.com/" class="ac3" target="blank">
+                  <div class="imc3"></div>
                   <div
-                    class="imc3"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cloth_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
                     class="dis3"
                   >
                     Tpana
                   </div>
                 </a>
-                <a href="https://www.customzone.co.kr/" class="ac4" target="blank">
+                <a
+                  href="https://www.customzone.co.kr/"
+                  class="ac4"
+                  target="blank"
+                >
+                  <div class="imc4"></div>
                   <div
-                    class="imc4"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cloth_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
                     class="dis4"
                   >
                     Customzone
@@ -389,47 +425,66 @@
           <div class="lists">
             <div class="list2">
               <div
-              style="background-image: url('../../static/img/griptok_modified.jpg')"
-              class="img">
-                <a href="http://www.bandya.com/product/list.html?cate_no=152" class="ac1" target="blank">
+                style="
+                  background-image: url('../../static/img/griptok_modified.jpg');
+                "
+                class="img"
+              >
+                <a
+                  href="http://www.bandya.com/product/list.html?cate_no=152"
+                  class="ac1"
+                  target="blank"
+                >
+                  <div class="imc1"></div>
                   <div
-                    class="imc1"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/griptok_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
                     class="dis1"
                   >
                     Bandya
                   </div>
                 </a>
-                <a href="https://www.marpple.com/kr/cases" class="ac2" target="blank">
+                <a
+                  href="https://www.marpple.com/kr/cases"
+                  class="ac2"
+                  target="blank"
+                >
+                  <div class="imc2"></div>
                   <div
-                    class="imc2"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/griptok_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
                     class="dis2"
                   >
                     MARPPLE
                   </div>
                 </a>
-                <a href="https://www.phoneppu.com/product/custom_list.html?cate_no=3275" class="ac3" target="blank">
+                <a
+                  href="https://www.phoneppu.com/product/custom_list.html?cate_no=3275"
+                  class="ac3"
+                  target="blank"
+                >
+                  <div class="imc3"></div>
                   <div
-                    class="imc3"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/griptok_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
                     class="dis3"
                   >
                     Phoneppu
                   </div>
                 </a>
-                <a href="http://www.thankshop.co.kr/shopuser/goods/productList.html?largeno=92&kind=normal" class="ac4" target="blank">
+                <a
+                  href="http://www.thankshop.co.kr/shopuser/goods/productList.html?largeno=92&kind=normal"
+                  class="ac4"
+                  target="blank"
+                >
+                  <div class="imc4"></div>
                   <div
-                    class="imc4"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/griptok_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
                     class="dis4"
                   >
                     Shapely
@@ -442,36 +497,43 @@
           <div class="lists">
             <div class="list3">
               <div
-              style="background-image: url('../../static/img/cup_modified.jpg')"
-              class="img">
+                style="
+                  background-image: url('../../static/img/cup_modified.jpg');
+                "
+                class="img"
+              >
                 <a href="http://www.handmc.com/" class="ac1" target="blank">
+                  <div class="imc1"></div>
                   <div
-                    class="imc1"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cup_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
                     class="dis1"
                   >
                     Handmadec
                   </div>
                 </a>
                 <a href="http://www.jjomool.com/" class="ac2" target="blank">
+                  <div class="imc2"></div>
                   <div
-                    class="imc2"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cup_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
                     class="dis2"
                   >
                     Jjomoolshop
                   </div>
                 </a>
-                <a href="https://www.tobuymall.com/goods/goods_list.php?cateCd=025002" class="ac3" target="blank">
+                <a
+                  href="https://www.tobuymall.com/goods/goods_list.php?cateCd=025002"
+                  class="ac3"
+                  target="blank"
+                >
+                  <div class="imc3"></div>
                   <div
-                    class="imc3"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cup_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
                     class="dis3"
                   >
                     TBL
@@ -479,13 +541,14 @@
                 </a>
                 <a
                   href="http://www.thankshop.co.kr/shopuser/index.html/"
-                  class="ac4" target="blank"
+                  class="ac4"
+                  target="blank"
                 >
+                  <div class="imc4"></div>
                   <div
-                    class="imc4"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/cup_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
                     class="dis4"
                   >
                     Thankshop
@@ -493,52 +556,63 @@
                 </a>
               </div>
             </div>
-            <p class="tes">Botella y taza</p>
+            <p class="tes">Artículos de uso doméstico</p>
           </div>
           <div class="lists">
             <div class="list4">
               <div
-              style="background-image: url('../../static/img/sticker_modified.jpg')"
-              class="img">
+                style="
+                  background-image: url('../../static/img/sticker_modified.jpg');
+                "
+                class="img"
+              >
                 <a href="https://www.smilecat.com/" class="ac1" target="blank">
+                  <div class="imc1"></div>
                   <div
-                    class="imc1"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/sticker_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
                     class="dis1"
                   >
                     Smilecat
                   </div>
                 </a>
                 <a href="http://www.adsland.com/" class="ac2" target="blank">
+                  <div class="imc2"></div>
                   <div
-                    class="imc2"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/sticker_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
                     class="dis2"
                   >
                     Adsland
                   </div>
                 </a>
-                <a href="https://www.snaps.com/store/calendar/overview?g_media=google&g_keyword=%EB%8B%AC%EB%A0%A5%EC%A3%BC%EB%AC%B8%EC%A0%9C%EC%9E%91&gclid=Cj0KCQjw37iTBhCWARIsACBt1IzYqwP6nrQ9phP3ijLab9ZUS_XVVxpXajcShzw3rKgPN3-i7cy8jSwaAkElEALw_wcB" class="ac3" target="blank">
+                <a
+                  href="https://www.snaps.com/store/calendar/overview?g_media=google&g_keyword=%EB%8B%AC%EB%A0%A5%EC%A3%BC%EB%AC%B8%EC%A0%9C%EC%9E%91&gclid=Cj0KCQjw37iTBhCWARIsACBt1IzYqwP6nrQ9phP3ijLab9ZUS_XVVxpXajcShzw3rKgPN3-i7cy8jSwaAkElEALw_wcB"
+                  class="ac3"
+                  target="blank"
+                >
+                  <div class="imc3"></div>
                   <div
-                    class="imc3"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/sticker_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
                     class="dis3"
                   >
                     Snaps
                   </div>
                 </a>
-                <a href="http://www.huniprinting.com/" class="ac4" target="blank">
+                <a
+                  href="http://www.huniprinting.com/"
+                  class="ac4"
+                  target="blank"
+                >
+                  <div class="imc4"></div>
                   <div
-                    class="imc4"
-                  ></div>
-                  <div
-                    style="background-image: url('../../static/img/sticker_origin.jpg')"
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
                     class="dis4"
                   >
                     huniprinting
@@ -546,7 +620,7 @@
                 </a>
               </div>
             </div>
-            <p class="tes">Encuadernación</p>
+            <p class="tes">otro</p>
           </div>
         </div>
       </div>
@@ -563,7 +637,7 @@
                 padding-bottom: 5rem;
               "
             >
-              Contact 📧
+              Contacto 📧
             </h1>
           </div>
           <div class="member">
@@ -649,10 +723,12 @@
               </span>
               <br />
               <br />
-              
+
               Política de derechos de autor
               <br />
-              Este servicio está limitado solo para fines educativos. Todos los derechos de copia están reservados para cada artista que proporcionamos.
+              Este servicio está limitado solo para fines educativos. Todos los
+              derechos de copia están reservados para cada artista que
+              proporcionamos.
             </p>
           </div>
         </div>
