@@ -37,9 +37,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  html {
+  /* html {
     font-size: 10px;
-  }
+  } */
 }
 .nav-link {
   padding: 0rem-0rem;
