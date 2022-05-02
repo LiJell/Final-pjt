@@ -3,47 +3,42 @@
 #container {
   width: 100%;
   height: 100%;
-  /* overflow: auto;/ */
-  /* scroll-behavior: smooth;
-  scroll-snap-type: y mandatory; */
 }
 
 .list {
   background: linear-gradient(to right, #f2994a, #f2c94c);
   width: 100%;
   height: 100vh;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
-  /* scroll-snap-align: center; */
-  /* 자동으로 넘어가는거 해제 */
 }
 
+/* 배너 */
 .list:nth-child(1) {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
+/* 슬라이드쇼 + 어바웃 */
 .list:nth-child(2) {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   width: 100%;
   height: 100%;
-  /* height: 110vh; */
-  /* overflow:hidden; */
 }
 
+/* 서비스 예시 */
 .list:nth-child(3) {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   width: 100%;
   height: 100%;
-  /* padding-top: 200px; */
 }
 
+/* 굿즈 */
 .list:nth-child(4) {
   background-size: cover;
   background-attachment: fixed;
@@ -52,41 +47,20 @@
   height: 100%;
 }
 
-@media screen and (max-width: 1376px) {
-  .list:nth-child(4) {
-    height: 120vh;
-  }
-}
-@media screen and (max-width: 694px) {
-  .list:nth-child(4) {
-    height: 210vh;
-  }
-}
-
+/* 연락처 */
 .list:nth-child(5) {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  /* height: 100vh;
-  padding-top: 300px; */
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 669px) {
-  .list:nth-child(5) {
-    height: 110vh;
-  }
-}
 
+/* 하단바 */
 .list:nth-child(6) {
   background: #212121;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 20vh;
-}
-@media screen and (max-width: 669px) {
-  .list:nth-child(6) {
-    height: 25vh;
-  }
+  height: 100%;
 }

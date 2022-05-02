@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="../static/css/banner.css" />
     <link rel="stylesheet" href="../static/css/slideshow.css" />
     <link rel="stylesheet" href="../static/css/contact.css" />
+    <link rel="stylesheet" href="../static/css/goods.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
     </style>
@@ -61,7 +62,7 @@
                     transform: translate(-50%, -50%);
                   "
                 >
-                  Drawing your pet, LimnPet
+                  당신의 펫을 그려보세요, LimnPet
                 </p>
                 <br /><br /><br /><br /><br />
                 <br /><br /><br /><br /><br />
@@ -193,7 +194,6 @@
             LimnPet으로 반려견의 사진을 다양한 그림체로 변환해 보세요!
           </p>
           <br /><br />
-          <div class="intext">
             <h1 style="color: aliceblue">
               What Is
               <span
@@ -204,6 +204,12 @@
                 >LimnPet</span
               >? 🐶
             </h1>
+            <div class="intext"             style="
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 3;
+            color: rgba(255, 255, 255, 0.733);
+          ">
             <span
               style="color: rgb(255, 94, 0); -webkit-text-stroke: 0.02rem black"
               >LimnPet</span
@@ -221,7 +227,6 @@
             만약 반려견의 그림 사진이 들어간 커스텀 굿즈를 구매하고 싶으시면,
             메뉴에서 <a href="/goods_ko">Goods</a> 항목을 선택하세요.
           </div>
-
           <p style="font-size: 40px; font-weight: 600; color: aliceblue">
             <br /><br /><u>Considering Future Plans</u>
           </p>
@@ -229,7 +234,7 @@
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_collabo.jpg') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/collabo.jpg') }}"
               alt=""
             />
             <p>
@@ -242,23 +247,22 @@
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_opt.jpg') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/option.jpg') }}"
               alt=""
             />
             <p>
-              Considering to add<br />
-              <span style="color: #ff483b; font-weight: 800">포토샵 옵션</span
-              ><br />
+              사진을 더 이쁘게 꾸밀 수 있는<br><span style="color: #ff483b; font-weight: 800">포토샵 옵션 추가</span
+              >
             </p>
           </div>
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_emoji.png') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/emoji.png') }}"
               alt=""
             />
             <p>
-              나만의 반려견
+              나만의 반려견<br>
               <span style="color: #ff483b; font-weight: 800">이모티콘</span
               >만들기
             </p>
@@ -266,7 +270,7 @@
           <div class="futureplans">
             <img
               class="futureplans_img"
-              src="{{ url_for('static', filename = 'img/futureplans_nft.jpg') }}"
+              src="{{ url_for('static', filename = 'img/futureplans/nft.jpg') }}"
               alt=""
             />
             <p>
@@ -278,7 +282,7 @@
       </div>
 
       <div class="list">
-        <div class="three">
+        <div class="three" style="padding-top: 15rem; color: aliceblue">
           <p style="font-size: 48px; font-weight: 600; color: aliceblue">
             Service Before & After 🎨
           </p>
@@ -317,37 +321,246 @@
           >
             Goods Shops 🎁
           </h1>
-          <div class="lists" style="padding-top: 5rem">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_clothes.jpg') }}"
-              alt=""
-            />
-            <p>의류</p>
+          <div style="padding-top: 2rem; padding-bottom: 2rem">
+            <h4>
+              <p style="color: white">
+                변환된 사진으로 나만의 펫 상품을 만들어보세요!
+              </p>
+              <p style="color: white">
+                새롭게 디자인된 이미지로 굿즈을 만들기 원하시면 아래 그림을 클릭하세요
+              </p>
+              <p style="color: red">
+                현재 굿즈 회사의 서비스는 한국에서만 가능합니다
+              </p>
+            </h4>
+          </div>
+
+          <div class="lists">
+            <div class="list1">
+              <div
+                style="
+                  background-image: url('../../static/img/cloth_modified.jpg');
+                "
+                class="img"
+              >
+                <a href="https://www.bizhows.com/" class="ac1">
+                  <div class="imc1"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
+                    class="dis1"
+                  >
+                    Bizhows
+                  </div>
+                </a>
+                <a href="https://www.publog.co.kr/Default.asp" class="ac2">
+                  <div class="imc2"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
+                    class="dis2"
+                  >
+                    Publog
+                  </div>
+                </a>
+                <a href="https://www.tpana.com/" class="ac3">
+                  <div class="imc3"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
+                    class="dis3"
+                  >
+                    Tpana
+                  </div>
+                </a>
+                <a href="https://www.customzone.co.kr/" class="ac4">
+                  <div class="imc4"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cloth_origin.jpg');
+                    "
+                    class="dis4"
+                  >
+                    Customzone
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p class="tes">의류</p>
           </div>
           <div class="lists">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_griptok.jpg') }}"
-              alt=""
-            />
-            <p>휴대폰 액세서리</p>
+            <div class="list2">
+              <div
+                style="
+                  background-image: url('../../static/img/griptok_modified.jpg');
+                "
+                class="img"
+              >
+                <a href="http://www.bandya.com/" class="ac1">
+                  <div class="imc1"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
+                    class="dis1"
+                  >
+                    Bandya
+                  </div>
+                </a>
+                <a href="https://www.marpple.com/kr/" class="ac2">
+                  <div class="imc2"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
+                    class="dis2"
+                  >
+                    MARPPLE
+                  </div>
+                </a>
+                <a href="https://www.phoneppu.com/" class="ac3">
+                  <div class="imc3"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
+                    class="dis3"
+                  >
+                    Phoneppu
+                  </div>
+                </a>
+                <a href="https://shapely.co.kr/" class="ac4">
+                  <div class="imc4"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/griptok_origin.jpg');
+                    "
+                    class="dis4"
+                  >
+                    Shapely
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p class="tes">핸드폰 액세서리</p>
           </div>
           <div class="lists">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_cup.jpg') }}"
-              alt=""
-            />
-            <p>생활용품</p>
+            <div class="list3">
+              <div
+                style="
+                  background-image: url('../../static/img/cup_modified.jpg');
+                "
+                class="img"
+              >
+                <a href="http://www.handmc.com/" class="ac1">
+                  <div class="imc1"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
+                    class="dis1"
+                  >
+                    Handmadec
+                  </div>
+                </a>
+                <a href="http://www.jjomool.com/" class="ac2">
+                  <div class="imc2"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
+                    class="dis2"
+                  >
+                    Jjomoolshop
+                  </div>
+                </a>
+                <a href="https://www.ruashop.co.kr/" class="ac3">
+                  <div class="imc3"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
+                    class="dis3"
+                  >
+                    Ruashop
+                  </div>
+                </a>
+                <a
+                  href="http://www.thankshop.co.kr/shopuser/index.html/"
+                  class="ac4"
+                >
+                  <div class="imc4"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/cup_origin.jpg');
+                    "
+                    class="dis4"
+                  >
+                    Thankshop
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p class="tes">생활용품</p>
           </div>
           <div class="lists">
-            <img
-              class="list_img"
-              src="{{ url_for('static', filename = 'img/goods_sticker.jpg') }}"
-              alt=""
-            />
-            <p>그 외 기타</p>
+            <div class="list4">
+              <div
+                style="
+                  background-image: url('../../static/img/sticker_modified.jpg');
+                "
+                class="img"
+              >
+                <a href="https://www.smilecat.com/" class="ac1">
+                  <div class="imc1"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
+                    class="dis1"
+                  >
+                    Smilecat
+                  </div>
+                </a>
+                <a href="http://www.adsland.com/" class="ac2">
+                  <div class="imc2"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
+                    class="dis2"
+                  >
+                    Adsland
+                  </div>
+                </a>
+                <a href="http://www.t-free.co.kr/" class="ac3">
+                  <div class="imc3"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
+                    class="dis3"
+                  >
+                    The Fancy & Stiker
+                  </div>
+                </a>
+                <a href="http://www.huniprinting.com/" class="ac4">
+                  <div class="imc4"></div>
+                  <div
+                    style="
+                      background-image: url('../../static/img/sticker_origin.jpg');
+                    "
+                    class="dis4"
+                  >
+                    huniprinting
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p class="tes">그 외 기타</p>
           </div>
         </div>
       </div>
@@ -368,31 +581,31 @@
             </h1>
           </div>
           <div class="member">
-            <img src="{{ url_for('static', filename = 'img/syj.png') }}" />
+            <img src="{{ url_for('static', filename = 'img/contact/khj.png') }}" />
             <p>김한주</p>
             <p>E-mail : hanjukim0922@gmail.com</p>
             <p>카카오톡 : hj0922</p>
           </div>
           <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <img src="{{ url_for('static', filename = 'img/contact/kmj.png') }}" />
             <p>김민지</p>
             <p>E-mail : vp9397@naver.com</p>
             <p>카카오톡 : woodbvo12</p>
           </div>
           <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <img src="{{ url_for('static', filename = 'img/contact/syj.png') }}" />
             <p>성연재</p>
             <p>E-mail : siriyay@naver.com</p>
             <p>카카오톡 : proofreadd</p>
           </div>
           <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <img src="{{ url_for('static', filename = 'img/contact/sjh.png') }}" />
             <p>송종호</p>
             <p>E-mail : sjh7397@naver.com</p>
             <p>카카오톡 : Lilac3</p>
           </div>
           <div class="member">
-            <img src="{{ url_for('static', filename = 'img/bg.jpg') }}" />
+            <img src="{{ url_for('static', filename = 'img/contact/jyh.png') }}" />
             <p>정영훈</p>
             <p>E-mail : gi93008@naver.com</p>
             <p>카카오톡 : gannak8</p>
@@ -411,10 +624,60 @@
 
       <div class="list">
         <div class="six">
-          <h5 style="color: white">정보 입력?</h5>
+          <div class="footer-info">
+            <p class="footer-info__name">
+              <img src="{{ url_for('static', filename = 'img/footer.png') }}" />
+            </p>
+            <p class="footer-info__text">
+              <span>림펫 LIMNPET</span>
+              |
+              <span>
+                <em>출처</em>
+                <a
+                  href="/img_src"
+                  target="_blank"
+                  style="text-decoration: none; color: white"
+                >
+                  사용 이미지 출처</a
+                >
+              </span>
+              |
+              <span>
+                <em>made by</em>
+                LIMNPET TEAM
+              </span>
+              |
+              <span>
+                <em>team_email</em>
+                allislijell@gmail.com
+              </span>
+              <br />
+              <br />
+              Copyright Policy
+              <br />
+              This service is limited only for educational purpose. All Rights
+              of copy right are reserved to each artists who we provides.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    >
+      let test = document.getElementById("example");
+
+      test.addEventListener("mouseover", function (event) {
+      //highlight the mouseover target
+      event.target.style.color = "red";
+      }, false);
+
+      test.addEventListener("mouseout", function (event) {
+      // highlight the mouseout target
+      event.target.style.color = "black";
+      }, false);
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
