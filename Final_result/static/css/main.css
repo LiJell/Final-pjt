@@ -7,11 +7,10 @@ body {
 
 .menu .navbar-dark {
   font-family: "Gowun Dodum", sans-serif;
-  opacity: 0.7;
-  background-color: #000000;
+  background: rgba(0, 0, 0, 0.7);
   font-size: 1.5rem;
-  font-style: italic Bold;
-  align-items: center; /* text-align: center; */
+  /* font-style: italic Bold; */
+  /* align-items: center; text-align: center; */
   position: fixed;
   top: 0;
   left: 0;
@@ -22,9 +21,9 @@ body {
 }
 
 .navbar-dark .navbar-toggler {
-  border-color: #000000;
+  border-color: rgba(0,0,0,0);
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
   .menu ul {
     float: none;
     position: absolute;
@@ -38,16 +37,13 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  html {
+  /* html {
     font-size: 10px;
-  }
-  /* .menu ul {
-		float: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0; */
+  } */
+}
+.nav-link {
+  padding: 0rem-0rem;
+
 }
 
 /* Banner 1 */
