@@ -57,21 +57,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/home"
+                <a class="nav-link active" aria-current="page" href="/home_ja"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="/about_ja">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/service">Service</a>
+                <a class="nav-link" href="/service_ja">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="/contact_ja">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/goods">Goods</a>
+                <a class="nav-link" href="/goods_ja">Goods</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -107,15 +107,15 @@
     <div class="list">
       <div class="three">
         <div style="text-align: center" id="div_show">
-          <h1 style="text-align: center">LimnPet Service</h1>
+          <h1 style="text-align: center">LimnPet サービス</h1>
           <h3 style="text-align: center">
-            Draw your pet in the style of your choice
+            お好みのスタイルでペットを描く
           </h3>
           <p style="padding-top:1rem;text-align: center">
-            Save the result<br>
-            Back to the Service page to improve resolution<br>
-            or<br>
-            Move to the Goods page & Select a goods shop
+            結果を保存する<br>
+            解像度を向上させるためにサービスページに戻る<br>
+            また<br>
+            グッズページに移動してグッズショップを選択
           </p>
         </div>
 
@@ -131,7 +131,7 @@
           <div id="download_button">
             <a href="{{url_for('static', filename = img_file)}}" download>
               <button class="remove-image">
-                <span class="image-title">Save</span>
+                <span class="image-title">保存する</span>
               </button>
             </a>
           </div>
@@ -140,9 +140,9 @@
             <button
               class="remove-image"
               type="button"
-              onClick="location.href='/service'"
+              onClick="location.href='/service_ja'"
             >
-              <span class="image-title">Try Again</span>
+              <span class="image-title">再試行する</span>
             </button>
           </div>
 
@@ -151,9 +151,9 @@
               class="remove-image"
               style="font-size:medium"
               type="button"
-              onClick="location.href='/goods'"
+              onClick="location.href='/goods_ja'"
             >
-              <span class="image-title">Move to Goods shop list</span>
+              <span class="image-title">グッズショップリストに移動</span>
             </button>
           </div>
           
@@ -161,9 +161,9 @@
             <button
               class="remove-image"
               type="button"
-              onClick="location.href='/home'"
+              onClick="location.href='/home_ja'"
             >
-              <span class="image-title">Back Home</span>
+              <span class="image-title">帰国</span>
             </button>
           </div>
 
