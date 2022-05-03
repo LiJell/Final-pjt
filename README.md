@@ -18,7 +18,7 @@ Cartoon stylization service project
     ·
     <a href="https://limnpet.notion.site/LimnPet-537f6461d3234937ab94dee11671d22a">Team notion</a>
     ·
-    <a href="#팀소개">Members</a>
+    <a href="#Team-members">Members</a>
   </p>
 </div>
 
