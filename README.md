@@ -2,8 +2,8 @@
 <img alt="Contributors" src ="https://img.shields.io/badge/Contributors-5-brightgreen.svg?&style=for-the-badge"/>
 <img alt="issues" src ="https://img.shields.io/badge/Issues-27-green.svg?&style=for-the-badge"/>
 </div>
-
 <br>
+
 <div align="center">
   <a href="https://github.com/LiJell/Final-pjt">
     <img src="/assets/README/logo.png" alt="Logo" width="80" height="80">
@@ -47,7 +47,6 @@ Cartoon stylization service project
     <li><a href="#acknowledgments">참고 자료 및 코드 출처</a></li>
   </ol>
 </details>
-
 <br>
 
 ## About the Project
@@ -55,15 +54,16 @@ Cartoon stylization service project
   <a href="https://github.com/LiJell/Final-pjt">
     <img src="/assets/README/My%20project.jpg">
   </a>
-
-<p align="center"><br><b>LimnPet</b>은 커스텀 굿즈 제작 과정 간 따로 그림 서비스를 받아야 하는 불편함을 해소하기 위한<br> GAN 기반 반려견 그림 자동 생성 및 저장/공유 서비스입니다.<p>
+<br>
+<p align="center"><br><b>LimnPet은 커스텀 굿즈 제작 과정 간 따로 그림 서비스를 받아야 하는 불편함을 해소하기 위한<br> GAN 기반 반려견 그림 자동 생성 및 저장/공유 서비스입니다.</b></p>
 <br>
 <br>
-최근 성장하는 반려동물 시장과 반려동물을 가족 구성원으로 인식하고 감정을 가진 하나의 인격체로 대우하는 현상인 펫 휴머나이제이션 트렌드가 확산되고 있습니다. 때문에 개성을 중요하게 생각하는 MZ세대의 반려인은 반려동물 옷이나 액세서리를 통해 일명 <b>‘펫부심’</b>을 드러내려합니다.
 
-만약 고객이 반려견 사진을 원본 그대로 이용하지 않고, 캐릭터화한 반려견 그림이나 초상화를 이용하여 커스텀 굿즈 제작을 의뢰하기 위해서는 상품 제작과는 별개로 그림을 그려주는 서비스를 제공받아야 합니다.
-
-하지만 고객의 입장에서 이러한 과정은 매우 번거롭고 비용도 많이 들 수 있다는 단점이 존재합니다.
+> 최근 성장하는 반려동물 시장과 반려동물을 가족 구성원으로 인식하고 감정을 가진 하나의 인격체로 대우하는 현상인 펫 휴머나이제이션 트렌드가 확산되고 있습니다. 때문에 개성을 중요하게 생각하는 MZ세대의 반려인은 반려동물 옷이나 액세서리를 통해 일명 <b>‘펫부심’</b>을 드러내려합니다.
+>
+> 만약 고객이 반려견 사진을 원본 그대로 이용하지 않고, 캐릭터화한 반려견 그림이나 초상화를 이용하여 커스텀 굿즈 제작을 의뢰하기 위해서는 상품 제작과는 별개로 그림을 그려주는 서비스를 제공받아야 합니다.
+>
+> 하지만 고객의 입장에서 이러한 과정은 매우 번거롭고 비용도 많이 들 수 있다는 단점이 존재합니다.
 
 <br>
 <br>
@@ -71,8 +71,8 @@ Cartoon stylization service project
 <b>Here's Insight 😊</b>
 
 - 굿즈 제작을 위한 그림 서비스를 전문가의 수작업이 필요하지 않도록 자동화합니다.
-- 생성된 이미지를 기반으로 반려견 커스텀 굿즈(의류, 휴대폰 악세서리, 생활용품, 기타 등등)를 제작할 수 있도록 관련 업체와 사용자간 의사소통 채널 형성 기반 마련합니다.
-- 이원화된 서비스 제공으로 인한 고객의 불편함을 감소시키고 굿즈 제작에 대한 접근성을 높일 수 있습니다.
+- 생성된 이미지를 기반으로 반려견 커스텀 굿즈(의류, 휴대폰 악세서리, 생활용품, 기타 등등)를 제작할 수 있도록 관련 업체와 사용자간 의사소통 채널을 형성합니다.
+- 이원화된 서비스 제공으로 인한 **<u>고객의 불편함을 감소</u>**시키고 **<u>굿즈 제작에 대한 접근성을 높일 수 있습니다</u>**.
   <br>
   <br>
 
