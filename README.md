@@ -2,17 +2,18 @@
 
 ![My project](assets/README/My%20project.jpg)
 
-- [프로젝트 소개](#-------)
-  * [프로젝트 목표](#-------)
-  * [팀소개](#---)
-  * [기술 스택 및 수행 도구](#-------------)
-- [구현 기능](#-----)
-  * [주요 기능](#-----)
-  * [추가 기능](#-----)
-- [향후 계획](#-----)
-- [자료 및 코드 출처](#----------)
+#### 목차
 
+1. [프로젝트 소개](#프로젝트-소개)
 
+- [프로젝트 목표](#-------)
+- [팀소개](#---)
+- [기술 스택 및 수행 도구](#-------------)
+  [2. 구현 기능](#-----)
+- [주요 기능](#-----)
+- [추가 기능](#-----)
+  [3. 향후 계획](#-----)
+  [4. 자료 및 코드 출처](#----------)
 
 ## 프로젝트 소개
 
@@ -22,38 +23,20 @@
 
 [프로젝트 홈페이지](https://www.limnpet.ml/)에서 서비스를 체험해보실 수 있으며, 프로젝트에 대한 자세한 내용은 [Team notion](https://www.notion.so/limnpet/LimnPet-537f6461d3234937ab94dee11671d22a)에 작성되어 있습니다.
 
-
-
-<div style="justify-content:space-between">
+<div align="center">
 	<a>
     	<img src="assets/README/dog.jpg">
     	<img src="assets/README/gif-16515419712193.gif">
     </a>
 </div>
 
-
-
-
-
-
-
-
-
 ### 프로젝트 목표
 
-- 이제는 가족의 구성원인 나의 반려동물만을 위한 카툰/그림 형식의 캐릭터 생성 
+- 이제는 가족의 구성원인 나의 반려동물만을 위한 카툰/그림 형식의 캐릭터 생성
 - 높은 비용과 오랜 제작기간이 필요한 수작업 반려동물 굿즈의 문제점을 해결
   - 전문가의 작업이 필요했던 반려동물 캐릭터화 또는 그림을 자동하여 비용과 시간을 절약
   - 생성된 이미지를 커스터마이징 굿즈 제작 업체에 제공하여 손쉽게 나만의 굿즈 구매
-- 반려동물과 커스터마이징 업체 중개를 통해 **반려동물 관련 새로운 시장 및 문화를 형성하고자 함** 
-
-
-
-
-
-
-
-
+- 반려동물과 커스터마이징 업체 중개를 통해 **반려동물 관련 새로운 시장 및 문화를 형성하고자 함**
 
 ### 팀소개
 
@@ -97,13 +80,6 @@
   </tr>
 </table>
 
-
-
-
-
-
-
-
 ### 기술 스택 및 수행 도구
 
 <div align=center>
@@ -136,12 +112,6 @@
 <img alt="Freenom" src ="https://img.shields.io/badge/Freenom-%23744AB.svg?&style=for-the-badge&logo=Freenom&logoColor=white"/>
 </div>
 
-
-
-
-
-
-
 ## 구현 기능
 
 ### 주요 기능
@@ -155,20 +125,12 @@
 - 변환 이미지를 활용해 굿즈를 제작할 수 있는 업체 목록 및 간단한 소개 표시
 - 사용자가 선택한 업체 페이지로 이동
 
-
-
 ### 추가 기능
 
 - 사진 전체가 아닌 반려견 영역만 따로 추출하여 이미지 변환
 - 저화질 이미지 화질 개선
 
-
-
 ## 향후 계획
-
-
-
-
 
 ## 자료 및 코드 출처
 
@@ -177,12 +139,6 @@ segmentation: [pytorch hub](https://github.com/kairess/semantic-segmentation-pyt
 cartoonGAN: https://github.com/mnicnc404/CartoonGan-tensorflow
 
 Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
-
-
-
-
-
-
 
 ---
 
@@ -196,11 +152,9 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
     - CartoonGAN 모델 이용하려 사진을 Cartoon화
     - return 이미지를 웹과 앱상에 post
 
-    
-
 - goal 2
 
-  - 소셜 네트워크 기능 
+  - 소셜 네트워크 기능
     - 댓글 기능 추가
     - 피드백 수용
     - SNS 공유기능 추가
@@ -209,8 +163,6 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
 
   - 웹, 앱 배포
 
-
-
 #### 2nd. iteration
 
 - goal 1
@@ -218,11 +170,9 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
     - 배경을 제외한 반려동물 사진만 캐릭터화
     - UX/UI 개선
     - 모델 개선 - 원하는 디자인 > 추가학습
-      - 모델개수 
-- goal 2 
+      - 모델개수
+- goal 2
   - 앱/웹 배포를 통해 얻은 feedback 추가
-
-
 
 #### 3rd. iteration
 
@@ -232,11 +182,10 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
       - 사업자 정보 제공
     - 사진을 굿즈 사업자에게 전달
       - 굿즈 제작 및 구매
-- goal 2 
+- goal 2
   - 앱/웹 배포를 통해 얻은 feedback 추가
-- goal 3 
+- goal 3
   - google colab 말고 제대로된 서버 구축해서 이용방안 탐구
-
 
 ---
 
@@ -267,32 +216,30 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
 
 - Service
 
-  - 웹/앱 사진 입력, 삭제기능 
+  - 웹/앱 사진 입력, 삭제기능
 
     - codepen 사용하여 아주 기본적인 template 가져오기
       - HTML/CSS/Javascript 수정하여 완전히 다른 디자인과 UX/UI 변경
-  - 학습한 CartoonGAN과 연결 
+
+  - 학습한 CartoonGAN과 연결
 
   - 댓글창 구현
 
-    - DISQUS를 이용한 댓글기능 구현 ( Backend 안해도됨) 
+    - DISQUS를 이용한 댓글기능 구현 ( Backend 안해도됨)
 
       - SNS 공유, 움짤(gif), 이미지 첨부, 텍스트 꾸미기 기능, 좋아요, 싫어요, 대댓글 기능 등 엄청나게 다양한 기능 추가
       - SEO에도 도움됨( 검색엔진 최적화)
 
   - AddThis로 공유하기 버튼 따로 만들기
-    
-      - SNS마다 API연결 안해도 됨
 
+    - SNS마다 API연결 안해도 됨
 
 - Contact
   - 팀원들의 연락처 정보 제공
 - Goods
-  - 다양한 굿즈회사로 연결 
+  - 다양한 굿즈회사로 연결
 
 ---
-
-
 
 #### 앱
 
@@ -302,22 +249,20 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
 
   - Webview 이용하기
     - 인터넷 화면을 앱에 띄우는 기술
-  
+
 - 환경설정
 
-  - React-Native & Expo 개발 환경 설정 
+  - React-Native & Expo 개발 환경 설정
 
     - Node.js, Expo, React Native = 구름 IDE로 해결
       - container에서 React Native 선택 후 생성
-    
+
   - Android & iOS 앱 코딩
 
     - React Native를 도와주는 Expo(테스트와 배포)를 이용
       - expo react web view 검색 > inastallation (terminal)> Usage (App.js) 대체 > 저장
       - expo 어플 다운뒤 QR 찍어서 직접 확인가능
-      
-      
-    
+
   - 앱 마켓 출시 준비
 
     - 출시를 위한 설정(아이콘이나 스플래시 이미지) , APK 파일 제작
@@ -329,9 +274,11 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
         - 앱 아이콘과 스플래쉬 이미지 변경
 
         - Expo에서 규격 확인 후 변경
+
     - Install Expo CLI를 이용
-    
+
       - terminal에서 npm install > .expo 폴더 삭제
+
     - configure app.json
       - app.json에 추가
       - package 이름 변경
@@ -343,7 +290,7 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
     - APK 다운 > 무시하고 설치
 
 - 앱 배포하기
-  - google store 
+  - google store
     - 한번만 내면 됨
   - one store
     - 네이버
@@ -353,4 +300,3 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
 ##### Plan2
 
 - PWA를 이용한 앱 생성
-
