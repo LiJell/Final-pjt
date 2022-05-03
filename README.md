@@ -10,13 +10,15 @@
 
 생성된 이미지를 기반으로 반려견 커스텀 굿즈(의류, 휴대폰 악세서리, 생활용품, 기타 등등)를 제작할 수 있도록 관련 업체와 사용자간 의사소통 채널 형성 기반 마련합니다.
 
-> 프로젝트 홈페이지는 [LimnPet.ml](https://www.limnpet.ml/) 이며, 프로젝트에 대한 자세한 내용은 [Team notion](https://www.notion.so/limnpet/LimnPet-537f6461d3234937ab94dee11671d22a)에 작성되어 있습니다.
+> [프로젝트 홈페이지](https://www.limnpet.ml/)에서 서비스를 체험해보실 수 있으며, 프로젝트에 대한 자세한 내용은 [Team notion](https://www.notion.so/limnpet/LimnPet-537f6461d3234937ab94dee11671d22a)에 작성되어 있습니다.
+
+
 
 
 
 ### 팀소개
 
-<table>
+<table align=center>
   <tr>
     <td align="center">
       <a href="https://github.com/LiJell">
@@ -57,6 +59,9 @@
 </table>
 
 
+
+
+
 <div><h3>📚 수행 도구</h3></div>
 <div align=center>
 <img alt="Python" src ="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>
@@ -68,6 +73,7 @@
 <img alt="Microsoft PowerPoint" src ="https://img.shields.io/badge/Microsoft%20PowerPoint-%23B7472A.svg?&style=for-the-badge&logo=Microsoft PowerPoint&logoColor=white"/>
 <img alt="adobe photoshop" src ="https://img.shields.io/badge/Adobe%20Photoshop-%2331A8FF.svg?&style=for-the-badge&logo=adobe photoshop&logoColor=white"/>
 <img alt="google drive" src ="https://img.shields.io/badge/Google%20Drive-%234285F4.svg?&style=for-the-badge&logo=googledrive&logoColor=white"/>
+</div>
 
 
 
