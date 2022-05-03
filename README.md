@@ -6,17 +6,20 @@
 
 1. [프로젝트 소개](#프로젝트-소개)
 
-- 프로젝트 목표
-- 팀소개
-- 기술 스택 및 수행 도구
+   1. 프로젝트 목표
+   2. 팀소개
+   3. 기술 스택 및 수행 도구
 
 2. [구현 기능](#구현-기능)
 
-- 주요 기능
-- 추가 기능
+   1. 주요 기능
+   2. 추가 기능
 
 3. [향후 계획](#향후-계획)
+
 4. [자료 및 코드 출처](#자료-및-코드-출처)
+
+<br/><br/>
 
 ## 프로젝트 소개
 
@@ -24,7 +27,6 @@
 
 생성된 이미지를 기반으로 반려견 커스텀 굿즈(의류, 휴대폰 악세서리, 생활용품, 기타 등등)를 제작할 수 있도록 관련 업체와 사용자간 의사소통 채널 형성 기반 마련합니다.
 
-[프로젝트 홈페이지](https://www.limnpet.ml/){: .btn .btn--primary}
 [프로젝트 홈페이지](https://www.limnpet.ml/)에서 서비스를 체험해보실 수 있으며, 프로젝트에 대한 자세한 내용은 [Team notion](https://www.notion.so/limnpet/LimnPet-537f6461d3234937ab94dee11671d22a)에 작성되어 있습니다.
 
 <div align="center">
@@ -34,6 +36,8 @@
     </a>
 </div>
 
+<br/><br/>
+
 ### 프로젝트 목표
 
 - 이제는 가족의 구성원인 나의 반려동물만을 위한 카툰/그림 형식의 캐릭터 생성
@@ -41,6 +45,8 @@
   - 전문가의 작업이 필요했던 반려동물 캐릭터화 또는 그림을 자동하여 비용과 시간을 절약
   - 생성된 이미지를 커스터마이징 굿즈 제작 업체에 제공하여 손쉽게 나만의 굿즈 구매
 - 반려동물과 커스터마이징 업체 중개를 통해 **반려동물 관련 새로운 시장 및 문화를 형성하고자 함**
+
+<br/><br/>
 
 ### 팀소개
 
@@ -84,6 +90,8 @@
   </tr>
 </table>
 
+<br/><br/>
+
 ### 기술 스택 및 수행 도구
 
 <div align=center>
@@ -106,7 +114,7 @@
 <img alt="google drive" src ="https://img.shields.io/badge/google%20colab-%23F9AB00.svg?&style=for-the-badge&logo=googledrive&logoColor=white"/>
 <br><br>
 <img alt="google colab" src ="https://img.shields.io/badge/Googlecolab%20Drive-%234285F4.svg?&style=for-the-badge&logo=Googlecolab&logoColor=white"/>
-<img alt="Visual Studio Code" src ="https://img.shields.io/badge/Visual Studio Code-%007ACC.svg?&style=for-the-badge&logo=Visual Studio Code&logoColor=white"/>
+<img alt="Visual Studio Code" src ="https://img.shields.io/badge/Visual%20Studio%20Code-%007ACC.svg?&style=for-the-badge&logo=VisualStudioCode&logoColor=white"/>
 <br><br>
 <img alt="Addthis" src ="https://img.shields.io/badge/Addthis-%23FF6550.svg?&style=for-the-badge&logo=Addthis&logoColor=white"/>
 <img alt="Disqus" src ="https://img.shields.io/badge/Disqus-%232E9FFF.svg?&style=for-the-badge&logo=Disqus&logoColor=white"/>
@@ -116,7 +124,11 @@
 <img alt="Freenom" src ="https://img.shields.io/badge/Freenom-%23744AB.svg?&style=for-the-badge&logo=Freenom&logoColor=white"/>
 </div>
 
+<br><br>
+
 ## 구현 기능
+
+<br><br>
 
 ### 주요 기능
 
@@ -134,10 +146,14 @@
 - 사진 전체가 아닌 반려견 영역만 따로 추출하여 이미지 변환
 - 저화질 이미지 화질 개선
 
+<br><br>
+
 ## 향후 계획
 
 - [ ] 체크 안됨
 - [x] 체크 됨
+
+<br><br>
 
 ## 자료 및 코드 출처
 
