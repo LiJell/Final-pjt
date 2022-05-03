@@ -1,6 +1,10 @@
 <div align=center>
-<img alt="Contributors" src ="https://img.shields.io/badge/Contributors-5-brightgreen.svg?&style=for-the-badge"/>
-<img alt="issues" src ="https://img.shields.io/badge/Issues-27-green.svg?&style=for-the-badge"/>
+    <a href="https://github.com/LiJell/Final-pjt/graphs/contributors">
+		<img alt="Contributors" src ="https://img.shields.io/badge/Contributors-5-brightgreen.svg?&style=for-the-badge"/>
+    </a>
+	<a href="https://github.com/LiJell/Final-pjt/issues?q=is%3Aissue+is%3Aclosed">
+    	<img alt="issues" src ="https://img.shields.io/badge/Issues-27-green.svg?&style=for-the-badge"/>
+    </a>
 </div>
 <br>
 
