@@ -1,4 +1,91 @@
+# Cartoon stylization service project
+
 ![My project](assets/README/My%20project.jpg)
+
+
+
+## 림펫(LimnPet )
+
+반려견 커스텀 굿즈 제작 과정간 따로 그림 서비스를 받아야하는 불편함을 해소하기 위한 GAN 기반 반려견 그림 자동 생성 및 저장/공유 서비스 구현 팀프로젝트입니다.
+
+생성된 이미지를 기반으로 반려견 커스텀 굿즈(의류, 휴대폰 악세서리, 생활용품, 기타 등등)를 제작할 수 있도록 관련 업체와 사용자간 의사소통 채널 형성 기반 마련합니다.
+
+> 프로젝트 홈페이지는 [LimnPet.ml](https://www.limnpet.ml/) 이며, 프로젝트에 대한 자세한 내용은 [Team notion](https://www.notion.so/limnpet/LimnPet-537f6461d3234937ab94dee11671d22a)에 작성되어 있습니다.
+
+
+
+### 팀소개
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/LiJell">
+        <img src="https://avatars.githubusercontent.com/u/96508646?v=4" width="100px;" alt=""/>
+        <br />
+        <sub>김한주</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/kkally">
+        <img src="https://avatars.githubusercontent.com/u/96512254?v=4" width="100px;" alt=""/>
+        <br />
+        <sub>김민지</sub>
+      </a>
+    </td>
+    <td align="center">
+  <a href="https://github.com/yeonjaee">
+        <img src="https://avatars.githubusercontent.com/u/96452659?v=4" width="100px;" alt=""/>
+        <br />
+        <sub>성연재</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/dodo-Riley">
+        <img src="https://avatars.githubusercontent.com/u/96458726?v=4" width="100px;" alt=""/>
+        <br />
+        <sub>송종호</sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/gannak1">
+        <img src="https://avatars.githubusercontent.com/u/96508708?v=4" width="100px;" alt=""/>
+        <br />
+        <sub>정영훈</sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+<div><h3>📚 수행 도구</h3></div>
+<div align=center>
+<img alt="Python" src ="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>
+<img alt="html5" src ="https://img.shields.io/badge/html-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
+<img alt="css3" src ="https://img.shields.io/badge/css-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+<br><br>
+<img alt="Notion" src ="https://img.shields.io/badge/Notion-000000.svg?&style=for-the-badge&logo=notion&logoColor=white"/>
+<img alt="GitHub" src ="https://img.shields.io/badge/Github-%23181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/>
+<img alt="Microsoft PowerPoint" src ="https://img.shields.io/badge/Microsoft%20PowerPoint-%23B7472A.svg?&style=for-the-badge&logo=Microsoft PowerPoint&logoColor=white"/>
+<img alt="adobe photoshop" src ="https://img.shields.io/badge/Adobe%20Photoshop-%2331A8FF.svg?&style=for-the-badge&logo=adobe photoshop&logoColor=white"/>
+<img alt="google drive" src ="https://img.shields.io/badge/Google%20Drive-%234285F4.svg?&style=for-the-badge&logo=googledrive&logoColor=white"/>
+
+
+
+
+
+
+
+
+
+
+
+## GAN 기반 반려견 사진의 만화화 서비스
+
+
+
+
+
+
 
 
 
@@ -13,38 +100,18 @@ Real_esrGAN: https://github.com/xinntao/Real-ESRGAN
 
 
 
-
-# 파일 저장 형식
-
-
-
-- 모델: 
-  - 파일이름:파일이름(언더바)모델이름(언더바)작성자이름(언더바)
-  - 커밋이름: 변경된 사항
-
-- 웹/앱:
-  - 파일이름(언더바)적용된모델이름(언더바)작성자이름(언더바)
-  - 커밋이름:변견된 사항
-
-
-
-
 # 림펫 ( Limn pet )
 
 - Limn = to draw or paint on a surface
+
 - 반려동물의 사진을 그림 또는 카툰 형식의 캐릭터로 변환하여 제공하는 것
+
 - 변환된 캐릭터를 커스터마이징 굿즈로 구매하는 것
   - 림펫에서 캐릭터화를 시킨 후 커스터마이징 굿즈를 제작하는 사업자와 연결시켜주는 방법
+  
   - 이후 앱 이용을 통해 중개가 잘 이루어지면, 림펫 자체적으로 굿즈 제각하여 판매
-
-
-## TEAM
-
-- 김한주 - Leader
-- 성연재- Co-Leader
-- 송종호
-- 정영훈
-- 김민지
+  
+    
 
 ### Goal
 
