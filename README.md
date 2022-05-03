@@ -52,10 +52,11 @@ Cartoon stylization service project
 
 ## About the Project
 
-  <a href="https://github.com/LiJell/Final-pjt">
+<a href="https://github.com/LiJell/Final-pjt">
     <img src="/assets/README/My%20project.jpg">
   </a>
 <br>
+
 <p align="center"><br><b>LimnPet은 커스텀 굿즈 제작 과정 간 따로 그림 서비스를 받아야 하는 불편함을 해소하기 위한<br> GAN 기반 반려견 그림 자동 생성 및 저장/공유 서비스입니다.</b></p>
 <br>
 <br>
@@ -64,12 +65,14 @@ Cartoon stylization service project
 >
 > 만약 고객이 반려견 사진을 원본 그대로 이용하지 않고, 캐릭터화한 반려견 그림이나 초상화를 이용하여 커스텀 굿즈 제작을 의뢰하기 위해서는 상품 제작과는 별개로 그림을 그려주는 서비스를 제공받아야 합니다.
 >
-> 하지만 고객의 입장에서 이러한 과정은 매우 번거롭고 비용도 많이 들 수 있다는 단점이 존재합니다.
+> **하지만 고객의 입장에서 이러한 과정은 매우 번거롭고 비용도 많이 들 수 있다는 단점이 존재합니다.**
 
 <br>
 <br>
 <br>
 <b>Here's Insight 😊</b>
+
+<br>
 
 <br>
 
@@ -104,6 +107,8 @@ Cartoon stylization service project
 
 ### Used Tech stack & Tools
 
+<br>
+
 <div align=center>
 <img alt="Python" src ="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>
 <img alt="html5" src ="https://img.shields.io/badge/html-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
@@ -137,6 +142,8 @@ Cartoon stylization service project
 <br/><br/>
 
 ### Team members
+
+<br>
 
 <table align=center>
   <tr>
