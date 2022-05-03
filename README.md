@@ -22,6 +22,7 @@ Cartoon stylization service project
   </p>
 </div>
 
+
 <details>
   <summary>목차</summary>
   <ol>
@@ -70,9 +71,11 @@ Cartoon stylization service project
 <br>
 <b>Here's Insight 😊</b>
 
+<br>
+
 - 굿즈 제작을 위한 그림 서비스를 전문가의 수작업이 필요하지 않도록 자동화합니다.
 - 생성된 이미지를 기반으로 반려견 커스텀 굿즈(의류, 휴대폰 악세서리, 생활용품, 기타 등등)를 제작할 수 있도록 관련 업체와 사용자간 의사소통 채널을 형성합니다.
-- 이원화된 서비스 제공으로 인한 **<u>고객의 불편함을 감소</u>**시키고 **<u>굿즈 제작에 대한 접근성을 높일 수 있습니다</u>**.
+- 이원화된 서비스 제공으로 인한 <u>고객의 불편함을 감소</u>시키고 <u>굿즈 제작에 대한 접근성을 높일 수 있습니다</u>.
   <br>
   <br>
 
@@ -81,12 +84,15 @@ Cartoon stylization service project
     <img src="assets/README/dog.jpg">
     <img src="assets/README/gif-16515419712193.gif">
     <br><br>
-    더 자세한 프로젝트 소개와 문제 정의는 >> <a href="https://limnpet.notion.site/1-1-3076b068c2ee4f8986312c65a18ac6ac">Team notion</a> 에서..
+    <u>더 자세한 프로젝트 소개와 문제 정의는</u> >> <a href="https://limnpet.notion.site/1-1-3076b068c2ee4f8986312c65a18ac6ac">Team notion</a> 에서..
   </a>
 </div>
+
   <br><br>
 
 ### Goals of LimnPet Project
+
+<br>
 
 - 이제는 가족의 구성원인 나의 반려동물만을 위한 카툰/그림 형식의 캐릭터 생성
 - 높은 비용과 오랜 제작기간이 필요한 수작업 반려동물 굿즈의 문제점을 해결
@@ -209,20 +215,33 @@ Cartoon stylization service project
 
 **1st. iteration**
 
+<br>
+
 - [x] 데이터셋 수집 및 CartoonGAN 모델 학습
+
 - [x] CartoonGAN 모델을 이용하여 반려견 사진을 Cartoon화
+
 - [x] return 이미지를 웹에 post
+
 - [x] 소셜 네트워크 기능 추가(댓글 기능, SNS 공유기능)
+
 - [x] 웹 배포
-      <br>
+  <br>
+  
+  <br>
 
 **2st. iteration**
 
 - [x] segmantation 모델을 추가. 이미지에서 반려견만을 추출하여 Cartoon화
+
 - [x] 웹 페이지 UI 추가 및 개선
+
 - [x] 굿즈 제작 회사 사이트 추가
+
 - [ ] 굿즈 제작 사업자 정보 제공, 사진을 굿즈 사업자에게 전달
       <br>
+  
+  <br>
 
 **3st. iteration**
 
@@ -230,7 +249,7 @@ Cartoon stylization service project
 - [ ] Plan2) PWA를 이용한 앱 개발
 - [ ] 앱 마켓 출시 준비
 - [ ] 앱 배포
-      <br><br>
+  
 
 <br/><br/><br/><br/>
 
