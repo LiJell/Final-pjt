@@ -2,7 +2,15 @@
 
 ![My project](assets/README/My%20project.jpg)
 
-[TOC]
+- [프로젝트 소개](#-------)
+  * [프로젝트 목표](#-------)
+  * [팀소개](#---)
+  * [기술 스택 및 수행 도구](#-------------)
+- [구현 기능](#-----)
+  * [주요 기능](#-----)
+  * [추가 기능](#-----)
+- [향후 계획](#-----)
+- [자료 및 코드 출처](#----------)
 
 
 
@@ -16,15 +24,19 @@
 
 
 
-
-<div>
+<div style="justify-content:space-between">
 	<a>
     	<img src="assets/README/dog.jpg">
-        <span style="font-size:3rem; color:black;">	
-→</span>
     	<img src="assets/README/gif-16515419712193.gif">
     </a>
 </div>
+
+
+
+
+
+
+
 
 
 ### 프로젝트 목표
@@ -34,6 +46,10 @@
   - 전문가의 작업이 필요했던 반려동물 캐릭터화 또는 그림을 자동하여 비용과 시간을 절약
   - 생성된 이미지를 커스터마이징 굿즈 제작 업체에 제공하여 손쉽게 나만의 굿즈 구매
 - 반려동물과 커스터마이징 업체 중개를 통해 **반려동물 관련 새로운 시장 및 문화를 형성하고자 함** 
+
+
+
+
 
 
 
@@ -84,6 +100,10 @@
 
 
 
+
+
+
+
 ### 기술 스택 및 수행 도구
 
 <div align=center>
@@ -106,7 +126,7 @@
 <img alt="google drive" src ="https://img.shields.io/badge/google%20colab-%23F9AB00.svg?&style=for-the-badge&logo=googledrive&logoColor=white"/>
 <br><br>
 <img alt="google colab" src ="https://img.shields.io/badge/Googlecolab%20Drive-%234285F4.svg?&style=for-the-badge&logo=Googlecolab&logoColor=white"/>
-<img alt="Visual Studio Code" src ="https://img.shields.io/badge/Visual Studio Code%20Drive-%007ACC.svg?&style=for-the-badge&logo=Visual Studio Code&logoColor=white"/>
+<img alt="Visual Studio Code" src ="https://img.shields.io/badge/Visual Studio Code-%007ACC.svg?&style=for-the-badge&logo=Visual Studio Code&logoColor=white"/>
 <br><br>
 <img alt="Addthis" src ="https://img.shields.io/badge/Addthis-%23FF6550.svg?&style=for-the-badge&logo=Addthis&logoColor=white"/>
 <img alt="Disqus" src ="https://img.shields.io/badge/Disqus-%232E9FFF.svg?&style=for-the-badge&logo=Disqus&logoColor=white"/>
@@ -114,6 +134,8 @@
 <img alt="Flask" src ="https://img.shields.io/badge/Flask-%23000000.svg?&style=for-the-badge&logo=Flask&logoColor=white"/>
 <img alt="Pythonanywhere" src ="https://img.shields.io/badge/Python-Anywhere-%233776AB.svg?&style=for-the-badge&logo=Pythonanywhere&logoColor=white"/>
 <img alt="Freenom" src ="https://img.shields.io/badge/Freenom-%23744AB.svg?&style=for-the-badge&logo=Freenom&logoColor=white"/>
+</div>
+
 
 
 
