@@ -1,3 +1,5 @@
+<div id = "top"></div>
+
 <div align=center>
     <a href="https://github.com/LiJell/Final-pjt/graphs/contributors">
 		<img alt="Contributors" src ="https://img.shields.io/badge/Contributors-5-brightgreen.svg?&style=for-the-badge"/>
@@ -5,7 +7,11 @@
 	<a href="https://github.com/LiJell/Final-pjt/issues?q=is%3Aissue+is%3Aclosed">
     	<img alt="issues" src ="https://img.shields.io/badge/Issues-27-green.svg?&style=for-the-badge"/>
     </a>
+	<a href="https://github.com/LiJell/Final-pjt/stargazers">
+    	<img alt="issues" src ="https://img.shields.io/badge/STARS-4-yellow.svg?&style=for-the-badge"/>
+    </a>
 </div>
+
 <br>
 
 <div align="center">
@@ -109,7 +115,7 @@ Cartoon stylization service project
 
 <br/><br/>
 
-### Used Tech stack & Tools
+### Used Tech stacks & Tools
 
 <br>
 
@@ -225,8 +231,6 @@ Cartoon stylization service project
 
 **1st. iteration**
 
-<br>
-
 - [x] 데이터셋 수집 및 CartoonGAN 모델 학습
 
 - [x] CartoonGAN 모델을 이용하여 반려견 사진을 Cartoon화
@@ -265,8 +269,8 @@ Cartoon stylization service project
 
 ## Contributing
 
-이 문제를 개선할 수 있는 제안이 있다면, repo를 전환하고 pull 요청 해주세요.<br>
-또한 "enhancement" 태그로 간단히 issues를 보실 수 있습니다. 이 프로젝트에 별을 주는 것을 잊지 마세요!<br>다시 한 번 감사합니다!
+이 프로젝트의 서비스 모델을 개선할 수 있는 제안이 있다면, repo를 전환하고 pull 요청을 해주세요.<br>
+또한 Issues 에서 "enhancement" 태그로 간단히 issue를 열어보고 기능 추가를 해보실 수 있습니다.<br>이 프로젝트에 별을 주는 것도 잊지 마세요. 감사합니다!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
