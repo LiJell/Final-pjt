@@ -27,7 +27,10 @@ app = Flask(__name__)  # 플라스크 인스턴스 생성
 app.debug = False
 app.use_reloader = False
 
-
+@app.route('/offline')
+def offline():  
+    return render_template('offline.html')
+    
 @app.route('/robots.txt')
 @app.route('/sitemap.xml')
 def static_from_root():
@@ -525,3 +528,6 @@ def test():
 
 if __name__ == '__main__':
     app.run()  # 파이썬 파일을 직접 실행할 경우 app.run 수행
+
+
+
