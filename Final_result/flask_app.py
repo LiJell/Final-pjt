@@ -27,6 +27,10 @@ app = Flask(__name__)  # 플라스크 인스턴스 생성
 app.debug = False
 app.use_reloader = False
 
+@app.route('/privacy')
+def offline():  
+    return render_template('privacy.html')
+
 @app.route('/offline')
 def offline():  
     return render_template('offline.html')

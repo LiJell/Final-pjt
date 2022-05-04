@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "AwesomeProject",
+    "name": "LimnPet",
     "slug": "AwesomeProject",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,16 +17,17 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.limnpet.LiJell",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.limnpet.LiJell",
+      "versionCode": 2,
+      "permissions": [
+      "CAMERA",
+      "READ_EXTERNAL_STORAGE"
+    ]
     }
   }
 }
