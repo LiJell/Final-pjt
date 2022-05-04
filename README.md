@@ -149,6 +149,7 @@ Cartoon stylization service project
 <img alt="Bootstrap" src ="https://img.shields.io/badge/Bootstrap-%237952B3.svg?&style=for-the-badge&logo=Bootstrap&logoColor=white"/>
 <img alt="Flask" src ="https://img.shields.io/badge/Flask-%23000000.svg?&style=for-the-badge&logo=Flask&logoColor=white"/>
 <img alt="Pythonanywhere" src ="https://img.shields.io/badge/PythonAnywhere-%233776AB.svg?&style=for-the-badge&logo=Pythonanywhere&logoColor=white"/>
+<img alt="freenom" src ="https://img.shields.io/badge/freenom-brightgreen.svg?&style=for-the-badge&logo=freenom&logoColor=white"/>
 </div>
 
 <br/><br/>
@@ -267,7 +268,7 @@ Cartoon stylization service project
 - [ ] 앱 마켓 출시 준비
 - [ ] 앱 배포
 
-
+<br>
 
 **TODO list in the near future:**
 
