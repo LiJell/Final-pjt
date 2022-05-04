@@ -28,7 +28,7 @@ app.debug = False
 app.use_reloader = False
 
 @app.route('/privacy')
-def offline():  
+def privacy():  
     return render_template('privacy.html')
 
 @app.route('/offline')
