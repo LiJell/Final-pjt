@@ -5,7 +5,7 @@ import os
 import sys
 from datetime import datetime
 import tensorflow as tf
-from tensorflow.keras.layers import Layer, InputSpec
+from tensorflow.python.keras.layers import Layer, InputSpec
 import PIL
 import matplotlib.pyplot as plt
 import torch
