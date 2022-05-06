@@ -283,13 +283,13 @@ Cartoon stylization service project
 
 **3st. iteration**
 
-- [ ] Plan1) ReactNative를 이용한 앱 개발
+- [x] Plan1) ReactNative를 이용한 앱 개발
 
 - [ ] Plan2) PWA를 이용한 앱 개발
 
-- [ ] 앱 마켓 출시 준비
+- [x] 앱 마켓 출시 준비 (Google Play)
 
-- [ ] 앱 배포
+- [x] 앱 Open testing release 대기
 
 <br>
 
