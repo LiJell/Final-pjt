@@ -52,6 +52,7 @@ Cartoon stylization service project
         <li><a href="#Additional-Features">추가 기능</a></li>
       </ul>
     </li>
+    <li><a href="#How-to-use">사용 방법</a></li>
     <li><a href="#Service-Demonstration-Video">서비스 시연 영상</a></li>
     <li><a href="#Roadmap">로드맵</a></li>
     <li><a href="#contributing">기여하기</a></li>
@@ -59,6 +60,7 @@ Cartoon stylization service project
     <li><a href="#acknowledgments">참고 자료 및 코드 출처</a></li>
   </ol>
 </details>
+
 <br>
 
 ## About the Project
@@ -220,6 +222,24 @@ Cartoon stylization service project
 
 <br/><br/><br/><br/>
 
+## How to use
+
+<div>
+    1. <a href="https://www.limnpet.ml/">홈페이지 접속</a> 방법<br>
+    &nbsp;&nbsp;1️⃣ Service 페이지 접속<br>
+    &nbsp;&nbsp;2️⃣ 스타일 선택 및 이미지 업로드<br>
+    &nbsp;&nbsp;3️⃣ Draw picture 버튼 클릭 또는 Improve resolution 버튼 클릭<br>
+    &nbsp;&nbsp;4️⃣ 출력/결과 이미지 저장<br>
+    &nbsp;&nbsp;5️⃣ 굿즈 사이트에서 주문 의뢰<br>
+<br>
+<br>
+2. 로컬 서버 실행 방법<br>
+	&nbsp;&nbsp;1️⃣ app.py 파일 실행<br>
+    &nbsp;&nbsp;2️⃣ localhost 주소로 접속<br>
+	&nbsp;&nbsp;3️⃣ 위의 과정과 동일<br>
+</div>
+<br/><br/><br/><br/>
+
 ## Service Demonstration Video
 
   <a href="https://www.youtube.com/watch?v=l4TzD4FMvKY">
@@ -264,8 +284,11 @@ Cartoon stylization service project
 **3st. iteration**
 
 - [ ] Plan1) ReactNative를 이용한 앱 개발
+
 - [ ] Plan2) PWA를 이용한 앱 개발
+
 - [ ] 앱 마켓 출시 준비
+
 - [ ] 앱 배포
 
 <br>
